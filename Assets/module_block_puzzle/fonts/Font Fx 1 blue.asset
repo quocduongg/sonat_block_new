@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c7dd5984ca1be4eb72756ae3bcce20, type: 3}
+  m_Name: Font Fx 1 blue
+  m_EditorClassIdentifier: 
+  loadSprites:
+  - {fileID: -30802381674340732, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: 6223064030273243258, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: 1834984206900090242, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: -2958860367811968982, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: -2864528860480142220, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: -4961351363444502012, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: -2864119678081931789, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: 5883784909558434608, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: -146922543186187312, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: 5579641344811891521, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  - {fileID: -8269703347724466879, guid: f7ee1fd3edf36104997f1426115504b8, type: 3}
+  abc: 0
+  characters:
+  - index: 43
+    sprite: {fileID: -5974261439524001904, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 48
+    sprite: {fileID: -7656158428600295565, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 49
+    sprite: {fileID: 2020686377199914532, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 50
+    sprite: {fileID: -3422905348711895262, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 51
+    sprite: {fileID: 7358927784108998379, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 52
+    sprite: {fileID: 1698837736252333327, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 53
+    sprite: {fileID: -4908101948006800455, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 54
+    sprite: {fileID: 8812651030047878644, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 55
+    sprite: {fileID: 8784553141011904074, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 56
+    sprite: {fileID: -1010071934270627259, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3
+  - index: 57
+    sprite: {fileID: 3899048675665409296, guid: c0fb0c09be8dd1c489f8bc88376414b0, type: 3}
+    adjustSpacing: 0.3

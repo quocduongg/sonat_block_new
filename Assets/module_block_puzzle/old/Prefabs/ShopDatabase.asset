@@ -1,0 +1,736 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a2e126e15e3584693a1414e42c0ea0, type: 3}
+  m_Name: ShopDatabase
+  m_EditorClassIdentifier: 
+  storeProductDescriptors:
+  - key: 0
+    storeProductId: package.noads
+    price: 9.99
+    description: 
+    productType: 1
+  - key: 1
+    storeProductId: package.gold1
+    price: 0.99
+    description: 
+    productType: 0
+  - key: 2
+    storeProductId: package.gold2
+    price: 2.99
+    description: 
+    productType: 0
+  - key: 3
+    storeProductId: package.gold3
+    price: 4.99
+    description: 
+    productType: 0
+  - key: 4
+    storeProductId: package.gold4
+    price: 9.99
+    description: 
+    productType: 0
+  - key: 5
+    storeProductId: package.gold5
+    price: 19.99
+    description: 
+    productType: 0
+  - key: 6
+    storeProductId: package.gold6
+    price: 49.99
+    description: 
+    productType: 0
+  - key: 7
+    storeProductId: package.gold7
+    price: 99.99
+    description: 
+    productType: 0
+  - key: 37
+    storeProductId: package.startbundle
+    price: 3.99
+    description: 
+    productType: 0
+  - key: 10
+    storeProductId: vipmember
+    price: 4.99
+    description: 
+    productType: 2
+  - key: 11
+    storeProductId: package.vip2
+    price: 49.99
+    description: 
+    productType: 2
+  offers:
+  - key: 0
+    ruleEnum: 1
+    amountTime: 0
+    times: 0
+    countDownOffer: 3600
+    bonuses: []
+    activeWhenScreenShow: 1
+    delayToShow: 0
+    displayRate: 1
+  - key: 37
+    ruleEnum: 0
+    amountTime: 0
+    times: 0
+    countDownOffer: 3600
+    bonuses: []
+    activeWhenScreenShow: 1
+    delayToShow: 0
+    displayRate: 1
+  shopItems:
+  - name: NoAds
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 0
+        stockType: 2
+        stock: 1
+    products:
+    - quantity: 200
+      amount: 0
+      parameter: 0
+      parameter2: 0
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Gem1
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 1
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 0
+      amount: 200
+      parameter: 0
+      parameter2: 1
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Gem2
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 2
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 0
+      amount: 600
+      parameter: 0
+      parameter2: 2
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Gem3
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 3
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 0
+      amount: 1200
+      parameter: 0
+      parameter2: 3
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Gem4
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 4
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 0
+      amount: 2400
+      parameter: 0
+      parameter2: 4
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Gem5
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 5
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 0
+      amount: 5000
+      parameter: 0
+      parameter2: 5
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Gem6
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 6
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 0
+      amount: 13000
+      parameter: 0
+      parameter2: 6
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Gem7
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 7
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 0
+      amount: 30000
+      parameter: 0
+      parameter2: 7
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Vip
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 10
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 22
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Vip2
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 10
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 22
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 1
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Start Bundle
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 21
+      amount: 150
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 37
+        stockType: 2
+        stock: 1
+    products:
+    - quantity: 7
+      amount: 99
+      parameter: 0
+      parameter2: 4
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Use Hammer
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 1
+      amount: 150
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 30
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 201
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 3
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Use swap
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 1
+      amount: 150
+      parameter: 0
+      parameter2: 0
+      index: 1
+      priceKey:
+        key: 31
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 201
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 2
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Undo
+    rewardAdsAsPrice: 1
+    price:
+      quantity: 1
+      amount: 150
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 32
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 201
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 1
+    description: 
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Buy Rotate 1
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 0
+      amount: 30
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 20
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 7
+      amount: 1
+      parameter: 0
+      parameter2: 1
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Buy Rotate 1 50%
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 0
+      amount: 15
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 25
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 7
+      amount: 1
+      parameter: 0
+      parameter2: 1
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Buy Rotate 2
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 0
+      amount: 300
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 21
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 7
+      amount: 10
+      parameter: 0
+      parameter2: 2
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Buy Rotate 2 50%
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 0
+      amount: 150
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 26
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 7
+      amount: 10
+      parameter: 0
+      parameter2: 2
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Buy Rotate 3
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 0
+      amount: 500
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 22
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 7
+      amount: 20
+      parameter: 0
+      parameter2: 3
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Buy Rotate 3 50%
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 0
+      amount: 250
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 27
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 7
+      amount: 20
+      parameter: 0
+      parameter2: 3
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Buy Rotate 4
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 0
+      amount: 1200
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 23
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 7
+      amount: 50
+      parameter: 0
+      parameter2: 4
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  - name: Buy Rotate 4 50%
+    rewardAdsAsPrice: 0
+    price:
+      quantity: 0
+      amount: 600
+      parameter: 0
+      parameter2: 0
+      index: 0
+      priceKey:
+        key: 28
+        stockType: 0
+        stock: 0
+    products:
+    - quantity: 7
+      amount: 50
+      parameter: 0
+      parameter2: 4
+      index: 0
+    description: Buy Rotate by gem
+    takeRandom: 0
+    ignoreSave: 0
+  adsItems:
+  - name: DoubleDailyGift
+    key: 0
+    countDownType: 1
+    countToGetReward: 1
+    maxInDay: 1
+    products:
+    - quantity: 200
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 1
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: get_x2_daily
+  - name: ShopDailyGift
+    key: 1
+    countDownType: 1
+    countToGetReward: 1
+    maxInDay: 1
+    products:
+    - quantity: 200
+      amount: 2
+      parameter: 0
+      parameter2: 0
+      index: 1
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: get_daily_shop
+  - name: Shop Ads Rotate
+    key: 9
+    countDownType: 0
+    countToGetReward: 1
+    maxInDay: 1
+    products:
+    - quantity: 7
+      amount: 2
+      parameter: 0
+      parameter2: 0
+      index: 0
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: get_rorate_shop
+  - name: Shop Ads Gem
+    key: 2
+    countDownType: 0
+    countToGetReward: 1
+    maxInDay: 1
+    products:
+    - quantity: 0
+      amount: 50
+      parameter: 0
+      parameter2: 0
+      index: 0
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: get_coin_shop
+  - name: New Block Gem
+    key: 3
+    countDownType: 0
+    countToGetReward: 1
+    maxInDay: 1
+    products:
+    - quantity: 1
+      amount: 180
+      parameter: 0
+      parameter2: 0
+      index: 0
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: 
+  - name: PlayGame Gem
+    key: 4
+    countDownType: 0
+    countToGetReward: 1
+    maxInDay: 1
+    products:
+    - quantity: 1
+      amount: 100
+      parameter: 0
+      parameter2: 0
+      index: 0
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: 
+  - name: StartFromAds
+    key: 5
+    countDownType: 0
+    countToGetReward: 1
+    maxInDay: 1
+    products:
+    - quantity: 1
+      amount: 100
+      parameter: 0
+      parameter2: 0
+      index: 0
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: 
+  - name: NextGoalAds
+    key: 6
+    countDownType: 3
+    countToGetReward: 1
+    maxInDay: 100
+    products:
+    - quantity: 1
+      amount: 30
+      parameter: 0
+      parameter2: 0
+      index: 0
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: 
+  - name: Spin
+    key: 7
+    countDownType: 1
+    countToGetReward: 1
+    maxInDay: 3
+    products:
+    - quantity: 200
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 2
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: get_spin
+  - name: HintJigsaw
+    key: 10
+    countDownType: 0
+    countToGetReward: 1
+    maxInDay: 3
+    products:
+    - quantity: 201
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 2
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: hint_jigsaw
+  - name: Unlock Jigsaw
+    key: 11
+    countDownType: 0
+    countToGetReward: 1
+    maxInDay: 3
+    products:
+    - quantity: 201
+      amount: 1
+      parameter: 0
+      parameter2: 0
+      index: 9
+    takeRandom: 0
+    adsTimeGap: 0
+    customCondition: 0
+    logName: get_unlock_level
+  subscriptionItems:
+  - key: 0
+    storeProductId: vipmember
+    activeDays: 30
+    autoTakeReward: 1
+    rewards:
+    - quantity: 7
+      amount: 5
+      parameter: 0
+      parameter2: 0
+      index: 0
+  rewards:
+  - quantity: 0
+    amount: 50
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testShow: 0

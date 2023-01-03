@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &174116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434616}
+  - component: {fileID: 11461154}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14028773, y: 15.852752, z: 0.7131467}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11461154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1811503739e5b4f098b06f784e6255fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listInputAudio:
+  - type: 0
+    audioClip: {fileID: 8300000, guid: f70922a75951111429a21b56f2ce3d91, type: 3}
+    loop: 0
+    volume: 0
+  - type: 1
+    audioClip: {fileID: 8300000, guid: c03e7d8f3d9607b419cf6196cf22a593, type: 3}
+    loop: 0
+    volume: 0
+  - type: 2
+    audioClip: {fileID: 8300000, guid: b96913edbeb217b48a226816c24e63d4, type: 3}
+    loop: 0
+    volume: 0
+  - type: 3
+    audioClip: {fileID: 8300000, guid: ea4ecaa633dc3c140bc1a86d8218112c, type: 3}
+    loop: 0
+    volume: 0
+  - type: 4
+    audioClip: {fileID: 8300000, guid: 932c7011f1365524289137d233b020b3, type: 3}
+    loop: 0
+    volume: 0
+  - type: 5
+    audioClip: {fileID: 8300000, guid: 1664537b3d76e9b4c823485eaef9e4ce, type: 3}
+    loop: 0
+    volume: 0
+  - type: 6
+    audioClip: {fileID: 8300000, guid: 31915f4f56e50f445923c472424ec786, type: 3}
+    loop: 0
+    volume: 0
+  - type: 8
+    audioClip: {fileID: 8300000, guid: fbd2d8af33987ea4bafae0d54b133003, type: 3}
+    loop: 0
+    volume: 0
+  - type: 7
+    audioClip: {fileID: 8300000, guid: 131b9f4e2b7780c46b0625b93bae35b8, type: 3}
+    loop: 0
+    volume: 0
+  - type: 9
+    audioClip: {fileID: 8300000, guid: f3cde5ed568a70c4bbdc19cc36648949, type: 3}
+    loop: 0
+    volume: 0
+  isMute: 0

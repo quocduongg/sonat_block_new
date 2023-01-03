@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas-9
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 736c73693954194438b363ef8b8baf61, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 1dae7900b9906764cb7c8d34288d5970, type: 3}
+  - {fileID: 21300000, guid: dc0b78804039f3248ab3042d4ab0dde6, type: 3}
+  - {fileID: 21300000, guid: 6e15ada0cea0a8a4bb541c4a2ee02a55, type: 3}
+  - {fileID: 21300000, guid: f7fb8c8163f716243a92fde11c5e910b, type: 3}
+  - {fileID: 21300000, guid: 400979435a1d1b54c911c042de9d643a, type: 3}
+  - {fileID: 21300000, guid: b2fbe064f1578564380a1624ec206ae5, type: 3}
+  - {fileID: 21300000, guid: ecb90b1564d04ea48b6c1511dcddca99, type: 3}
+  - {fileID: 21300000, guid: 902eb4254bc58dd43a23981f22ae6b89, type: 3}
+  - {fileID: 21300000, guid: 865fcd3562c314a4cbf2e1bce991de26, type: 3}
+  - {fileID: 21300000, guid: 5935dd55a5549e54dbf75485099b8505, type: 3}
+  - {fileID: 21300000, guid: 36fcebf5f33d1c34080cf7fbce6f8166, type: 3}
+  - {fileID: 21300000, guid: 8be5ddf653f822d4d9335247d3e09869, type: 3}
+  - {fileID: 21300000, guid: fa358c073f9294b41b55e13dfac2cf6f, type: 3}
+  - {fileID: 21300000, guid: 30c17b3774bfc8143906d335283827ef, type: 3}
+  - {fileID: 21300000, guid: e735e9b74bb29c341b71ac9973c3b268, type: 3}
+  - {fileID: 21300000, guid: ac61e8d76c4e37447a00981b69889e30, type: 3}
+  - {fileID: 21300000, guid: 75525618ffd61d749b9346bcaa2f5a23, type: 3}
+  - {fileID: 21300000, guid: 7039d509475bc8c42bab9e0339d01dae, type: 3}
+  - {fileID: 21300000, guid: 079a30695957e344e8ab30b5ce008be1, type: 3}
+  - {fileID: 21300000, guid: 36414f4d74351994ea9e6cdb884fd374, type: 3}
+  - {fileID: 21300000, guid: b6c100adf96475d4b9357cf253f4d09d, type: 3}
+  - {fileID: 21300000, guid: feea78ddb47beaa4fba58056b8a53522, type: 3}
+  - {fileID: 21300000, guid: 9875f66ea6db37844ad72544ecda2c9c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Tutorial_hand-press2_10
+  - Tutorial_hand-press2_11
+  - Tutorial_hand-press2_5
+  - Tutorial_hand-press2_22
+  - Tutorial_hand-press2_3
+  - Tutorial_hand-press2_12
+  - Tutorial_hand-press2_16
+  - Tutorial_hand-press2_13
+  - Tutorial_hand-press2_4
+  - Tutorial_hand-press2_0
+  - Tutorial_hand-press2_20
+  - Tutorial_hand-press2_7
+  - Tutorial_hand-press2_14
+  - Tutorial_hand-press2_19
+  - Tutorial_hand-press2_1
+  - Tutorial_hand-press2_17
+  - Tutorial_hand-press2_8
+  - Tutorial_hand-press2_2
+  - Tutorial_hand-press2_21
+  - Tutorial_hand-press2_15
+  - Tutorial_hand-press2_6
+  - Tutorial_hand-press2_18
+  - Tutorial_hand-press2_9
+  m_RenderDataMap: {}
+  m_Tag: atlas-9
+  m_IsVariant: 0

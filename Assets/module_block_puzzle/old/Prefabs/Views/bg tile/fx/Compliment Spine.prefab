@@ -1,0 +1,339 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8786295631446121518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8786295631446121509}
+  - component: {fileID: 8786295631446121514}
+  - component: {fileID: 8786295631446121515}
+  - component: {fileID: 8786295631446121512}
+  - component: {fileID: 8786295631446121513}
+  - component: {fileID: 3801293144754197672}
+  - component: {fileID: 6550655429842648638}
+  - component: {fileID: 5751441717674004409}
+  m_Layer: 0
+  m_Name: Compliment Spine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8786295631446121509
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786295631446121518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.92, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8786295631446121514
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786295631446121518}
+  m_Mesh: {fileID: 0}
+--- !u!23 &8786295631446121515
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786295631446121518}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f90cdfa046b8fe24bb22543a16b0300a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -91501807
+  m_SortingLayer: 1
+  m_SortingOrder: 1
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8786295631446121512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786295631446121518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonDataAsset: {fileID: 11400000, guid: 3983d253453e64845b9684e38f85ace1, type: 2}
+  initialSkinName: Cool
+  fixPrefabOverrideViaMeshFilter: 2
+  initialFlipX: 0
+  initialFlipY: 0
+  updateWhenInvisible: 3
+  separatorSlotNames: []
+  zSpacing: 0
+  useClipping: 1
+  immutableTriangles: 0
+  pmaVertexColors: 1
+  clearStateOnDisable: 0
+  tintBlack: 0
+  singleSubmesh: 0
+  fixDrawOrder: 0
+  addNormals: 0
+  calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
+  disableRenderingOnOverride: 1
+  _animationName: animation
+  loop: 1
+  timeScale: 1
+--- !u!114 &8786295631446121513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786295631446121518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1695ca2463d3371498552ae3a0386f17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testStartAction: 0
+  turnOff: 0
+  t1: 0
+  t2: 0
+  t3: 0
+  settings:
+    startOnEnable: 0
+    inThenOutOnStart: 0
+    inIncludeOut: 0
+    others: []
+    nextInThenOut: {fileID: 0}
+    resetOnStart: 0
+    deactiveAfterOut: 1
+    reverse: 0
+    animInClip: {fileID: 0}
+    animOutClip: {fileID: 0}
+    animInSound: 0
+    animOutSound: 0
+    whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
+    delayBeforeIn: 0
+    delayAfterOut: 0
+    toggleTrueOnIn: 1
+    toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
+    indexBindings: []
+    afterInCallBack: 0
+    particleTimeAdjust: 0
+    afterInParticleSystems: []
+    onStartParticleSystems: []
+  state: 2
+  index: 0
+  busy: 0
+  spineSequences:
+  - track: 0
+    animationName: animation
+    loop: 0
+    wait: 0
+    delayAfter: 0
+  - track: 0
+    animationName: animation
+    loop: 0
+    wait: 0
+    delayAfter: 0
+  skeleton: {fileID: 0}
+  skeleton2: {fileID: 8786295631446121512}
+  activeAfter: 0
+  testabc: 
+--- !u!114 &3801293144754197672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786295631446121518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e06d7c99019e2e46a6139b4d22ad34f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  overridePosition: 0
+  overridePositionAdjust: {x: 0, y: 0, z: 0}
+  enableOnRent: []
+  destroyAfter: 2.5
+  soundEnum: 0
+  playSoundAfter: 0
+  animationScripts:
+  - {fileID: 8786295631446121513}
+  indexBindings:
+  - {fileID: 5751441717674004409}
+  - {fileID: 6550655429842648638}
+  indexBindings2: []
+  delayActives: []
+  test: 0
+  testOnRent: 0
+--- !u!114 &6550655429842648638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786295631446121518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2665c21f2b06d4d856284d48058fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
+  lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sound: 0
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn: 0
+  testLoad1: 0
+  logDebug: 0
+  sounds: 0a0000000b0000000c000000
+  delay: 0
+--- !u!114 &5751441717674004409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786295631446121518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30e5414cce288f4d9784d6a8e51f8e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
+  lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sound: 0
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn: 0
+  testLoad1: 0
+  logDebug: 0
+  skinNames:
+  - Cool
+  - Great
+  - Excellent
+  skeleton: {fileID: 0}
+  skeleton2: {fileID: 8786295631446121512}

@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas-common
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 14a7f9a6c7bdfca4ba7c24b7809187c9, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 0ccfb1013ae954d42b021e548eed6685, type: 3}
+  - {fileID: 21300000, guid: f4965c1110f821d46978ffa3bd032bb5, type: 3}
+  - {fileID: 21300000, guid: 6bd6736140d90e44288b34610aebbd48, type: 3}
+  - {fileID: 21300000, guid: 979e6b42b9d9ce541a307a90c71725bc, type: 3}
+  - {fileID: 21300000, guid: 04c32b5281f473b4cba927188fc86386, type: 3}
+  - {fileID: 21300000, guid: c08edba2583785e4999e66de4b605a67, type: 3}
+  - {fileID: 21300000, guid: 92ba8da3a4caab14f9fbb46caed51076, type: 3}
+  - {fileID: 21300000, guid: af3901c3f65bf7e4da8ea75d05ce70a6, type: 3}
+  - {fileID: 21300000, guid: 6b230154560e9224e8eddf1d14a9a415, type: 3}
+  - {fileID: 21300000, guid: 926f4e54a5679794f95788b2d39fb02b, type: 3}
+  - {fileID: 21300000, guid: 60df21c487c1e7c4aac2cdf9aed4e04a, type: 3}
+  - {fileID: 21300000, guid: dee8d635ecdf94f4f9a5959150c3b5c0, type: 3}
+  - {fileID: 21300000, guid: 5b9d65a680d7b614da8c071976618723, type: 3}
+  - {fileID: 21300000, guid: 963c5757d764fb947b52e788ce95b261, type: 3}
+  - {fileID: 21300000, guid: 8349ae772accd034a98a1f5d6bc3f1ef, type: 3}
+  - {fileID: 21300000, guid: 1e202c082a9d360448c3b6bbf6d6a421, type: 3}
+  - {fileID: 21300000, guid: 906d77291df9725488ba3cdb2d3d5ea9, type: 3}
+  - {fileID: 21300000, guid: 17c5f44926d176d408faf5c7e1665f08, type: 3}
+  - {fileID: 21300000, guid: e5a677f902d0977409b7e34e0e8ea81f, type: 3}
+  - {fileID: 21300000, guid: b975d52af220cc54d85b027a1657b3c2, type: 3}
+  - {fileID: 21300000, guid: babebb4a2f01e4a43b0943a6763f745a, type: 3}
+  - {fileID: 21300000, guid: 3d28b74b6a2f9f64b907ded56ce5b2fe, type: 3}
+  - {fileID: 21300000, guid: 7b03595b715eb6142a71eeaa02e804cf, type: 3}
+  - {fileID: 21300000, guid: c2362d5b5cb1ee0419c5a10b2b909a47, type: 3}
+  - {fileID: 21300000, guid: a299af8be2c15f14daf91e5f25e625c6, type: 3}
+  - {fileID: 21300000, guid: 4aefc40c6b20edf4db3833fa976e8808, type: 3}
+  - {fileID: 21300000, guid: 2ed6623c8c78323439f34f8ee551e21a, type: 3}
+  - {fileID: 21300000, guid: 0f73f68c1e68eb84d8358bed712677ca, type: 3}
+  - {fileID: 21300000, guid: d079bcac68996724fb65382d8811aebd, type: 3}
+  - {fileID: 21300000, guid: d72b2b6d465ebb549a86ab817fa83571, type: 3}
+  - {fileID: 21300000, guid: 9786dc9d49046d04ca6d86a0273e67e2, type: 3}
+  - {fileID: 21300000, guid: 6d81c5ad25c530744a7ed41419ebded4, type: 3}
+  - {fileID: 21300000, guid: c25247bda5342524a84981008419b86c, type: 3}
+  - {fileID: 21300000, guid: d7cb78cec121a2e479df573f59c7bda9, type: 3}
+  - {fileID: 21300000, guid: 388185ee26810834aaf179358d35e77e, type: 3}
+  - {fileID: 21300000, guid: b6c08b0f533552d439c4984057f160f0, type: 3}
+  - {fileID: 21300000, guid: ed0eb14f8dddbc643a345e49b25dbf3f, type: 3}
+  - {fileID: 21300000, guid: 9d5d445fa13d3de45968e414d6f3bec2, type: 3}
+  - {fileID: 21300000, guid: e1495d7fa6fd653469cf7daa0b78ecd4, type: 3}
+  - {fileID: 21300000, guid: c40cc1df10bfc4f42ab6be6824f286b0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - cm_coin
+  - cm_twinkle_nocolor
+  - 8x8_7D7D7DFF
+  - Rotate_token
+  - btn_close
+  - ico_coin
+  - 8x8_FF72CDFF
+  - cm_noads
+  - cm_rectangle_adsframe
+  - 8x8_0074D4FF
+  - cm_Rotators_x100
+  - cm_Rotator_x2
+  - btn_shop
+  - cm_coinsx6
+  - cm_Rotators
+  - cm_rectangle_Top
+  - cm_coinsx2
+  - ico_check
+  - btn_sale
+  - cm_coinsx4
+  - cm_coins-pack
+  - 8x8_FFFFFF00
+  - round10
+  - 8x8_32FF2DFF
+  - round20
+  - round15
+  - Rotate_token_2
+  - cm_coinsx3
+  - cm_coinsx5
+  - ico_miss
+  - 8x8_FFCF72FF
+  - 8x8_7277FFFF
+  - round30
+  - cm_coinx4
+  - cm_coinsx7
+  - btn_play
+  - btn_OK
+  - Rotate_token_1
+  - ico_lock
+  - btn_replay
+  m_RenderDataMap: {}
+  m_Tag: atlas-common
+  m_IsVariant: 0

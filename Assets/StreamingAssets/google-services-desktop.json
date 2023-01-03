@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "113012334482",
+    "project_id": "block2022-a9cc5",
+    "storage_bucket": "block2022-a9cc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113012334482:android:01f43f5e9e74200712ab4b",
+        "android_client_info": {
+          "package_name": "block1010.puzzle.jigsaw.board.game"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113012334482-afuq71n4cukckr9vqlcp8dn73cqs2jvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6XNB87dpY_GPCKQyQ82DlznaBWtjsPFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113012334482-afuq71n4cukckr9vqlcp8dn73cqs2jvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

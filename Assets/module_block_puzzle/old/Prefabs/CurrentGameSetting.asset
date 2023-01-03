@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d135ba8796697a04ab31394744c6b6bf, type: 3}
+  m_Name: CurrentGameSetting
+  m_EditorClassIdentifier: 
+  blockSpawnSetting: {fileID: 11400000, guid: 501d6c615cd54924fb10879dd63785e1, type: 2}
+  tileDistance: 1
+  totalColor: 5
+  delayDestroy: 0.05
+  itemPlaceTween: 0.075
+  timeToHint: 30
+  waitEating: 1
+  soundCount: 1
+  waitLoseClearScreen: 0.5
+  waitBoardLose: 2
+  navigationTime: 10
+  randomRange: {x: 10, y: 15}
+  timeRotate: 0.115
+  starBoxProgress: 0a000000140000001e000000
+  boxRewards:
+  - quantity: 0
+    amount: 20
+    parameter: 0
+    parameter2: 0
+    index: 0
+  - quantity: 0
+    amount: 30
+    parameter: 0
+    parameter2: 0
+    index: 0
+  - quantity: 0
+    amount: 50
+    parameter: 0
+    parameter2: 0
+    index: 0
+  jigsawCollection: {fileID: 4900000, guid: d8a77a166475c064db4bae0c9a2822c4, type: 3}

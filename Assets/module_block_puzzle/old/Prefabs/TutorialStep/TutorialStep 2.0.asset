@@ -1,0 +1,466 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760a01e4f194ede4fbe9f0100dadd5a8, type: 3}
+  m_Name: TutorialStep 2.0
+  m_EditorClassIdentifier: 
+  stepType: 0
+  stepType2: 0
+  tutEnables: 2
+  enable: 0
+  actionOnly: 0
+  actionOnStart: []
+  actionBeforeNext: []
+  stopWhenNext: 0
+  indexStopTut: -1
+  waitIndex: 0
+  nextTutAdd: 1
+  handNodeIndex: 0
+  skipable: 1
+  map:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 2
+      row: 8
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 3
+      row: 8
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 4
+      row: 8
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 5
+      row: 8
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 6
+      row: 8
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 7
+      row: 8
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 8
+      row: 8
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 9
+      row: 8
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 2
+      row: 7
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 2
+      row: 6
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 2
+      row: 9
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 1
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 3
+      row: 7
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 3
+      row: 6
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 4
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 5
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 6
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 7
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 8
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 9
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 1
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 1
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 2
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 2
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 2
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 1
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 2
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 4
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 5
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 6
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 7
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 8
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 9
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 3
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 3
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 4
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 4
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 6
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 5
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 7
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 9
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 8
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 6
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 7
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 7
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 6
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 8
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 8
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 9
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 9
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+  hintPlacePoints:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 0
+      boolValue2: 0
+    points:
+    - col: 3
+      row: 3
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+  item:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 1
+    points: []
+  item2:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: -2
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: -2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+  item3:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: 2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: -2
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+  hintMask:
+    col1: 0
+    row1: 0
+    col2: 0
+    row2: 0
+  messages: Gray block means which is not possible to place. Let's solve this.
+  doneMessage: Well done!
+  sortOrderIndex: 1
+  turnOffRayCast: 0

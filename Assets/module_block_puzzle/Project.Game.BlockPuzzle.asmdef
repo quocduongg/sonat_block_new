@@ -1,0 +1,21 @@
+{
+    "name": "Project.Game.BlockPuzzle",
+    "rootNamespace": "",
+    "references": [
+        "GUID:81ac2fd98c2dbac4ab201e50c36fc4ac",
+        "GUID:ba1cc3a31bd4de04ca3b845ba30971b9",
+        "GUID:09ccf3b605e1fab41b0332895e0b320d",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:fad29f06bfa12d14b9ace76300bd6137",
+        "GUID:b928b50ce6dca47b5915501f643cb43b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

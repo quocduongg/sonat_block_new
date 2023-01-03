@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AL_InGameUI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 50392d751687b7f46a4d2a77b73d43b7, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ebbf6450968df8c42b169336e28686e5, type: 3}
+  - {fileID: 21300000, guid: 871bd7a0816586540b3a0b33b9097670, type: 3}
+  - {fileID: 21300000, guid: 73a10d41db59cff479f7c1e403411fc3, type: 3}
+  - {fileID: 21300000, guid: b1147602318c12d47a89203063eafbf4, type: 3}
+  - {fileID: 21300000, guid: bd337732e21abcb4dbeaa7c75632485a, type: 3}
+  - {fileID: 21300000, guid: 63b267d2124eb7141b67575f864a2d5f, type: 3}
+  - {fileID: 21300000, guid: ea6076c382d9e4848b2bbf751ac6538d, type: 3}
+  - {fileID: 21300000, guid: 96b910547852dd24c928386394aabf69, type: 3}
+  - {fileID: 21300000, guid: e9778794a9efcf74e8a943c3d6231960, type: 3}
+  - {fileID: 21300000, guid: 4029762503eb30042a104033e1204f05, type: 3}
+  - {fileID: 21300000, guid: 57bad675129df97488b45225083bd5eb, type: 3}
+  - {fileID: 21300000, guid: 0c959c6aee9e60d4ea46d5135e1183de, type: 3}
+  - {fileID: 21300000, guid: 2e9bcf8bd5c46c246b770ee0a191406e, type: 3}
+  - {fileID: 21300000, guid: 81827c7cca081d840b7ceb2caf27dfab, type: 3}
+  - {fileID: 21300000, guid: 8514a3cdc710101468a884ee8d16b121, type: 3}
+  - {fileID: 21300000, guid: 504fcf1e1483298499733ac0ae9fcbeb, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ico_best
+  - ico_ProbarStar
+  - btn_plus
+  - probar_outline
+  - probar_bg
+  - btn_setting
+  - btn_Skip
+  - toggle_handle
+  - btn_JisawMode
+  - probar_yellow
+  - decor_top
+  - cm_best
+  - cm_score
+  - toggle
+  - ico_handle
+  - decor_bottom
+  m_RenderDataMap: {}
+  m_Tag: AL_InGameUI
+  m_IsVariant: 0

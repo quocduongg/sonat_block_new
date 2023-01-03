@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "432466807536",
+    "project_id": "x2blocks-7a5ad",
+    "storage_bucket": "x2blocks-7a5ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432466807536:android:015fb36c5ade36f6185035",
+        "android_client_info": {
+          "package_name": "x2merge.block.fun.number.puzzle.game2048"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432466807536-3nuso4ssgeudc62j339733h5msnaab76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbXSxSPIsQqZh8uItQcqLvkO89jNoHfpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432466807536-3nuso4ssgeudc62j339733h5msnaab76.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

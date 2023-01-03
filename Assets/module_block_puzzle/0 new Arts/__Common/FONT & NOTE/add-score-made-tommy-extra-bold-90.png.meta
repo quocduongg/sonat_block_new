@@ -1,0 +1,397 @@
+fileFormatVersion: 2
+guid: 9f83b084b6885554c98cf0d35f5d7792
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1196813221927706774
+    second: add-score-made-tommy-extra-bold-90_0
+  - first:
+      213: 1620624571081342512
+    second: add-score-made-tommy-extra-bold-90_1
+  - first:
+      213: -7967569282913642169
+    second: add-score-made-tommy-extra-bold-90_2
+  - first:
+      213: -240563440843269335
+    second: add-score-made-tommy-extra-bold-90_3
+  - first:
+      213: 343019302565382719
+    second: add-score-made-tommy-extra-bold-90_4
+  - first:
+      213: 52949803940873426
+    second: add-score-made-tommy-extra-bold-90_5
+  - first:
+      213: -8349107757766476447
+    second: add-score-made-tommy-extra-bold-90_6
+  - first:
+      213: 1333659982939356815
+    second: add-score-made-tommy-extra-bold-90_7
+  - first:
+      213: 7026392667910172005
+    second: add-score-made-tommy-extra-bold-90_8
+  - first:
+      213: -7637212046008470512
+    second: add-score-made-tommy-extra-bold-90_9
+  - first:
+      213: 929666077617833813
+    second: add-score-made-tommy-extra-bold-90_10
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 10
+        width: 42
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f128437b0146fe0800000000000000
+      internalID: -1196813221927706774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 11
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03eb291067d9d7610800000000000000
+      internalID: 1620624571081342512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 11
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7495e9083f18d6190800000000000000
+      internalID: -7967569282913642169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 11
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b579a33d859acf0800000000000000
+      internalID: -240563440843269335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_4
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 11
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a03800d36a2c400800000000000000
+      internalID: 343019302565382719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_5
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 11
+        width: 56
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d482dee09d1cb000800000000000000
+      internalID: 52949803940873426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_6
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 11
+        width: 50
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dfed2dab2022c80800000000000000
+      internalID: -8349107757766476447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_7
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 11
+        width: 54
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ef04e30bc128210800000000000000
+      internalID: 1333659982939356815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_8
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 11
+        width: 48
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56de13f67e2c28160800000000000000
+      internalID: 7026392667910172005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_9
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 11
+        width: 54
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014b45b9b1c230690800000000000000
+      internalID: -7637212046008470512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: add-score-made-tommy-extra-bold-90_10
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 11
+        width: 52
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557442c3f56d6ec00800000000000000
+      internalID: 929666077617833813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7491e77694fe19d44a231e8b7bc0fc3e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

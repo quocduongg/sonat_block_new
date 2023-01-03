@@ -1,0 +1,25 @@
+loading.png
+size:112,130
+filter:Linear,Linear
+pma:true
+CUBE 1
+bounds:2,2,108,126
+offsets:1,1,110,128
+CUBE 2
+bounds:2,2,108,126
+offsets:1,1,110,128
+CUBE 3
+bounds:2,2,108,126
+offsets:1,1,110,128
+CUBE 4
+bounds:2,2,108,126
+offsets:1,1,110,128
+CUBE 5
+bounds:2,2,108,126
+offsets:1,1,110,128
+CUBE 6
+bounds:2,2,108,126
+offsets:1,1,110,128
+CUBE 7
+bounds:2,2,108,126
+offsets:1,1,110,128

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: atlas-3
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 90803290bcd30ce4abde85883d905334, type: 3}
+    - {fileID: 102900000, guid: 0587dbe9046c903468a021c0c0125add, type: 3}
+    - {fileID: 102900000, guid: b74fe6e111f1e4f458f780c71179e79e, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: aca3ec701057f5c43a16204c0d3b8cdd, type: 3}
+  - {fileID: 21300000, guid: 7c5126a1cdc4c0649a90333d57d4807f, type: 3}
+  - {fileID: 21300000, guid: a6e58e32299a91940bbdf8ab90c451f1, type: 3}
+  - {fileID: 21300000, guid: 82ff4e24089400044b2bef1ead8f9a27, type: 3}
+  - {fileID: 21300000, guid: a0d86cc438c13fc43bf32af960b2ebc2, type: 3}
+  - {fileID: 21300000, guid: d63fadd4ec3ab1b47be4caafe2ce4f70, type: 3}
+  - {fileID: 21300000, guid: 098f4bf4e7db6844c9431d1f216160b3, type: 3}
+  - {fileID: 21300000, guid: d3c9661655c685e46bf1b5fcecde0863, type: 3}
+  - {fileID: 21300000, guid: d6961de650a6acc4b9d55cfefd991e9a, type: 3}
+  - {fileID: 21300000, guid: 7406e60726067cd46a1c630653704023, type: 3}
+  - {fileID: 21300000, guid: 522b99b73156ad447bf99c1f13f255b9, type: 3}
+  - {fileID: 21300000, guid: ca115f08656a68c4cbbd7f4ed920d382, type: 3}
+  - {fileID: 21300000, guid: 053949783e2e5634b8d981ef85d83622, type: 3}
+  - {fileID: 21300000, guid: 6f646dfa86efbc04dbf0e756522e2352, type: 3}
+  - {fileID: 21300000, guid: 01a667dc0e4002d4ea25241a21848137, type: 3}
+  - {fileID: 21300000, guid: acdf567e482cf0d4f95681447c747036, type: 3}
+  - {fileID: 21300000, guid: 3f5e949ecea370948bd8a6585f96d258, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - ico_pencil
+  - btn_facebook
+  - ico_global
+  - ico_notification
+  - ico_crown
+  - cm_scrolldown_levelselect
+  - cm_rectangle_globalscore
+  - cm_rectangle_playerscore
+  - cm_AvatarFrame
+  - cm_line
+  - ico_leaderboard
+  - AvatarMask
+  - cm_avatar_mask
+  - ico_profile
+  - cm_scrolldown_levelselect_inactive
+  - cm_avatar
+  - cm_puzzle
+  m_RenderDataMap: {}
+  m_Tag: atlas-3
+  m_IsVariant: 0

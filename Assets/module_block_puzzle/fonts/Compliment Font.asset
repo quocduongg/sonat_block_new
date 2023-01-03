@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c7dd5984ca1be4eb72756ae3bcce20, type: 3}
+  m_Name: Compliment Font
+  m_EditorClassIdentifier: 
+  loadSprites: []
+  abc: 0
+  characters:
+  - index: 48
+    sprite: {fileID: 21300000, guid: 9f1d767d21386cd4f9b9fff0e03ae86c, type: 3}
+    adjustSpacing: 0.4
+  - index: 49
+    sprite: {fileID: 21300000, guid: a34d37b4836b2cc46afa601860da0fad, type: 3}
+    adjustSpacing: 0.4
+  - index: 50
+    sprite: {fileID: 21300000, guid: e37d962bc3f656c48a47fb24e91e19a4, type: 3}
+    adjustSpacing: 0.4

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c7dd5984ca1be4eb72756ae3bcce20, type: 3}
+  m_Name: Font
+  m_EditorClassIdentifier: 
+  characters:
+  - index: 48
+    sprite: {fileID: 1549699515136672672, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 49
+    sprite: {fileID: 535874343707201770, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 50
+    sprite: {fileID: -3805616041856395180, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 51
+    sprite: {fileID: -325336240974188076, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 52
+    sprite: {fileID: 8317012862636105247, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 53
+    sprite: {fileID: 4815984874647295339, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 54
+    sprite: {fileID: 4998759314203801112, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 55
+    sprite: {fileID: -4999232606579314733, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 56
+    sprite: {fileID: -6706472946856040207, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0
+  - index: 57
+    sprite: {fileID: 6975158678543022524, guid: bde0a91922eb83c42ae8cc39e9cbc0c1, type: 3}
+    adjustSpacing: 0

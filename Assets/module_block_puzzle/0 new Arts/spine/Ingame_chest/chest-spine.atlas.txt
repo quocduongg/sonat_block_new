@@ -1,0 +1,13 @@
+chest-spine.png
+size:1306,703
+filter:Linear,Linear
+pma:true
+body_box
+bounds:2,2,650,327
+closed_box
+bounds:2,331,676,370
+front_box
+bounds:654,30,650,299
+open_box
+bounds:680,332,544,369
+offsets:0,0,545,370

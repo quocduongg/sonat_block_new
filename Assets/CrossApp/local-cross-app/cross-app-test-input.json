@@ -1,0 +1,44 @@
+{
+    "list_view_ads": [{
+            "app_name": "brick_1010_2020",
+            "img_link": "https://i.ibb.co/DKcw17T/spritesheet2021-09-08-T14-40-23.png",
+            "store_link": "https://play.google.com/store/apps/details?id=com.blockpuzzle.galaxy.bluedream.puzzle",
+            "type_app": "block1010"
+        }, {
+            "app_name": "BubblePanda",
+            "img_link": "https://i.ibb.co/vhtvbDF/spritesheet2021-09-08-T04-28-03.png",
+            "store_link": "https://play.google.com/store/apps/details?id=com.panda.bubble.shooter.mania.free.puzzle.game",
+            "type_app": "bubble"
+        }, {
+            "app_name": "Bubble_Shooter_2019",
+			"img_link": "https://i.ibb.co/7Qpy16h/spritesheet2021-09-07-T11-24-01.png",
+			"store_link": "https://play.google.com/store/apps/details?id=com.bubbleshooter.games.blast.free.cat.pop",
+            "type_app": "bubble"
+        }, {
+            "app_name": "Drop_Down",
+             "img_link": "https://i.ibb.co/vhtvbDF/spritesheet2021-09-08-T04-28-03.png",
+            "store_link": "https://play.google.com/store/apps/details?id=com.jewel.drop.slide.block.puzzlegame",
+            "type_app": "puzzle"
+        }, {
+            "app_name": "Block_Jewel_2018",
+            "img_link": "https://i.ibb.co/7Qpy16h/spritesheet2021-09-07-T11-24-01.png",
+            "store_link": "https://play.google.com/store/apps/details?id=com.puzzlegamefree.blockpuzzle.gems.jewel",
+            "type_app": "block88"
+        }, {
+            "app_name": "Block_Brick_2019",
+            "img_link": "https://i.ibb.co/7Qpy16h/spritesheet2021-09-07-T11-24-01.png",
+            "store_link": "https://play.google.com/store/apps/details?id=com.puzzleclassic.brick.blockpuzzle.free",
+            "type_app": "block88"
+        }, {
+            "app_name": "Woody1010",
+            "img_link": "https://i.ibb.co/7Qpy16h/spritesheet2021-09-07-T11-24-01.png",
+            "store_link": "https://play.google.com/store/apps/details?id=com.puzzlegame.blockpuzzle.wood.topfreegame",
+            "type_app": "block1010"
+        }, {
+            "app_name": "WitchBlast",
+            "img_link": "https://i.ibb.co/7Qpy16h/spritesheet2021-09-07-T11-24-01.png",
+            "store_link": "https://play.google.com/store/apps/details?id=witch.cube.blast.free.puzzle.maching.blast.game",
+            "type_app": "match2"
+        }
+    ]
+}

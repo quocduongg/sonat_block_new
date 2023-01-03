@@ -1,0 +1,347 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dffcb5764855b74498493853ba606b0d, type: 3}
+  m_Name: MapScriptable
+  m_EditorClassIdentifier: 
+  map:
+    size: {x: 10, y: 10, z: 10}
+    points:
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+    - col: 1
+      row: 2
+      value: 0
+      value2: 0
+    - col: 2
+      row: 3
+      value: 0
+      value2: 0
+    - col: 3
+      row: 4
+      value: 0
+      value2: 0
+    - col: 4
+      row: 5
+      value: 0
+      value2: 0
+    - col: 5
+      row: 6
+      value: 0
+      value2: 0
+    - col: 6
+      row: 7
+      value: 0
+      value2: 0
+    - col: 7
+      row: 8
+      value: 0
+      value2: 0
+    - col: 8
+      row: 9
+      value: 0
+      value2: 0
+    - col: 5
+      row: 4
+      value: 0
+      value2: 0
+    - col: 6
+      row: 3
+      value: 0
+      value2: 0
+    - col: 7
+      row: 2
+      value: 0
+      value2: 0
+    - col: 8
+      row: 1
+      value: 0
+      value2: 0
+    - col: 9
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 2
+      row: 1
+      value: 0
+      value2: 0
+    - col: 3
+      row: 2
+      value: 0
+      value2: 0
+    - col: 4
+      row: 3
+      value: 0
+      value2: 0
+    - col: 6
+      row: 5
+      value: 0
+      value2: 0
+    - col: 7
+      row: 6
+      value: 0
+      value2: 0
+    - col: 8
+      row: 7
+      value: 0
+      value2: 0
+    - col: 9
+      row: 8
+      value: 0
+      value2: 0
+    - col: 6
+      row: 9
+      value: 0
+      value2: 0
+    - col: 5
+      row: 8
+      value: 0
+      value2: 0
+    - col: 4
+      row: 7
+      value: 0
+      value2: 0
+    - col: 2
+      row: 5
+      value: 0
+      value2: 0
+    - col: 1
+      row: 4
+      value: 0
+      value2: 0
+    - col: 0
+      row: 3
+      value: 0
+      value2: 0
+    - col: 3
+      row: 0
+      value: 0
+      value2: 0
+    - col: 4
+      row: 1
+      value: 0
+      value2: 0
+    - col: 5
+      row: 2
+      value: 0
+      value2: 0
+    - col: 7
+      row: 4
+      value: 0
+      value2: 0
+    - col: 8
+      row: 5
+      value: 0
+      value2: 0
+    - col: 9
+      row: 6
+      value: 0
+      value2: 0
+    - col: 9
+      row: 4
+      value: 0
+      value2: 0
+    - col: 8
+      row: 3
+      value: 0
+      value2: 0
+    - col: 6
+      row: 1
+      value: 0
+      value2: 0
+    - col: 5
+      row: 0
+      value: 0
+      value2: 0
+    - col: 7
+      row: 0
+      value: 0
+      value2: 0
+    - col: 9
+      row: 2
+      value: 0
+      value2: 0
+    - col: 0
+      row: 5
+      value: 0
+      value2: 0
+    - col: 4
+      row: 9
+      value: 0
+      value2: 0
+    - col: 0
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 2
+      value: 0
+      value2: 0
+    - col: 0
+      row: 4
+      value: 0
+      value2: 0
+    - col: 0
+      row: 6
+      value: 0
+      value2: 0
+    - col: 0
+      row: 7
+      value: 0
+      value2: 0
+    - col: 0
+      row: 8
+      value: 0
+      value2: 0
+    - col: 4
+      row: 8
+      value: 0
+      value2: 0
+    - col: 2
+      row: 8
+      value: 0
+      value2: 0
+    - col: 1
+      row: 8
+      value: 0
+      value2: 0
+    - col: 3
+      row: 8
+      value: 0
+      value2: 0
+    - col: 3
+      row: 9
+      value: 0
+      value2: 0
+    - col: 2
+      row: 9
+      value: 0
+      value2: 0
+    - col: 1
+      row: 7
+      value: 0
+      value2: 0
+    - col: 3
+      row: 6
+      value: 0
+      value2: 0
+    - col: 2
+      row: 7
+      value: 0
+      value2: 0
+    - col: 1
+      row: 1
+      value: 0
+      value2: 0
+    - col: 1
+      row: 3
+      value: 0
+      value2: 0
+    - col: 1
+      row: 5
+      value: 0
+      value2: 0
+    - col: 1
+      row: 6
+      value: 0
+      value2: 0
+    spawns: []
+  items:
+  - values:
+      x: 0
+      y: 0
+      z: 0
+    points:
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+  - values:
+      x: 1
+      y: 0
+      z: 0
+    points:
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 2
+      row: 0
+      value: 0
+      value2: 0
+    - col: 2
+      row: 1
+      value: 0
+      value2: 0
+    - col: 2
+      row: -1
+      value: 0
+      value2: 0
+  - values:
+      x: 2
+      y: 0
+      z: 0
+    points:
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+    - col: 2
+      row: 0
+      value: 0
+      value2: 0
+    - col: 2
+      row: 1
+      value: 0
+      value2: 0
+  - values:
+      x: 2
+      y: 0
+      z: 0
+    points:
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+    - col: 2
+      row: 0
+      value: 0
+      value2: 0
+    - col: 2
+      row: 1
+      value: 0
+      value2: 0

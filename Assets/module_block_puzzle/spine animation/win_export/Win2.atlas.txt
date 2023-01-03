@@ -1,0 +1,25 @@
+Win2.png
+size:1194,1194
+filter:Linear,Linear
+pma:true
+Cup1
+bounds:2,186,898,856
+offsets:35,6,962,877
+Layer 501
+bounds:902,308,358,204
+offsets:14,1,385,205
+rotate:90
+banner12
+bounds:2,2,652,182
+offsets:134,58,906,255
+banner122
+bounds:2,1044,906,148
+offsets:0,1,906,149
+flash02
+bounds:910,916,276,276
+light02
+bounds:902,668,257,246
+offsets:8,7,273,260
+text1
+bounds:656,98,485,86
+offsets:50,51,585,218

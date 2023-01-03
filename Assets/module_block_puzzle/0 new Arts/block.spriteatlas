@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: block
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 32193fdce8eb9b74ea3392f369fcaa36, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 782bd3e240052494cad0deb2283abc64, type: 3}
+  - {fileID: 21300000, guid: cc46f2c3940c83e48bc33c7b39faa599, type: 3}
+  - {fileID: 21300000, guid: 0d5731d3cdf89cb46b503b364fa274c0, type: 3}
+  - {fileID: 21300000, guid: 700582f361ff09548aedcd07c45b2562, type: 3}
+  - {fileID: 21300000, guid: aa12b3049501f7e42848ff391febeffc, type: 3}
+  - {fileID: 21300000, guid: 83dbac35c6c5c1d48bd60f071f012bd6, type: 3}
+  - {fileID: 21300000, guid: 91e0dd35f66e89349803685477797b52, type: 3}
+  - {fileID: 21300000, guid: d7f9eff739a2c8048a6076524993a914, type: 3}
+  - {fileID: 21300000, guid: 25adf028169795844a37250b90eb9dd9, type: 3}
+  - {fileID: 21300000, guid: 7051f138aab7d614d91bfdf7c6b74fdd, type: 3}
+  - {fileID: 21300000, guid: 4813bf58d0f3fc3408551504d051654e, type: 3}
+  - {fileID: 21300000, guid: 02fc910a78cb8c7468e3b0d189a7df22, type: 3}
+  - {fileID: 21300000, guid: 4422a10aeceffe14897930f1f869fd58, type: 3}
+  - {fileID: 21300000, guid: d3c5294af6716d04a8ac0ba41be734fe, type: 3}
+  - {fileID: 21300000, guid: d5570fbafef881346ad4dfddec2819ed, type: 3}
+  - {fileID: 21300000, guid: 366de45b141758947bb15755dbbed9f6, type: 3}
+  - {fileID: 21300000, guid: eb7f04fbd473cae4dae179243058f498, type: 3}
+  - {fileID: 21300000, guid: 6295613ca8fbf7d45845a3a42ec6c7cd, type: 3}
+  - {fileID: 21300000, guid: 19e837bc3e2948b47871ad1d02f789e3, type: 3}
+  - {fileID: 21300000, guid: 7ce309bcf1a35d8438407284111a362e, type: 3}
+  - {fileID: 21300000, guid: 3096e2dc36cc1a4408023b7447c85c39, type: 3}
+  - {fileID: 21300000, guid: bf91d04d5cc1cb34291d3ee68778a0eb, type: 3}
+  - {fileID: 21300000, guid: f071a44d49b095b4b9fe785b183e6079, type: 3}
+  - {fileID: 21300000, guid: 907cb15d1c892e849ae07c900da32eb0, type: 3}
+  - {fileID: 21300000, guid: 2643fded1a19d784ca5fd90efe07e7ea, type: 3}
+  - {fileID: 21300000, guid: 4de46a4e80008204c8d9256f72277908, type: 3}
+  - {fileID: 21300000, guid: af13fe7f0ead3d548994ba2dfd51d0f0, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - cm_5 IngameBlock_orange
+  - cm_3 IngameBlock_green
+  - cm_IngameBlock_grey
+  - cm_NextBlock 3_green
+  - cm_NextBlock 1_red
+  - cm_NextBlock 8_cyan
+  - Star4_yellow
+  - cm_NextBlock 2_blue
+  - cm_2 IngameBlock_blue
+  - Star5_orange
+  - cm_6 IngameBlock_pink
+  - Star3_green
+  - cm_4 IngameBlock_yellow
+  - cm_NextBlock 4_yellow
+  - Star8_cyan
+  - cm_8 IngameBlock_cyan
+  - cm_NextBlock 5_orange
+  - Star2_blue
+  - Star7_violet
+  - cm_NextBlock_grey
+  - cm_7 IngameBlock_violet
+  - btn_rotate
+  - cm_1 IngameBlock_red
+  - cm_NextBlock 7_violet
+  - cm_NextBlock 6_pink
+  - Star6_pink
+  - Star1_red
+  m_RenderDataMap: {}
+  m_Tag: block
+  m_IsVariant: 0

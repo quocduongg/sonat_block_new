@@ -1,0 +1,581 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f391c96588494ee4295aed6ed958f013, type: 3}
+  m_Name: BlockSpawnSetting
+  m_EditorClassIdentifier: 
+  levelData:
+  - level: 0
+    Score: 300
+    weight: 060000000a00000004000000060000000c00000009000000050000000a000000020000000300000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - level: 1
+    Score: 600
+    weight: 060000000a00000004000000060000000a000000090000000500000008000000030000000300000000000000040000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - level: 2
+    Score: 900
+    weight: 060000000800000008000000060000000a000000090000000500000008000000030000000300000000000000040000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - level: 3
+    Score: 1200
+    weight: 050000000a00000004000000060000000a00000009000000050000000a000000030000000300000002000000040000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000
+  - level: 4
+    Score: 1500
+    weight: 050000000a00000005000000060000000a0000000a000000080000000a000000030000000300000002000000040000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000
+  - level: 5
+    Score: 1800
+    weight: 050000000a00000005000000060000000a000000090000000500000008000000040000000300000002000000040000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000
+  - level: 6
+    Score: 2100
+    weight: 050000000a00000005000000050000000a000000090000000500000008000000040000000300000002000000040000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000
+  - level: 7
+    Score: 2500
+    weight: 050000000a00000008000000050000000a0000000c0000000800000008000000040000000300000002000000040000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000
+  - level: 8
+    Score: 3000
+    weight: 050000000a00000006000000050000000a0000000c0000000800000008000000040000000300000002000000040000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000
+  map:
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 0
+      boolValue2: 0
+    points: []
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 0
+      boolValue2: 0
+    points:
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 0
+      boolValue2: 0
+    points:
+    - col: -1
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+    - col: 1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -2
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -2
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 2
+      row: 0
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -2
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: -2
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+    - col: 1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+    - col: 1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 0
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -1
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+    - col: 1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 0
+      boolValue2: 0
+    points:
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 2
+      row: 0
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+    - col: 1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: -1
+      row: -1
+      value: 0
+      value2: 0
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: -1
+      row: 1
+      value: 0
+      value2: 0
+  - customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+    - col: 1
+      row: -1
+      value: 0
+      value2: 0
+    - col: -1
+      row: 0
+      value: 0
+      value2: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0

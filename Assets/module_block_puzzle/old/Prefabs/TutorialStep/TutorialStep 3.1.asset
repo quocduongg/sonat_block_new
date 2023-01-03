@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760a01e4f194ede4fbe9f0100dadd5a8, type: 3}
+  m_Name: TutorialStep 3.1
+  m_EditorClassIdentifier: 
+  stepType: 0
+  stepType2: 0
+  tutEnables: 0
+  enable: 0
+  actionOnly: 0
+  actionOnStart: []
+  actionBeforeNext: []
+  stopWhenNext: 0
+  indexStopTut: -1
+  waitIndex: 0
+  nextTutAdd: 1
+  handNodeIndex: 0
+  skipable: 1
+  map:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 0
+      boolValue2: 0
+    points: []
+  hintPlacePoints:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 0
+      boolValue2: 0
+    points:
+    - col: 4
+      row: 4
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 4
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 5
+      row: 5
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 5
+      row: 4
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+  item:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: -1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+  item2:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 1
+    points:
+    - col: 1
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 0
+      row: 1
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+  item3:
+    customParameter:
+      intValue: 0
+      intValue2: 0
+      intValue3: 0
+      boolValue: 1
+      boolValue2: 0
+    points:
+    - col: 1
+      row: 0
+      value: 0
+      value2: 0
+      value3: 0
+      value4: 0
+  hintMask:
+    col1: 0
+    row1: 0
+    col2: 0
+    row2: 0
+  messages: You can place the block to "save" position, and take it out whenever
+    you want
+  doneMessage: Well done!
+  sortOrderIndex: 1
+  turnOffRayCast: 0
