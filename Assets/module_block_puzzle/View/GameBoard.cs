@@ -606,7 +606,7 @@ namespace BlockPuzzle
                             !(_draggingItem.Value.Data.rotate % 2 == 0 && _draggingItem.Value.Data.IsOneLine()))
                         {
                             NRotate.Value--;
-                            SubjectController.OnGlobalEffect.OnNext((int)AnimatorCallbackEnum.RotateSub);
+                            SubjectController.OnGlobalEffect.OnNext((int)GlobalEffectEnum.RotateSub);
                             CurrentGameSave[(int) GameSaveKey.UseBoosterCount]++;
                             if (NRotate.Value == 0)
                             {
@@ -1093,7 +1093,7 @@ namespace BlockPuzzle
                             complimentEffects.pools[0].Rent(null, pos).SetIndex(complimentIndex);
                         if (boardSetting.complimentSpawnPos == FxSpawnPos.Center)
                             complimentEffects.pools[0].Rent(null, Vector3.zero).SetIndex(complimentIndex);
-                        SubjectController.OnGlobalEffect.OnNext((int) AnimatorCallbackEnum.ShakeCamera);
+                        SubjectController.OnGlobalEffect.OnNext((int) GlobalEffectEnum.ShakeCamera);
                     });
                 }
 
@@ -1729,9 +1729,7 @@ namespace BlockPuzzle
             if (_secondsFromLastAction > currentGameSetting.navigationTime && _currentNavigation < 0
                 //  && Blocks.Count > currentGameSetting  .numberOfBlockToNavi
             )
-            {
                 StartNavigation();
-            }
         }
 
         private void StartNavigation()

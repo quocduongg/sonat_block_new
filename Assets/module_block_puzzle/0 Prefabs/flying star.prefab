@@ -4909,7 +4909,7 @@ GameObject:
   - component: {fileID: 6919827344245496686}
   - component: {fileID: 6919827344245496681}
   - component: {fileID: 6919827344245496684}
-  - component: {fileID: -3455162612675657192}
+  - component: {fileID: 8448543494077720387}
   m_Layer: 0
   m_Name: flying star
   m_TagString: Untagged
@@ -5036,7 +5036,7 @@ MonoBehaviour:
     others: []
     nextInThenOut: {fileID: 0}
     resetOnStart: 0
-    deactiveAfterOut: 1
+    deactiveAfterOut: 0
     reverse: 0
     animInClip: {fileID: 0}
     animOutClip: {fileID: 0}
@@ -5049,8 +5049,9 @@ MonoBehaviour:
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
-    toggleOutValue: 1
-    toggleOnOut: []
+    toggleOutValue: 0
+    toggleOnOut:
+    - {fileID: 8448543494077720387}
     indexBindings: []
     afterInCallBack: 2
     particleTimeAdjust: 0
@@ -5100,7 +5101,7 @@ MonoBehaviour:
         m_PostInfinity: 0
         m_RotationOrder: 0
     scale:
-      active: 1
+      active: 0
       value: {x: 1.5, y: 1.5, z: 0}
       time: 0.25
       delay: 0
@@ -5147,7 +5148,7 @@ MonoBehaviour:
   moveTowards: 1
   speed: 8
   moveTowardVelocity: 8
---- !u!114 &-3455162612675657192
+--- !u!114 &8448543494077720387
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5156,9 +5157,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6919827344245496680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1728acbe631e04688e3b2a8992b36b, type: 3}
+  m_Script: {fileID: 11500000, guid: f19ed7b7fe6ab3449b498dc759920eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeReturn: 3
-  destroy: 0
-  animators: []
+  disable: 0
+  sound: 0
+  whenStartInAnimations: []
+  test2: 0
+  testToggle: 0
+  testToggle2: 0
+  others: []
+  reverse: 0
+  custom: 0
+  testOnOff: 0
+  testLoadtoggle: 0
+  testBreak: 0
+  poolItem: {fileID: 6919827344245496681}

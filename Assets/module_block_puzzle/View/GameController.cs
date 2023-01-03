@@ -121,16 +121,16 @@ namespace BlockPuzzle
 
         protected override void HandleGlobalEffect(int value)
         {
-            if((AnimatorCallbackEnum) value == AnimatorCallbackEnum.None)
+            if((GlobalEffectEnum) value == GlobalEffectEnum.None)
                 return;
             
-            switch ((AnimatorCallbackEnum) value)
+            switch ((GlobalEffectEnum) value)
             {
-                case AnimatorCallbackEnum.None:
+                case GlobalEffectEnum.None:
                     break;
-                case AnimatorCallbackEnum.ShakeCamera:
+                case GlobalEffectEnum.ShakeCamera:
                     break;
-                case AnimatorCallbackEnum.StarHitBox:
+                case GlobalEffectEnum.StarHitBox:
                     PlayerData.customPropertyList[(int) CustomPlayerDataProperty.Star].Value++;
                     starProgress.TweenTo(PlayerData.customPropertyList[(int) CustomPlayerDataProperty.Star].Value);
 //                    if (WaveData.coin >= currentGameSetting.starBoxProgress)
@@ -145,7 +145,7 @@ namespace BlockPuzzle
 //                        });
                     
                     break;
-                case AnimatorCallbackEnum.CoinHit:
+                case GlobalEffectEnum.CoinHit:
                     ((int) SoundEnum.CoinHitPanelSound).PlaySound();
                 //    PlayerData.Claim(currentGameSetting.starRewards);
                     break;

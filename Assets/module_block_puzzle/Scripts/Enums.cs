@@ -195,7 +195,7 @@ namespace BlockPuzzle
         Star
     }
 
-    public enum AnimatorCallbackEnum
+    public enum GlobalEffectEnum
     {
         None = 0,
         ShakeCamera = 1,
