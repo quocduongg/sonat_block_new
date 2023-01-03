@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sonat;
 using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
@@ -52,6 +53,13 @@ namespace BlockPuzzle
             if (PlayerData.tutorialStep == tutorialSteps.Length)
                 return InternalStopTut(true);
 
+            if (PlayerData.tutorialStep == 0)
+            {
+                new SonatLogTutorialBegin()
+                {
+                    placement = "start_game",
+                }.Post();
+            }
             // set current tut
             if (PlayerData.tutorialStep >= 0 && PlayerData.tutorialStep < tutorialSteps.Length)
                 CurrentTutStep = tutorialSteps[PlayerData.tutorialStep];
@@ -110,10 +118,22 @@ namespace BlockPuzzle
                     if (isNextTut)
                         GameController.StopTut(indexStop);
                     else
+                    {
                         GameController.StopTut(-1);
+                        new SonatLogTutorialComplete()
+                        {
+                            placement = "start_game",
+                        }.Post();
+                    }
                 }
                 else
+                {
                     GameController.StopTut(-1);
+                    new SonatLogTutorialComplete()
+                    {
+                        placement = "start_game",
+                    }.Post();
+                }
 
                 StopTut();
                 return false;
