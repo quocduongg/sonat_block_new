@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   testStartAction: 0
+  turnOff: 0
   t1: 0
   t2: 0
   t3: 0
@@ -184,17 +185,23 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
+    toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
     afterInParticleSystems: []
     onStartParticleSystems: []
   state: 2
+  index: 0
+  busy: 0
   inThenOutIdleDelay: 0
-  particleTimeAdjust: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
   afterInAction:
@@ -428,9 +435,9 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   testProduct123: 0
-  descriptions: 
   reloadOnEnable: 0
   lastValue: 0
+  index2: 0
   sound: 0
   add: 0
   divide: -1
@@ -440,10 +447,22 @@ MonoBehaviour:
   othersIndex2: []
   othersComputedIndex2: []
   index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sound: 0
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn: 0
   testLoad1: 0
   logDebug: 0
-  index2: 0
-  btn: 0
   target: {fileID: 8053218343309262506}
   target2: {fileID: 0}
   sprites:
@@ -477,4 +496,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abc: 0
-  rotateVector: {x: 0, y: 0, z: -12}
+  rotateVector: {x: 0, y: 0, z: -720}

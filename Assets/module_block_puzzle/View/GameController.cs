@@ -39,6 +39,7 @@ namespace BlockPuzzle
         public IntReactiveProperty rotateOn;
 
         [NonSerialized] public IntReactiveProperty RotateValid;
+        [SerializeField] IntReactiveProperty _freeToRotate = new IntReactiveProperty();
 
         public override IntReactiveProperty GetRootViewProperty(string propertyName)
         {
@@ -64,7 +65,8 @@ namespace BlockPuzzle
                 PlayerData.tutorialStep = 0;
             }
             
-            RotateValid = new IntReactiveProperty(rotateOn,PlayerData.GetCustomProperty((int)CustomPlayerDataProperty.Rotate));
+//            RotateValid = new IntReactiveProperty(rotateOn,PlayerData.GetCustomProperty((int)CustomPlayerDataProperty.Rotate));
+            RotateValid = new IntReactiveProperty(new []{rotateOn,PlayerData.GetCustomProperty((int)CustomPlayerDataProperty.Rotate),_freeToRotate});
         }
 
         protected override void Retry()

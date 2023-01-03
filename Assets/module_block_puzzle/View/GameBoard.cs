@@ -257,6 +257,7 @@ namespace BlockPuzzle
         protected override void InitGame()
         {
             base.InitGame();
+            _freeToRotate.BoolValue = true;
             Debug.Log(PlayerData.playTimes);
             BoardSpecialState = BoardSpecialState.None;
             _lose = false;
@@ -1503,6 +1504,9 @@ namespace BlockPuzzle
                 spawnItems[3].SetActive(false);
 
 
+            _freeToRotate.BoolValue = false;
+            0.65f.Timer(() => _freeToRotate.BoolValue = true);
+            
             if (spawns == null || spawns.Length == 0 || spawns.All(x => !x.active))
                 spawns = GetSpawnBlockSonat().ToArray();
 
