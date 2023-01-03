@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using Sonat;
 using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
@@ -134,12 +135,11 @@ namespace BlockPuzzle
                 }
             }
 
-            var logEvent2 = $"level_start";
-            Kernel.Resolve<FireBaseController>().LogEvent(logEvent2, new LogParameter[]
+            new SonatLogLevelStart()
             {
-                new LogParameter("mode", "jigsaw"),
-                new LogParameter("level", i.ToString()),
-            });
+                level = i.ToString(),
+                mode = "jigsaw"
+            }.Post();
         }
 
 
@@ -480,14 +480,17 @@ namespace BlockPuzzle
                     ScreenRoot.popupManager.ShowPopup<PopupWinJigsaw>().SetLevel(_levelIndex);
                 });
 
-                var logEvent2 = $"level_end";
-                Kernel.Resolve<FireBaseController>().LogEvent(logEvent2, new LogParameter[]
+                new SonatLogLevelEnd()
                 {
-                    new LogParameter("mode", "jigsaw"),
-                    new LogParameter("level", _levelIndex.ToString()),
-                    new LogParameter("play_time", (int)_playSeconds),
-                    new LogParameter("use_booster_count", _boosterCount),
-                });
+                    level = _levelIndex.ToString(),
+                    mode = "jigsaw",
+                    use_booster_count = _boosterCount,
+                    play_time = (int)_playSeconds,
+                    success = true,
+                    score = 0,
+                    highest_score = 0,
+                    is_first_play = false,
+                }.Post();
                 _playSeconds = 0;
             }
         }
@@ -495,13 +498,15 @@ namespace BlockPuzzle
         public void HintJigsaw()
         {
             _boosterCount++;
-            var logEvent = $"use_booster";
-            Kernel.Resolve<FireBaseController>().LogEvent(logEvent, new[]
+            
+            new SonatLogUseBooster()
             {
-                new LogParameter("mode", "jigsaw"),
-                new LogParameter("level", _levelIndex),
-                new LogParameter("name", "hint"),
-            });
+                level =_levelIndex.ToString(),
+                mode = "jigsaw",
+                name = "hint"
+            }.Post();
+            
+          
             for (var i = 0; i < items.pools[0].ActiveItems.Count; i++)
             {
                 var itemView = items.pools[0].ActiveItems[i];

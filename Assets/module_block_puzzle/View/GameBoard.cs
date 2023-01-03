@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
+using Sonat;
 using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
@@ -353,18 +354,6 @@ namespace BlockPuzzle
         {
             base.GameOver();
             PlayerData.customPropertyList[(int) CustomPlayerDataProperty.LoseTimes].Value++;
-            var logEvent2 = $"start_level";
-            Kernel.Resolve<FireBaseController>().LogEvent(logEvent2, new LogParameter[]
-            {
-                new LogParameter("mode", "classic"),
-                new LogParameter("level", PlayerData.playTimes.ToString()),
-            });
-            Kernel.Resolve<AppFlyerController>().SendEvent(logEvent2,
-                new Dictionary<string, string>
-                {
-                    {"mode", "classic"},
-                    {"level", PlayerData.playTimes.ToString()},
-                });
         }
 
         protected override void OnStartANewGame()
@@ -385,18 +374,11 @@ namespace BlockPuzzle
                 }
             }
 
-            var logEvent2 = $"level_start";
-            Kernel.Resolve<FireBaseController>().LogEvent(logEvent2, new LogParameter[]
+            new SonatLogLevelStart()
             {
-                new LogParameter("mode", "classic"),
-                new LogParameter("level", PlayerData.playTimes.ToString()),
-            });
-//            Kernel.Resolve<AppFlyerController>().SendEvent(logEvent2,
-//                new Dictionary<string, string>
-//                {
-//                    {"mode", "classic"},
-//                    {"level", PlayerData.playTimes.ToString()},
-//                });
+                level = PlayerData.playTimes.ToString(),
+                mode = "classic"
+            }.Post();
         }
 
         public override void Handler(ParameterTutorialMiniAction action)
@@ -630,20 +612,12 @@ namespace BlockPuzzle
                                 TurnIndicateBuyRotate(true);
                             }
 
-                            var logEvent = $"use_booster";
-                            Kernel.Resolve<FireBaseController>().LogEvent(logEvent, new[]
+                            new SonatLogUseBooster()
                             {
-                                new LogParameter("mode", "classic"),
-                                new LogParameter("level", PlayerData.playTimes.ToString()),
-                                new LogParameter("name", "rotate"),
-                            });
-//                            Kernel.Resolve<AppFlyerController>().SendEvent(logEvent,
-//                                new Dictionary<string, string>
-//                                {
-//                                    {"mode", "classic"},
-//                                    {"level", PlayerData.playTimes.ToString()},
-//                                    {"name", "rotate"},
-//                                });
+                                level = PlayerData.playTimes.ToString(),
+                                mode = "classic",
+                                name = "rotate"
+                            }.Post();
                         }
                         // turn off rotate
 
@@ -1000,18 +974,14 @@ namespace BlockPuzzle
                     Debug.Log("show popup new record");
                     UnDrag();
                     ScreenRoot.dialogController.Resolve<DialogMiniPop>().ShowMiniPop((int) MiniPopEnum.Best);
-                    var logEvent = $"post_score";
-                    Kernel.Resolve<FireBaseController>().LogEvent(logEvent, new[]
+                    
+                    new SonatLogPostScore()
                     {
-                        new LogParameter("level", PlayerData.playTimes.ToString()),
-                        new LogParameter("score", WaveData.currentScore.Value),
-                    });
-//                    Kernel.Resolve<AppFlyerController>().SendEvent(logEvent,
-//                        new Dictionary<string, string>
-//                        {
-//                            {"level", PlayerData.playTimes.ToString()},
-//                            {"score",  WaveData.currentScore.Value.ToString()},
-//                        });
+                        level = PlayerData.playTimes.ToString(),
+                        score =  WaveData.currentScore.Value,
+                        mode = "classic"
+                    }.Post();
+       
                 }
             }
         }

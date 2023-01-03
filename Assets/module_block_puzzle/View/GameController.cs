@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Sonat;
 using UnityEngine;
 using UniRx;
 using UnityEngine.Serialization;
@@ -371,28 +372,20 @@ namespace BlockPuzzle
 //                    ScreenRoot.popupManager.ShowPopup<PopupGameOver>();
 //            }
 //            else
-                ScreenRoot.popupManager.ShowPopup<PopupGameOver>();
-            
-            
-            var logEvent2 = $"level_end";
-            Kernel.Resolve<FireBaseController>().LogEvent(logEvent2, new LogParameter[]
+            ScreenRoot.popupManager.ShowPopup<PopupGameOver>();
+
+            new SonatLogLevelEnd()
             {
-                new LogParameter("type", "game_over"),
-                new LogParameter("mode", "classic"),
-                new LogParameter("level", PlayerData.playTimes.ToString()),
-                new LogParameter("score", WaveData.currentScore.Value),
-                new LogParameter("use_booster_count", DeletedCurrentGameSave[(int) GameSaveKey.UseBoosterCount]),
-                new LogParameter("play_time", DeletedCurrentGameSave[(int) GameSaveKey.TimeSeconds]),
-            });
-//            Kernel.Resolve<AppFlyerController>().SendEvent(logEvent2,
-//                new Dictionary<string, string>
-//                {
-//                    {"mode", "classic"},
-//                    {"level", PlayerData.playTimes.ToString()},
-//                    {"score", WaveData.currentScore.Value.ToString()},
-//                    {"use_booster_count", DeletedCurrentGameSave[(int) EnumGameSave.UseBoosterCount].ToString()},
-//                    {"play_time", DeletedCurrentGameSave[(int) EnumGameSave.TimeSeconds].ToString()},
-//                });
+                level = PlayerData.playTimes.ToString(),
+                mode = "classic",
+                use_booster_count = DeletedCurrentGameSave[(int) GameSaveKey.UseBoosterCount],
+                play_time = DeletedCurrentGameSave[(int) GameSaveKey.TimeSeconds],
+                success = false,
+                score = WaveData.currentScore.Value,
+                highest_score = DeletedCurrentGameSave[(int) GameSaveKey.StartBestScore],
+                lose_cause = "full",
+                is_first_play = false,
+            }.Post();
         }
         
         
