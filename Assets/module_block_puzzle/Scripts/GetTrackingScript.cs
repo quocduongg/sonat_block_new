@@ -19,7 +19,7 @@ namespace SpaceShooter
             )
             {
                 if(adType == AdType.banner)
-                    yield return new LogParameter("ad_placement", RootView.rootView.screenRoot.CurrentScreen.placementName);
+                    yield return new LogParameter("ad_placement", RootView.rootView.screenRoot.CurrentScreen.ScreenName);
                 if(adType == AdType.interstital)
                     yield return new LogParameter("ad_placement", SonatAnalyticTracker.InterstitialLogName);
                 if(adType == AdType.rewarded_video)
