@@ -204,6 +204,15 @@ namespace BlockPuzzle
         RotateSub = 4,
     }
 
+    public enum PlacementEnum
+    {
+        Undefined = 0,
+        Shop = 1,
+        Spin = 2,
+        StarProgress = 3,
+        JigsawProgress = 4,
+    }
+
     public enum ParameterGameActionEnum
     {
         SetToggleRotate
