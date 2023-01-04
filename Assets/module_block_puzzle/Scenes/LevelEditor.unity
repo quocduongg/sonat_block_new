@@ -18427,10 +18427,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopupShop
       objectReference: {fileID: 0}
-    - target: {fileID: 8165727439836196336, guid: 9f958f7e8bbb9dd409b2f9745a2ae623, type: 3}
-      propertyPath: popupName
-      value: popup_shop
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f958f7e8bbb9dd409b2f9745a2ae623, type: 3}
 --- !u!1001 &1246500402821710336
