@@ -53,16 +53,16 @@ MonoBehaviour:
     price: 99.99
     description: 
     productType: 0
-  - key: 37
-    storeProductId: package.startbundle
-    price: 3.99
-    description: 
-    productType: 0
   - key: 10
     storeProductId: vipmember
     price: 4.99
     description: 
     productType: 2
+  - key: 37
+    storeProductId: package.startbundle
+    price: 3.99
+    description: 
+    productType: 0
   - key: 11
     storeProductId: package.vip2
     price: 49.99

@@ -46,11 +46,12 @@ namespace BlockPuzzle
             var getProperty = typeof(GameController).GetField(propertyName);
             return (IntReactiveProperty) getProperty.GetValue(this);
         }
-        
-        [SerializeField] private PlayerPrefRemoteArrayInt logLevelStart = new PlayerPrefRemoteArrayInt("log_level_start_array",new[]
-        {
-            1,5,10,15,30
-        });
+
+        [SerializeField] private PlayerPrefRemoteArrayInt logLevelStart = new PlayerPrefRemoteArrayInt(
+            "log_level_start_array", new[]
+            {
+                1, 5, 10, 15, 30
+            });
 
         protected override ScriptableObject CurrentGameSetting => currentGameSetting;
 
@@ -64,9 +65,10 @@ namespace BlockPuzzle
                 DeleteGameSave();
                 PlayerData.tutorialStep = 0;
             }
-            
+
 //            RotateValid = new IntReactiveProperty(rotateOn,PlayerData.GetCustomProperty((int)CustomPlayerDataProperty.Rotate));
-            RotateValid = new IntReactiveProperty(new []{rotateOn,PlayerData.GetCustomProperty((int)CustomPlayerDataProperty.Rotate),_freeToRotate});
+            RotateValid = new IntReactiveProperty(new[]
+                {rotateOn, PlayerData.GetCustomProperty((int) CustomPlayerDataProperty.Rotate), _freeToRotate});
         }
 
         protected override void Retry()
@@ -92,7 +94,9 @@ namespace BlockPuzzle
             customPropertyList[(int) CustomDailyDataProperty.Spin].Value = 1;
         }
 
-        [SerializeField] [MyButtonInt(nameof(TestAddStar))] private int testBoard;
+        [SerializeField] [MyButtonInt(nameof(TestAddStar))]
+        private int testBoard;
+
         public void TestAddStar()
         {
             var fx = genericPoolItem.pools[0].RentWorld(null, transform.position);
@@ -109,21 +113,21 @@ namespace BlockPuzzle
             BasePoolItemGameView<GameController, CurrentGameSetting>.Set(this, currentGameSetting);
         }
 
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         public override void TestGameOver(int score)
         {
             ChangeScore(score, SetDataType.SetThenTween);
             CheckBest();
             3f.Timer(GameOver);
         }
-        #endif
-        
+#endif
+
 
         protected override void HandleGlobalEffect(int value)
         {
-            if((GlobalEffectEnum) value == GlobalEffectEnum.None)
+            if ((GlobalEffectEnum) value == GlobalEffectEnum.None)
                 return;
-            
+
             switch ((GlobalEffectEnum) value)
             {
                 case GlobalEffectEnum.None:
@@ -143,11 +147,11 @@ namespace BlockPuzzle
 //                                starProgress.TweenTo(WaveData.coin);
 //                            }
 //                        });
-                    
+
                     break;
                 case GlobalEffectEnum.CoinHit:
                     ((int) SoundEnum.CoinHitPanelSound).PlaySound();
-                //    PlayerData.Claim(currentGameSetting.starRewards);
+                    //    PlayerData.Claim(currentGameSetting.starRewards);
                     break;
             }
         }
@@ -172,7 +176,7 @@ namespace BlockPuzzle
                 size = new Point(cast.map.customParameter.vector2.x, cast.map.customParameter.vector2.y)
             };
 
-          //  cam.orthographicSize = cast.map.customParameter.vector3.z;
+            //  cam.orthographicSize = cast.map.customParameter.vector3.z;
             InitGame();
 
             var gameSave = new GameSave<BoardState>(typeof(GameSaveKey))
@@ -207,21 +211,22 @@ namespace BlockPuzzle
                 var state = CurrentGameSave.GetLastState();
                 WaveData.currentScore.Value = state.Score;
 
-            //    PlayerData.customPropertyList[(int) CustomPlayerDataProperty.Star].Value = 50;
-            //    PlayerData.Save();
+                //    PlayerData.customPropertyList[(int) CustomPlayerDataProperty.Star].Value = 50;
+                //    PlayerData.Save();
                 starProgress.SetAll(currentGameSetting.starBoxProgress,
                     PlayerData.customPropertyList[(int) CustomPlayerDataProperty.Star].Value,
-                    PlayerData.customPropertyList[(int)CustomPlayerDataProperty.BoxClaimed].Value-1,
+                    PlayerData.customPropertyList[(int) CustomPlayerDataProperty.BoxClaimed].Value - 1,
                     true);
-         
-                
+
+
                 TweenScore(TextTweenType.Set, WaveData.currentScore.Value);
                 if (!InitTut())
                     LoadState(state);
 //                Kernel.LogLevel(PlayerData.playTimes + 1);
                 StartInput(0.1f);
-                
-                if (PlayerData.customPropertyList[(int) CustomPlayerDataProperty.Star].Value>= currentGameSetting.starBoxProgress[currentGameSetting.starBoxProgress.Length-1])
+
+                if (PlayerData.customPropertyList[(int) CustomPlayerDataProperty.Star].Value >=
+                    currentGameSetting.starBoxProgress[currentGameSetting.starBoxProgress.Length - 1])
                 {
                     Observable.Interval(TimeSpan.FromSeconds(3))
                         .Where(x => ValidInput())
@@ -230,7 +235,7 @@ namespace BlockPuzzle
                         {
                             ProductGameActionEventHandler(new ProductAction()
                             {
-                                index  = (int) ProductGameAction.OpenBox,
+                                index = (int) ProductGameAction.OpenBox,
                             });
                         })
                         .AddToGameDisposable();
@@ -289,7 +294,7 @@ namespace BlockPuzzle
             }
         }
 
-       
+
         public override BoardState CreateStateFromLevel(Level level)
         {
             return new BoardState
@@ -354,7 +359,7 @@ namespace BlockPuzzle
             return false;
         }
 
-    
+
         protected override void DeleteGameSave()
         {
             base.DeleteGameSave();
@@ -389,11 +394,11 @@ namespace BlockPuzzle
                 is_first_play = false,
             }.Post();
         }
-        
-        
+
+
         protected override void OnSubscriptionActivate(int subscriptionKey)
         {
-            switch ((SubscriptionKey)subscriptionKey)
+            switch ((SubscriptionKey) subscriptionKey)
             {
                 case SubscriptionKey.Vip1:
                     Kernel.Resolve<AdsManager>().CheckNoAds();
@@ -407,24 +412,24 @@ namespace BlockPuzzle
         {
             return IsSubscriptionActive((int) SubscriptionKey.Vip1);
         }
-        
+
         public override string GetLogName(Product product)
         {
             switch (product.quantity)
             {
                 case Quantity.CustomProperty:
-                    return ((CustomPlayerDataProperty)product.index) + "_"+product.amount;
+                    return ((CustomPlayerDataProperty) product.index) + "_" + product.amount;
                 default:
                     return base.GetLogName(product);
             }
         }
-        
+
         public override string GetQuantityName(Product product)
         {
             switch (product.quantity)
             {
                 case Quantity.CustomProperty:
-                    return ((CustomPlayerDataProperty)product.index).ToString().ToLower();
+                    return ((CustomPlayerDataProperty) product.index).ToString().ToLower();
                 case Quantity.None:
                     break;
                 case Quantity.Gold:
@@ -432,11 +437,11 @@ namespace BlockPuzzle
                 case Quantity.Diamond:
                     return product.quantity.ToString().ToLower();
                 case Quantity.Energy:
-                    return product.quantity.ToString().ToLower();   
+                    return product.quantity.ToString().ToLower();
                 case Quantity.Spin:
-                    return product.quantity.ToString().ToLower();  
+                    return product.quantity.ToString().ToLower();
                 case Quantity.Medal:
-                    return product.quantity.ToString().ToLower();  
+                    return product.quantity.ToString().ToLower();
                 case Quantity.Item:
                     break;
                 case Quantity.WatchAds:
@@ -462,12 +467,13 @@ namespace BlockPuzzle
                 default:
                     return base.GetQuantityName(product);
             }
+
             return base.GetQuantityName(product);
         }
 
-        public override bool CheckNavigation(int nav,bool skipScreenCheck = false)
+        public override bool CheckNavigation(int nav, bool skipScreenCheck = false)
         {
-            switch ((NavigationEnum)nav)
+            switch ((NavigationEnum) nav)
             {
                 case NavigationEnum.PlayJigsaw:
                 {
@@ -481,12 +487,15 @@ namespace BlockPuzzle
                             PlayerData.navigationChecker.Add(nav);
                             return false;
                         }
+
                         return PlayerData.playTimes >= 1;
                     }
+
                     break;
                 }
             }
-            return base.CheckNavigation(nav,skipScreenCheck);
+
+            return base.CheckNavigation(nav, skipScreenCheck);
         }
 
         public override bool CheckShowNavigationDialog()
@@ -495,16 +504,16 @@ namespace BlockPuzzle
             {
                 if (!DailyData.customPropertyList[(int) CustomDailyDataProperty.CheckShowJigsaw].BoolValue)
                 {
-                    ScreenRoot.dialogController.Resolve<DialogNavigate>().ShowNavigate((int)NavigateDialogEnum.Jigsaw);
+                    ScreenRoot.dialogController.Resolve<DialogNavigate>().ShowNavigate((int) NavigateDialogEnum.Jigsaw);
                     DailyData.customPropertyList[(int) CustomDailyDataProperty.CheckShowJigsaw].BoolValue = true;
                     return true;
-                } 
+                }
             }
 
             return false;
         }
 
-        public override void CheckLogSpendMoney<T, T2>(Trade<T, T2> trade)
+        protected override void LogSpendVirtualCurrency<T, T2>(Trade<T, T2> trade)
         {
             foreach (var price in trade.Prices)
                 if (price.quantity == Quantity.Diamond || price.quantity == Quantity.Gold)
@@ -535,11 +544,11 @@ namespace BlockPuzzle
                                         item_id = GetItemId(product),
                                     }.Post();
                                 }
+
 //                                else
 //                                    Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
 //                                        RootView.rootView.gameController.GetLogName(product), price.amount,
 //                                        price.quantity.ToString().ToLower());
-
                                 break;
                         }
                     }
@@ -551,12 +560,12 @@ namespace BlockPuzzle
                     var custom = (CustomPlayerDataProperty) product.index;
                     if (custom == CustomPlayerDataProperty.Rotate)
                         return "booster";
-                    return ((CustomPlayerDataProperty)product.index).ToString().ToLower();
+                    return ((CustomPlayerDataProperty) product.index).ToString().ToLower();
                 }
-                    
+
                 return product.quantity.ToString().ToLower();
             }
-            
+
             string GetItemId(Product product)
             {
                 if (product.quantity == Quantity.CustomProperty)
@@ -564,13 +573,77 @@ namespace BlockPuzzle
                     var custom = (CustomPlayerDataProperty) product.index;
                     if (custom == CustomPlayerDataProperty.Rotate)
                         return "rotate";
-                    return ((CustomPlayerDataProperty)product.index).ToString().ToLower();
+                    return GetItemType(product)+"_"+((CustomPlayerDataProperty) product.index).ToString().ToLower();
                 }
-                    
+
                 return product.quantity.ToString().ToLower();
             }
         }
-        
+
+        protected override void LogEarnVirtualCurrency<T, T2>(Trade<T, T2> trade)
+        {
+            foreach (var product in trade.Products)
+                if (product.quantity == Quantity.CustomProperty || product.quantity == Quantity.Gold)
+                    foreach (var price in trade.Prices)
+                    {
+                        switch (price.quantity)
+                        {
+                            default:
+                                if (price is ShopPrice)
+                                {
+                                    // is shop item;
+                                    string virtual_currency_name = product.quantity.ToString();
+                                    if (product.quantity == Quantity.CustomProperty)
+                                        virtual_currency_name = ((CustomPlayerDataProperty) product.index).ToString();
+                                    var item_id = GetItemId(price);
+                                    if (price.quantity == Quantity.IapBuying)
+                                        item_id = Kernel.GetDatabase<ShopDatabase>().GetDescriptor((price as ShopPrice).priceKey.key)
+                                            .storeProductId;
+                                    new SonatLogEarnVirtualCurrency()
+                                    {
+                                        virtual_currency_name = virtual_currency_name.ToLower(),
+                                        value = product.amount,
+                                        placement = trade.Placement,
+                                        item_type = GetItemType(price),
+                                        item_id = item_id,
+                                    }.Post();
+                                }
+
+//                                else
+//                                    Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
+//                                        RootView.rootView.gameController.GetLogName(product), price.amount,
+//                                        price.quantity.ToString().ToLower());
+                                break;
+                        }
+                    }
+
+            string GetItemType(Product product)
+            {
+                if (product.quantity == Quantity.CustomProperty)
+                {
+                    var custom = (CustomPlayerDataProperty) product.index;
+                    if (custom == CustomPlayerDataProperty.Rotate)
+                        return "booster";
+                    return ((CustomPlayerDataProperty) product.index).ToString().ToLower();
+                }
+
+                return product.quantity.ToString().ToLower();
+            }
+
+            string GetItemId(Product product)
+            {
+                if (product.quantity == Quantity.CustomProperty)
+                {
+                    var custom = (CustomPlayerDataProperty) product.index;
+                    if (custom == CustomPlayerDataProperty.Rotate)
+                        return "rotate";
+                    return GetItemType(product)+"_"+((CustomPlayerDataProperty) product.index).ToString().ToLower();
+                }
+
+
+                return product.quantity.ToString().ToLower();
+            }
+        }
 
         public void Test()
         {
