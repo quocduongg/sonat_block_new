@@ -528,7 +528,7 @@ namespace BlockPuzzle
                                     // is shop item;
                                     new SonatLogSpendVirtualCurrency()
                                     {
-                                        virtual_currency_name = product.quantity.ToString(),
+                                        virtual_currency_name = price.quantity.ToString().ToLower(),
                                         value = price.amount,
                                         placement = trade.Placement,
                                         item_type = GetItemType(product),

@@ -34603,6 +34603,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   key: 28
+  placement: shop
   whenCloseShop: 0
   whenNotAffordable: 1
   whenNotAffordableAction: {fileID: 7002418447862532389}
@@ -36498,6 +36499,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   key: 4
+  placement: shop
   whenCloseShop: 0
   whenNotAffordable: 0
   whenNotAffordableAction: {fileID: 0}
@@ -43329,6 +43331,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   key: 7
+  placement: shop
   whenCloseShop: 0
   whenNotAffordable: 0
   whenNotAffordableAction: {fileID: 0}
@@ -43825,6 +43828,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   key: 23
+  placement: shop
   whenCloseShop: 0
   whenNotAffordable: 1
   whenNotAffordableAction: {fileID: 1922071311002755325}
@@ -45101,6 +45105,10 @@ PrefabInstance:
       propertyPath: key
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 8977600038495013864, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
+      propertyPath: placement
+      value: shop
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
 --- !u!1 &1801211033548309622 stripped
@@ -45322,6 +45330,10 @@ PrefabInstance:
       propertyPath: key
       value: 27
       objectReference: {fileID: 0}
+    - target: {fileID: 8977600038495013864, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
+      propertyPath: placement
+      value: shop
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
 --- !u!1 &4065113412290774853 stripped
@@ -45531,6 +45543,10 @@ PrefabInstance:
       propertyPath: key
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 8977600038495013864, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
+      propertyPath: placement
+      value: shop
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
 --- !u!1 &916799228386060456 stripped
@@ -45635,6 +45651,10 @@ PrefabInstance:
     - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: key
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
+      propertyPath: placement
+      value: shop
       objectReference: {fileID: 0}
     - target: {fileID: 7770581036543138005, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: m_Pivot.x
@@ -45807,6 +45827,10 @@ PrefabInstance:
     - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: key
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
+      propertyPath: placement
+      value: shop
       objectReference: {fileID: 0}
     - target: {fileID: 7770581036543138005, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: m_Pivot.x
@@ -46080,6 +46104,10 @@ PrefabInstance:
       propertyPath: key
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 8977600038495013864, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
+      propertyPath: placement
+      value: shop
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
 --- !u!1 &4206997374011003996 stripped
@@ -46200,6 +46228,10 @@ PrefabInstance:
     - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: key
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
+      propertyPath: placement
+      value: shop
       objectReference: {fileID: 0}
     - target: {fileID: 7770581036543138005, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: m_Pivot.x
@@ -46376,6 +46408,10 @@ PrefabInstance:
     - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: key
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
+      propertyPath: placement
+      value: shop
       objectReference: {fileID: 0}
     - target: {fileID: 7770581036543138005, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: m_Pivot.x
@@ -46629,6 +46665,10 @@ PrefabInstance:
       propertyPath: key
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8977600038495013864, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
+      propertyPath: placement
+      value: shop
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
 --- !u!224 &8602670014970273712 stripped
@@ -46850,6 +46890,10 @@ PrefabInstance:
       propertyPath: key
       value: 26
       objectReference: {fileID: 0}
+    - target: {fileID: 8977600038495013864, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
+      propertyPath: placement
+      value: shop
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af2ae64a325cdd47bd6d23bfa450da8, type: 3}
 --- !u!224 &7623658184092731652 stripped
@@ -46974,6 +47018,10 @@ PrefabInstance:
     - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: key
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
+      propertyPath: placement
+      value: shop
       objectReference: {fileID: 0}
     - target: {fileID: 7770581036543138005, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: m_Pivot.x
@@ -47320,6 +47368,10 @@ PrefabInstance:
     - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: key
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495603006023270354, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
+      propertyPath: placement
+      value: shop
       objectReference: {fileID: 0}
     - target: {fileID: 7770581036543138005, guid: c32ba90a96c18304694bc18aadb260a9, type: 3}
       propertyPath: m_Pivot.x
