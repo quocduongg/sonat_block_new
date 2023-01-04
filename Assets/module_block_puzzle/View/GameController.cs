@@ -504,6 +504,74 @@ namespace BlockPuzzle
             return false;
         }
 
+        public override void CheckLogSpendMoney<T, T2>(Trade<T, T2> trade)
+        {
+            foreach (var price in trade.Prices)
+                if (price.quantity == Quantity.Diamond || price.quantity == Quantity.Gold)
+                    foreach (var product in trade.Products)
+                    {
+                        switch (product.quantity)
+                        {
+                            case Quantity.SystemAction:
+//                                Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
+//                                    $"{RootView.rootView.gameController.GetLogName(product.index, BuiltInEnumType.ProductSystemAction.ToString(), "SystemAction_")}",
+//                                    price.amount, price.quantity.ToString().ToLower());
+                                break;
+                            case Quantity.GameAction:
+//                                Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
+//                                    $"{RootView.rootView.gameController.GetLogName(product.index, BuiltInEnumType.ProductGameAction.ToString(), "GameAction_")}",
+//                                    price.amount, price.quantity.ToString().ToLower());
+                                break;
+                            default:
+                                if (price is ShopPrice)
+                                {
+                                    // is shop item;
+                                    new SonatLogSpendVirtualCurrency()
+                                    {
+                                        virtual_currency_name = product.quantity.ToString(),
+                                        value = price.amount,
+                                        placement = trade.Placement,
+                                        item_type = GetItemType(product),
+                                        item_id = GetItemId(product),
+                                    }.Post();
+                                }
+//                                else
+//                                    Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
+//                                        RootView.rootView.gameController.GetLogName(product), price.amount,
+//                                        price.quantity.ToString().ToLower());
+
+                                break;
+                        }
+                    }
+
+            string GetItemType(Product product)
+            {
+                if (product.quantity == Quantity.CustomProperty)
+                {
+                    var custom = (CustomPlayerDataProperty) product.index;
+                    if (custom == CustomPlayerDataProperty.Rotate)
+                        return "booster";
+                    return ((CustomPlayerDataProperty)product.index).ToString().ToLower();
+                }
+                    
+                return product.quantity.ToString().ToLower();
+            }
+            
+            string GetItemId(Product product)
+            {
+                if (product.quantity == Quantity.CustomProperty)
+                {
+                    var custom = (CustomPlayerDataProperty) product.index;
+                    if (custom == CustomPlayerDataProperty.Rotate)
+                        return "rotate";
+                    return ((CustomPlayerDataProperty)product.index).ToString().ToLower();
+                }
+                    
+                return product.quantity.ToString().ToLower();
+            }
+        }
+        
+
         public void Test()
         {
             Debug.Log(1.56f);
