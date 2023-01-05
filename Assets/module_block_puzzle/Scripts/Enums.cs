@@ -204,13 +204,44 @@ namespace BlockPuzzle
         RotateSub = 4,
     }
 
-    public enum PlacementEnum
+    public enum LogPlacement
     {
         Undefined = 0,
         Shop = 1,
         Spin = 2,
-        StarProgress = 3,
-        JigsawProgress = 4,
+        DailyReward = 3,
+        Achievement = 4,
+        Quest = 5,
+        CompleteLevel = 6,
+        Subscription = 7,
+        Home = 8,
+        GamePlay = 9,
+    }
+    
+    public enum LogItemType
+    {
+        Undefined = 0,
+        Ads = 1,
+        DailyReward = 2,
+        Achievement = 3,
+        Quest = 4,
+        CompleteLevel = 5,
+        Subscription = 6,
+        
+        
+        Collecting = 20
+    }
+
+    [Flags]
+    public enum RewardTypeFlag
+    {
+        // Decimal     // Binary
+        ClaimQuietly = 0, 
+        ClaimOnPopup = 1,
+        ClaimMultipleAdsPopup = 2, 
+        ClaimOnCurrencyPopup = 4,
+        IsReward = 8,
+        IsOpenBox = 16
     }
 
     public enum ParameterGameActionEnum

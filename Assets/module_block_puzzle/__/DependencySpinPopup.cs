@@ -26,6 +26,11 @@ namespace BlockPuzzle
         [SerializeField] private float spinRound = 3f;
         [SerializeField] private ToggleScript[] onSpins;
         [SerializeField] private AdsItemView adsItemViewToClose;
+        [IndexAsEnumFlag(BuiltInEnumType.RewardTypeFlag)] [SerializeField]
+        private int rewardTypeFlag = 1;
+        [IndexAsEnum(BuiltInEnumType.LogPlacement)] [SerializeField]
+        private int placement = (int) BaseLogPlacement.Spin;
+        [SerializeField] private float multi = 2f;
         
         private float _mDeltaEuler;
         [MyButtonInt(nameof(Spin), nameof(Arrange), nameof(RefreshSpin))] [SerializeField]
@@ -122,8 +127,16 @@ namespace BlockPuzzle
             for (var i = 0; i < rewardViews.Length; i++)
                 rewardViews[i].SetClaimed(i == rewardsIndex);
             ((int) SoundEnum.AudioGetReward2).PlaySound();
+
+
+            var price = new Product(Quantity.Spin, -1, 0, 0, 0);
+            var currencyLog = new TradeLog((int) BaseLogItemType.Spin, "spin");
+            var trade = new Trade<Product,Product>(rewardViews[rewardsIndex].Product,price,placement,currencyLog,null);
+            var input = new ShowRewardInput(trade,rewardTypeFlag,1,trade.Product.parameter,multi);
+            //parameter = 1, // 0 = no tween box, 1 2 3 = tween box
+            // parameter2 = product.parameter, // index of box
+            RootView.rootView.screenRoot.ShowReward(input);
             
-            ScreenRoot.ShowReward(rewardViews[rewardsIndex].Product,new Product(Quantity.Spin,-1,0,0,0));
             ScreenRoot.TurnRayCast(true);
             onSpins.OnChanged(false);
             Kernel.Resolve<FireBaseController>().LogEvent("lucky_wheel_spinned");

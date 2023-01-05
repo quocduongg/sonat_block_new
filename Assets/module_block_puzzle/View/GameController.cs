@@ -539,7 +539,7 @@ namespace BlockPuzzle
                                     {
                                         virtual_currency_name = price.quantity.ToString().ToLower(),
                                         value = price.amount,
-                                        placement = ((PlacementEnum) trade.Placement).ToString().ToLower(),
+                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
                                         item_type = GetItemType(product),
                                         item_id = GetItemId(product),
                                     }.Post();
@@ -607,9 +607,9 @@ namespace BlockPuzzle
                                     {
                                         virtual_currency_name = virtual_currency_name.ToLower(),
                                         value = product.amount,
-                                        placement = ((PlacementEnum) trade.Placement).ToString().ToLower(),
+                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
                                         item_type = GetItemType(price),
-                                        item_id = trade.HasLogName() ? trade.LogName : item_id,
+                                        item_id = trade.SpendLog.itemId
                                     }.Post();
                                 }
                                 else if (price.quantity == Quantity.WatchAds)
@@ -618,9 +618,9 @@ namespace BlockPuzzle
                                     {
                                         virtual_currency_name = virtual_currency_name.ToLower(),
                                         value = product.amount,
-                                        placement = ((PlacementEnum) trade.Placement).ToString().ToLower(),
+                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
                                         item_type = "ads",
-                                        item_id = trade.LogName,
+                                        item_id = trade.SpendLog.itemId
                                     }.Post();
                                 }
 
@@ -650,8 +650,7 @@ namespace BlockPuzzle
                         return "rotate";
                     return GetItemType(product) + "_" + ((CustomPlayerDataProperty) product.index).ToString().ToLower();
                 }
-
-
+                
                 return product.quantity.ToString().ToLower();
             }
         }

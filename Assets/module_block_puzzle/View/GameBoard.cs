@@ -378,7 +378,8 @@ namespace BlockPuzzle
             new SonatLogLevelStart()
             {
                 level = PlayerData.playTimes.ToString(),
-                mode = "classic"
+                mode = "classic",
+                setUserProperty = true
             }.Post();
         }
 
@@ -1685,20 +1686,14 @@ namespace BlockPuzzle
                     if (ValidInput())
                     {
                         UnDrag();
-                        RootView.rootView.screenRoot.ShowRewardDoubleAds(new PopupAdsDoubleReward.DoubleAdsInput()
-                        {
-//                            product = Kernel.GetDatabase<ShopDatabase>().GetReward((int) RewardEnum.ClassicBox),
-                            product = currentGameSetting.boxRewards[product.parameter],
-                            price = new Product(Quantity.GameAction, 1, (int) ProductGameAction.ClearWaveCoin, 0, 0),
-                            multipleByAds = 2,
-                            isOpenBox = true,
-                            isReward = true,
-                            logName = eventNameClaimBox,
-                            adsLog = null,
-                            instantClaim = false,
-                            parameter = 1, // 0 = no tween box, 1 2 3 = tween box
-                            parameter2 = product.parameter, // index of box
-                        });
+                        var price = new Product(Quantity.GameAction, 1, (int) ProductGameAction.ClearWaveCoin, 0, 0);
+                        var rewardTypeFlag = (int) (RewardTypeFlag.IsReward | RewardTypeFlag.ClaimOnPopup | RewardTypeFlag.IsOpenBox);
+                        var currencyLog = new TradeLog((int) LogItemType.Collecting, "star");
+                        var trade = new Trade<Product,Product>(currentGameSetting.boxRewards[product.parameter],price,(int)LogPlacement.GamePlay,currencyLog,null);
+                        var input = new ShowRewardInput(trade,rewardTypeFlag,1,product.parameter,2f);
+                        //parameter = 1, // 0 = no tween box, 1 2 3 = tween box
+                        // parameter2 = product.parameter, // index of box
+                        RootView.rootView.screenRoot.ShowReward(input);
                     }
 
                     break;
@@ -1760,6 +1755,11 @@ namespace BlockPuzzle
             x = null;
             Debug.Log(temp);
             Debug.Log(x);
+        }
+
+        public override string GetLogName(BuiltInEnumType itemType, int key)
+        {
+            return "null";
         }
     }
 }
