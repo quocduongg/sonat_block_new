@@ -230,6 +230,8 @@ namespace BlockPuzzle
         CompleteLevel = 7,
         Subscription = 8,
         BuyIap = 9,
+        BuyItem = 10,
+
         
         Collecting = 100
     }

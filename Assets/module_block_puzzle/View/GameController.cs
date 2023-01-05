@@ -584,7 +584,7 @@ namespace BlockPuzzle
         {
             if (trade.EarnLog != null)
             {
-                string virtual_currency_name = trade.Product.quantity.ToString();
+                string virtual_currency_name = GetItemName(trade.Product);
                 new SonatLogEarnVirtualCurrency()
                 {
                     virtual_currency_name = virtual_currency_name.ToLower(),
@@ -597,8 +597,8 @@ namespace BlockPuzzle
             
             if (trade.SpendLog != null)
             {
-                string virtual_currency_name = trade.Price.quantity.ToString();
-                new SonatLogEarnVirtualCurrency()
+                string virtual_currency_name = GetItemName(trade.Price);
+                new SonatLogSpendVirtualCurrency()
                 {
                     virtual_currency_name = virtual_currency_name.ToLower(),
                     value = trade.Price.amount,
@@ -609,31 +609,31 @@ namespace BlockPuzzle
             }
 
 
-            string GetItemType(Product product)
+            string GetItemName(Product product)
             {
                 if (product.quantity == Quantity.CustomProperty)
                 {
-                    var custom = (CustomPlayerDataProperty) product.index;
-                    if (custom == CustomPlayerDataProperty.Rotate)
-                        return "booster";
+//                    var custom = (CustomPlayerDataProperty) product.index;
+//                    if (custom == CustomPlayerDataProperty.Rotate)
+//                        return "booster_rotate";
                     return ((CustomPlayerDataProperty) product.index).ToString().ToLower();
                 }
 
                 return product.quantity.ToString().ToLower();
             }
 
-            string GetItemId(Product product)
-            {
-                if (product.quantity == Quantity.CustomProperty)
-                {
-                    var custom = (CustomPlayerDataProperty) product.index;
-                    if (custom == CustomPlayerDataProperty.Rotate)
-                        return "rotate";
-                    return GetItemType(product) + "_" + ((CustomPlayerDataProperty) product.index).ToString().ToLower();
-                }
-
-                return product.quantity.ToString().ToLower();
-            }
+//            string GetItemId(Product product)
+//            {
+//                if (product.quantity == Quantity.CustomProperty)
+//                {
+//                    var custom = (CustomPlayerDataProperty) product.index;
+//                    if (custom == CustomPlayerDataProperty.Rotate)
+//                        return "rotate";
+//                    return GetItemType(product) + "_" + ((CustomPlayerDataProperty) product.index).ToString().ToLower();
+//                }
+//
+//                return product.quantity.ToString().ToLower();
+//            }
         }
 
 

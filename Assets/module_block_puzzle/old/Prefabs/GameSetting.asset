@@ -22,6 +22,7 @@ MonoBehaviour:
       parameter2: 0
       index: 0
     questAvatar: {fileID: 21300000, guid: 184dd9cf6de4782428896ec927f51382, type: 3}
+    logName: 
   - key: 1
     description: 
     reward:
@@ -31,6 +32,7 @@ MonoBehaviour:
       parameter2: 0
       index: 0
     questAvatar: {fileID: 21300000, guid: 184dd9cf6de4782428896ec927f51382, type: 3}
+    logName: 
   - key: 4
     description: 
     reward:
@@ -40,6 +42,7 @@ MonoBehaviour:
       parameter2: 0
       index: 0
     questAvatar: {fileID: 21300000, guid: 6f9762c7df348fb4b9a8c1bb20e16498, type: 3}
+    logName: 
   - key: 5
     description: 
     reward:
@@ -49,6 +52,7 @@ MonoBehaviour:
       parameter2: 0
       index: 0
     questAvatar: {fileID: 21300000, guid: 5a6d3306d17334f4fa5038e930fed48c, type: 3}
+    logName: 
   - key: 6
     description: 
     reward:
@@ -58,6 +62,7 @@ MonoBehaviour:
       parameter2: 0
       index: 0
     questAvatar: {fileID: 21300000, guid: d85e90cbf92e00642a23cbc960c9bc9d, type: 3}
+    logName: 
   - key: 7
     description: 
     reward:
@@ -67,6 +72,7 @@ MonoBehaviour:
       parameter2: 0
       index: 0
     questAvatar: {fileID: 21300000, guid: d85e90cbf92e00642a23cbc960c9bc9d, type: 3}
+    logName: 
   achievementItems:
   - key: 15
     description: 
@@ -92,6 +98,7 @@ MonoBehaviour:
       parameter2: 4
       index: 0
     questAvatar: {fileID: 0}
+    logName: jigsaw_level_complete
   dailyGiftRewards:
   - quantity: 0
     amount: 20
@@ -130,4 +137,6 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   size: {x: 10, y: 10}
+  sortingOrders: []
   alwaysIsNewDayTestEditor: 0
+  testShow: 0

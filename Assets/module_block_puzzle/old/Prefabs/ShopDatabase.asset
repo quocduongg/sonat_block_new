@@ -455,8 +455,8 @@ MonoBehaviour:
       parameter2: 1
       index: 0
     spendOnLog:
-      itemType: 0
-      itemId: 
+      itemType: 10
+      itemId: buy_rotate
     earnFromLog:
       itemType: 0
       itemId: 
@@ -480,8 +480,8 @@ MonoBehaviour:
       parameter2: 1
       index: 0
     spendOnLog:
-      itemType: 0
-      itemId: 
+      itemType: 10
+      itemId: buy_rotate
     earnFromLog:
       itemType: 0
       itemId: 
@@ -505,8 +505,8 @@ MonoBehaviour:
       parameter2: 2
       index: 0
     spendOnLog:
-      itemType: 0
-      itemId: 
+      itemType: 10
+      itemId: buy_rotate
     earnFromLog:
       itemType: 0
       itemId: 
@@ -530,8 +530,8 @@ MonoBehaviour:
       parameter2: 2
       index: 0
     spendOnLog:
-      itemType: 0
-      itemId: 
+      itemType: 10
+      itemId: buy_rotate
     earnFromLog:
       itemType: 0
       itemId: 
@@ -555,8 +555,8 @@ MonoBehaviour:
       parameter2: 3
       index: 0
     spendOnLog:
-      itemType: 0
-      itemId: 
+      itemType: 10
+      itemId: buy_rotate
     earnFromLog:
       itemType: 0
       itemId: 
@@ -580,8 +580,8 @@ MonoBehaviour:
       parameter2: 3
       index: 0
     spendOnLog:
-      itemType: 0
-      itemId: 
+      itemType: 10
+      itemId: buy_rotate
     earnFromLog:
       itemType: 0
       itemId: 
@@ -605,8 +605,8 @@ MonoBehaviour:
       parameter2: 4
       index: 0
     spendOnLog:
-      itemType: 0
-      itemId: 
+      itemType: 10
+      itemId: buy_rotate
     earnFromLog:
       itemType: 0
       itemId: 
@@ -630,8 +630,8 @@ MonoBehaviour:
       parameter2: 4
       index: 0
     spendOnLog:
-      itemType: 0
-      itemId: 
+      itemType: 10
+      itemId: buy_rotate
     earnFromLog:
       itemType: 0
       itemId: 
@@ -683,7 +683,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    adsLog: 
+    adsLog: shop_ads_rotate
   - name: Shop Ads Gem
     key: 2
     countDownType: 0
@@ -698,7 +698,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    adsLog: 
+    adsLog: shop_ads_gem
   - name: New Block Gem
     key: 3
     countDownType: 0
