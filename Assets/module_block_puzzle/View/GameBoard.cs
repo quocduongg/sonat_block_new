@@ -1687,7 +1687,7 @@ namespace BlockPuzzle
                     {
                         UnDrag();
                         var price = new Product(Quantity.GameAction, 1, (int) ProductGameAction.ClearWaveCoin, 0, 0);
-                        var rewardTypeFlag = (int) (RewardTypeFlag.IsReward | RewardTypeFlag.ClaimOnPopup | RewardTypeFlag.IsOpenBox);
+                        var rewardTypeFlag = (int) (RewardTypeFlag.IsReward | RewardTypeFlag.ClaimMultipleWithAdsPopup | RewardTypeFlag.IsOpenBox);
                         var currencyLog = new TradeLog((int) LogItemType.Collecting, "star");
                         var trade = new Trade<Product,Product>(price,currentGameSetting.boxRewards[product.parameter],(int)LogPlacement.GamePlay,currencyLog,null);
                         var input = new ShowRewardInput(trade,rewardTypeFlag,1,product.parameter,2f);

@@ -2066,6 +2066,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ac558b5c7fe744b8d22e93465c7696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &384430902 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 159025095, guid: f063099db2906a7478819171448cac4b, type: 3}
+  m_PrefabInstance: {fileID: 7375372331180687283}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &407673177
 GameObject:
   m_ObjectHideFlags: 0
@@ -10728,6 +10739,17 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1065018278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 104616467187990065, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+  m_PrefabInstance: {fileID: 104616467510489645}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1088570770 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7375372332260833825, guid: f063099db2906a7478819171448cac4b, type: 3}
@@ -16703,6 +16725,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934165301}
   m_CullTransparentMesh: 1
+--- !u!114 &1958414842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3582282960765476112, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+  m_PrefabInstance: {fileID: 3582282962148906333}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d85b887af7e6c3f45a2e2d2920d641bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1970485381 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2018884736, guid: f063099db2906a7478819171448cac4b, type: 3}
@@ -18038,6 +18071,10 @@ PrefabInstance:
       propertyPath: setTargetData.setTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 104616467187990064, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: skeleton
+      value: 
+      objectReference: {fileID: 1065018278}
     - target: {fileID: 7878598480108679521, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
       propertyPath: popupName
       value: popup_claim_reward
@@ -18926,6 +18963,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 940941012}
     m_Modifications:
+    - target: {fileID: 623458902, guid: 236d6b9c65cf4eb448ffe2b40a80a677, type: 3}
+      propertyPath: rewardTypeFlag
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1172118448641154410, guid: 236d6b9c65cf4eb448ffe2b40a80a677, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 48
@@ -19737,6 +19778,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 940941012}
     m_Modifications:
+    - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: rewardTypeFlag1
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: rewardTypeFlag2
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582282960765476113, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: skeleton
+      value: 
+      objectReference: {fileID: 1958414842}
     - target: {fileID: 3582282960918255249, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -130.36133
@@ -19867,6 +19920,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5231067182263335065, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: setTargetData.setTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5231067182263335065, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: claimedToggles.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5595640224236205246, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
@@ -20881,6 +20938,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 940941012}
     m_Modifications:
+    - target: {fileID: 159025094, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: skeleton
+      value: 
+      objectReference: {fileID: 384430902}
     - target: {fileID: 414210356, guid: f063099db2906a7478819171448cac4b, type: 3}
       propertyPath: canvasScaler
       value: 

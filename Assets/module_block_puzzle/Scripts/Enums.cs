@@ -236,18 +236,7 @@ namespace BlockPuzzle
         Collecting = 100
     }
 
-    [Flags]
-    public enum RewardTypeFlag
-    {
-        // Decimal     // Binary
-        ClaimQuietly = 0, 
-        ClaimOnPopup = 1,
-        ClaimMultipleAdsPopup = 2, 
-        ClaimOnCurrencyPopup = 4,
-        IsReward = 8,
-        IsOpenBox = 16
-    }
-
+ 
     public enum ParameterGameActionEnum
     {
         SetToggleRotate

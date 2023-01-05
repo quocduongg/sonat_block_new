@@ -376,6 +376,8 @@ MonoBehaviour:
   - {fileID: 977136023}
   - {fileID: 624995273}
   fontSize: 44
+  paddingLeft: 0
+  posY: 0
 --- !u!1 &1957224880388702247
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,6 +2318,7 @@ MonoBehaviour:
   watchAdsButton: {fileID: 8907438873879175266}
   playableBindings:
   - {fileID: 3461382495167176610}
+  placement: 0
   notCloseCurrentDialog: 0
   takeRewardClickSound: 0
   key: 11
@@ -2331,6 +2334,7 @@ MonoBehaviour:
   progressText: {fileID: 0}
   countDownView: {fileID: 0}
   state: 0
+  rewardTypeFlag: 4
 --- !u!114 &4499687871128556537
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -70,10 +70,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0.4
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -81,6 +85,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -10064,6 +10069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -15133,6 +15139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -15464,10 +15471,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 117
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0.8
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 3
     particleTimeAdjust: 0
@@ -15475,6 +15486,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   localAppear:
     localPoint: {x: 0, y: 150, z: 0}
     timeLocal: 0.25
@@ -15622,9 +15634,9 @@ GameObject:
   m_Component:
   - component: {fileID: 104616465883079442}
   - component: {fileID: 104616465883079532}
-  - component: {fileID: 104616465883079533}
   - component: {fileID: 104616465883079534}
   - component: {fileID: 104616465883079535}
+  - component: {fileID: 9087456190031263519}
   m_Layer: 5
   m_Name: +200 onInstant
   m_TagString: Untagged
@@ -15675,6 +15687,7 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   testProduct123: 0
+  testValueTween3: 0
   testValueTween: 0
   testValueTween2: 0
   trueValue: 0
@@ -15707,33 +15720,6 @@ MonoBehaviour:
   customFontText: {fileID: 0}
   displayFormat: +{0}
   toStringFormat: 
---- !u!114 &104616465883079533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104616465883079443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sound: 0
-  whenStartInAnimations: []
-  test2: 0
-  testToggle: 0
-  testToggle2: 0
-  others: []
-  reverse: 0
-  custom: 0
-  testOnOff: 0
-  testLoadtoggle: 0
-  testBreak: 0
-  otherReverses: []
-  delayDeactive: 0
-  delayDeactiveOnActive: 0
-  lastValue: 0
 --- !u!222 &104616465883079534
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15831,6 +15817,66 @@ MonoBehaviour:
   m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9087456190031263519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104616465883079443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d675315dd9b368488f27a5fea1e8e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
+  lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sound: 0
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn: 0
+  testLoad1: 0
+  logDebug: 0
+  toggles: []
+  setActive: 1
+  reverse: 0
+  activeWhenZero: 0
+  containsAllState: 0
+  containsAllStateExcept: 0
+  activeState: 1
+  exceptState: 0
 --- !u!1 &104616465889955992
 GameObject:
   m_ObjectHideFlags: 0
@@ -15840,7 +15886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 104616465889955995}
-  - component: {fileID: 104616465889955994}
+  - component: {fileID: 1355702325715119255}
   m_Layer: 5
   m_Name: _open_box
   m_TagString: Untagged
@@ -15868,7 +15914,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &104616465889955994
+--- !u!114 &1355702325715119255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15877,24 +15923,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 104616465889955992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d675315dd9b368488f27a5fea1e8e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
-  whenStartInAnimations: []
-  test2: 0
-  testToggle: 0
-  testToggle2: 0
-  others: []
-  reverse: 0
-  custom: 0
-  testOnOff: 0
-  testLoadtoggle: 0
-  testBreak: 0
-  otherReverses: []
-  delayDeactive: 0
-  delayDeactiveOnActive: 0
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
   lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sound: 0
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn: 0
+  testLoad1: 0
+  logDebug: 0
+  toggles: []
+  setActive: 1
+  reverse: 0
+  activeWhenZero: 0
+  containsAllState: 0
+  containsAllStateExcept: 0
+  activeState: 16
+  exceptState: 0
 --- !u!1 &104616465957016693
 GameObject:
   m_ObjectHideFlags: 0
@@ -16046,6 +16125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c196b147089eb14796fd6ad9c867196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -16199,10 +16279,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0.6
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -16210,6 +16294,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -16620,6 +16705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c029f3a450ef1474b8a4c497c243a088, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -16664,10 +16750,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -16675,6 +16765,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -21803,6 +21894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -21886,10 +21978,14 @@ MonoBehaviour:
     animInSound: 123
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0.7
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -21897,6 +21993,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inTime: 1
   outTime: 0
 --- !u!114 &104616466143197942
@@ -21911,6 +22008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -22037,10 +22135,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 117
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 1
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 3
     particleTimeAdjust: 0
@@ -22048,6 +22150,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   localAppear:
     localPoint: {x: 0, y: 150, z: 0}
     timeLocal: 0.25
@@ -22296,10 +22399,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 117
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0.9
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 3
     particleTimeAdjust: 0
@@ -22307,6 +22414,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   localAppear:
     localPoint: {x: 0, y: 150, z: 0}
     timeLocal: 0.25
@@ -22555,10 +22663,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 117
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0.7
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 3
     particleTimeAdjust: 0
@@ -22566,6 +22678,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   localAppear:
     localPoint: {x: 0, y: 150, z: 0}
     timeLocal: 0.25
@@ -22714,7 +22827,7 @@ GameObject:
   - component: {fileID: 104616466213190021}
   - component: {fileID: 104616466213190023}
   - component: {fileID: 104616466213190020}
-  - component: {fileID: 104616466213190022}
+  - component: {fileID: 393669509475603010}
   m_Layer: 5
   m_Name: title
   m_TagString: Untagged
@@ -22779,7 +22892,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &104616466213190022
+--- !u!114 &393669509475603010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -22788,24 +22901,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 104616466213190026}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d675315dd9b368488f27a5fea1e8e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
-  whenStartInAnimations: []
-  test2: 0
-  testToggle: 0
-  testToggle2: 0
-  others: []
-  reverse: 0
-  custom: 0
-  testOnOff: 0
-  testLoadtoggle: 0
-  testBreak: 0
-  otherReverses: []
-  delayDeactive: 0
-  delayDeactiveOnActive: 0
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
   lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sound: 0
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn: 0
+  testLoad1: 0
+  logDebug: 0
+  toggles: []
+  setActive: 1
+  reverse: 0
+  activeWhenZero: 0
+  containsAllState: 0
+  containsAllStateExcept: 0
+  activeState: 8
+  exceptState: 0
 --- !u!1 &104616466215475203
 GameObject:
   m_ObjectHideFlags: 0
@@ -37713,10 +37859,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -37724,6 +37874,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   waitToOut: 0
   scale: 1
   scaleLoopType: 1
@@ -43087,6 +43238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -48154,6 +48306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -48213,6 +48366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -48339,10 +48493,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 117
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 1.1
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 3
     particleTimeAdjust: 0
@@ -48350,6 +48508,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   localAppear:
     localPoint: {x: 0, y: 150, z: 0}
     timeLocal: 0.25
@@ -48623,6 +48782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -48746,10 +48906,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 1
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -48757,6 +48921,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 1
   index: 0
+  busy: 0
   testAnim: {x: 0, y: 0}
   moveLocal: 1
   useCurrentPos: 0
@@ -48907,6 +49072,7 @@ MonoBehaviour:
   _updatePoses: []
   moveTowards: 0
   speed: 10
+  moveTowardVelocity: 0
 --- !u!223 &104616466963183086
 Canvas:
   m_ObjectHideFlags: 0
@@ -49054,6 +49220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -53950,6 +54117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -54087,10 +54255,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -54098,6 +54270,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -54317,7 +54490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 104616467091923991}
-  - component: {fileID: 104616467091923990}
+  - component: {fileID: 7021940395938875693}
   m_Layer: 5
   m_Name: _not_open_box
   m_TagString: Untagged
@@ -54346,7 +54519,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &104616467091923990
+--- !u!114 &7021940395938875693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54355,24 +54528,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 104616467091923988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d675315dd9b368488f27a5fea1e8e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
-  whenStartInAnimations: []
-  test2: 0
-  testToggle: 0
-  testToggle2: 0
-  others: []
-  reverse: 1
-  custom: 0
-  testOnOff: 0
-  testLoadtoggle: 0
-  testBreak: 0
-  otherReverses: []
-  delayDeactive: 0
-  delayDeactiveOnActive: 0
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
   lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sound: 0
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn: 0
+  testLoad1: 0
+  logDebug: 0
+  toggles: []
+  setActive: 1
+  reverse: 1
+  activeWhenZero: 0
+  containsAllState: 0
+  containsAllStateExcept: 0
+  activeState: 16
+  exceptState: 0
 --- !u!1 &104616467117087699
 GameObject:
   m_ObjectHideFlags: 0
@@ -54657,6 +54863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5054651ce3e856d46b4aa55cbb3fcc20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -59729,6 +59936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33e4ce982853f93428348adaedb58fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations:
   - {fileID: 104616466171897748}
@@ -59775,7 +59983,6 @@ MonoBehaviour:
     loop: 1
     wait: 0
     delayAfter: 0
-  skeleton: {fileID: 104616467187990065}
 --- !u!114 &104616467187990065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59856,10 +60063,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -59867,6 +60078,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -60522,6 +60734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -60605,10 +60818,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -60616,6 +60833,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -61233,6 +61451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c196b147089eb14796fd6ad9c867196, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -61384,7 +61603,8 @@ MonoBehaviour:
   watchAdsButton: {fileID: 104616467501998772}
   playableBindings:
   - {fileID: 104616467501998779}
-  log: open_box_x2
+  placement: 0
+  logName: 
 --- !u!114 &104616467501998779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61397,6 +61617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b72bd35a9335b749aac2e38c7920700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -61445,10 +61666,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0.3
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -61456,6 +61681,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -61745,6 +61971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5054651ce3e856d46b4aa55cbb3fcc20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -61955,6 +62182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -66906,6 +67134,7 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   testProduct123: 0
+  testValueTween3: 0
   testValueTween: 0
   testValueTween2: 0
   trueValue: 0
@@ -67194,6 +67423,7 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   testProduct123: 0
+  testValueTween3: 0
   testValueTween: 0
   testValueTween2: 0
   trueValue: 0
@@ -67373,10 +67603,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -67384,9 +67618,14 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   scaleFrom: {x: 1, y: 1, z: 1}
   scaleTo: {x: 1.1, y: 1.05, z: 1}
   duration: 0.15
+  loop:
+    active: 0
+    delayLoopRandomFrom: 1
+    delayLoopRandomTo: 1
   curve:
     serializedVersion: 2
     m_Curve:
@@ -67614,10 +67853,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -67625,6 +67868,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   froms:
   - {fileID: 0}
   - {fileID: 0}
@@ -77527,6 +77771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -87273,27 +87518,8 @@ MonoBehaviour:
   activeOnShow: []
   checkers: []
   dependencies: []
-  testInput:
-    product:
-      quantity: 0
-      amount: 100
-      parameter: 0
-      parameter2: 0
-      index: 0
-    price:
-      quantity: 100
-      amount: 0
-      parameter: 0
-      parameter2: 0
-      index: 0
-    multipleByAds: 1
-    isOpenBox: 1
-    isReward: 1
-    logName: 
-    adsLog: 
-    instantClaim: 0
-    parameter: 0
-    parameter2: 0
+  popupName: 
+  skipLog: 0
   delayToClaim: 2.6
   delayToClose: 4
   claimButton: {fileID: 104616466021392870}
@@ -87319,13 +87545,14 @@ MonoBehaviour:
   - {fileID: 104616465957016695}
   productView: {fileID: 104616466021392871}
   productByAdsView: {fileID: 104616467501998773}
-  instantClaimBindings:
-  - {fileID: 104616465883079533}
-  toggleOpenBox:
-  - {fileID: 104616467091923990}
-  - {fileID: 104616465889955994}
-  toggleIsReward:
-  - {fileID: 104616466213190022}
+  instantClaimBindings: []
+  toggleOpenBox: []
+  toggleIsReward: []
+  rewardTypeStateBindings:
+  - {fileID: 9087456190031263519}
+  - {fileID: 393669509475603010}
+  - {fileID: 1355702325715119255}
+  - {fileID: 7021940395938875693}
   bindingFinalRewardAmount:
   - {fileID: 7878598480108679520}
 --- !u!223 &7878598480108679524
@@ -87627,10 +87854,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -87638,9 +87869,14 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   scaleFrom: {x: 1, y: 1, z: 1}
   scaleTo: {x: 1.1, y: 1.05, z: 1}
   duration: 0.15
+  loop:
+    active: 0
+    delayLoopRandomFrom: 1
+    delayLoopRandomTo: 1
   curve:
     serializedVersion: 2
     m_Curve:

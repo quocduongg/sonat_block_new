@@ -80,12 +80,12 @@ MonoBehaviour:
     - quantity: 0
       amount: 50
       parameter: 5
-      parameter2: 2
+      parameter2: 1
       index: 0
     - quantity: 0
       amount: 100
       parameter: 10
-      parameter2: 4
+      parameter2: 3
       index: 0
     - quantity: 0
       amount: 150

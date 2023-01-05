@@ -768,6 +768,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     0: 
+    1: use_admob;use_firebase;use_appflyer;use_iap;use_facebook;USE_SPINE
     4: use_admob,use_firebase,use_appflyer,use_iap,use_facebook
     7: USE_SPINE;use_admob;use_firebase;use_appflyer;use_iap;use_playfab;use_facebook
   additionalCompilerArguments: {}
