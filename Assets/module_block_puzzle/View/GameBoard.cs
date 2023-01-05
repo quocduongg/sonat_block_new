@@ -335,6 +335,16 @@ namespace BlockPuzzle
 
         [DisplayAsDisable] [SerializeField] private DragItemState dragItemState;
 
+        public override bool IsNotOnAnyAction()
+        {
+            return dragItemState == DragItemState.NotHandler;
+        }
+
+        public override void FreeAction()
+        {
+            UnDrag();
+        }
+
         [Flags]
         public enum DragItemState
         {

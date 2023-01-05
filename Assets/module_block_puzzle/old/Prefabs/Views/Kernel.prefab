@@ -702,16 +702,22 @@ MonoBehaviour:
     animInSound: 103
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
     afterInParticleSystems: []
     onStartParticleSystems: []
   state: 2
+  index: 0
+  busy: 0
   sound: 119
   repeat: 1
   interval: 0.25
@@ -902,6 +908,13 @@ MonoBehaviour:
     defaultBoolean: 1
     jsonTextAsset: {fileID: 0}
     key: 111
+  - dataType: 3
+    defaultString: 0,1
+    defaultInt: 1800
+    defaultFloat: 0
+    defaultBoolean: 0
+    jsonTextAsset: {fileID: 0}
+    key: 112
   defaultConfigs2:
   - dataType: 1
     defaultString: 
@@ -960,7 +973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fff6e39608f92459265689d2b680a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avatar: {fileID: 0}
+  facebookController: {fileID: 0}
   totalAvatar: 8
 --- !u!1 &8435826601139006070
 GameObject:
@@ -1005,6 +1018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d1d4df2e409f049b1341f400eda865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  autoRestore: 0
   dummy: 0
 --- !u!1 &8435826601217447461
 GameObject:
@@ -1175,15 +1189,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showBanner: 1
+  testAds: 0
+  logFail: 0
+  useOpenAdsAsInterstitial:
+    value: 0
   testDeviceIds:
   - B15BB24370A69E2E02CE1EA2F2E5BD10
   - 6C1D2464995A4589012EC24CBFD4A6B2
-  testAds: 0
   bannerId: ca-app-pub-8652816628411018/1846491294
   interstitialId: ca-app-pub-8652816628411018/3323224495
   videoId: ca-app-pub-8652816628411018/5594164618
   openId: ca-app-pub-8652816628411018/7946614721
+  nativeBannerId: 
   bannerId_ios: 
   interstitialId_ios: 
   videoId_ios: 
   openId_ios: 
+  nativeBannerId_ios: 
+  ctr_time_logs:
+    defaultValue: 140000002d0000002d0000005a000000

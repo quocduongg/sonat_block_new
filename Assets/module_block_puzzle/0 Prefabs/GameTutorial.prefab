@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -566,6 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -645,10 +647,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -656,6 +662,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   loop: 1
   nodes:
   - action: 5
@@ -741,20 +748,10 @@ MonoBehaviour:
       indexes: {x: 0, y: 0, z: 0}
       once: 0
       curve: -1
-    - action: 0
-      delayBefore: 0
-      delayAfter: 0.25
-      time: 0
-      setStartValue: 0
-      startValue: {x: 0, y: 0, z: 0}
-      value3: {x: 0.71, y: -9.29, z: 0}
-      indexes: {x: 0, y: 0, z: 0}
-      once: 0
-      curve: -1
     - action: 7
       delayBefore: 0
-      delayAfter: 0.1
-      time: 0.175
+      delayAfter: 0
+      time: 0
       setStartValue: 0
       startValue: {x: 0, y: 0, z: 0}
       value3: {x: 0, y: 0, z: 0}
@@ -773,8 +770,8 @@ MonoBehaviour:
       curve: -1
     - action: 7
       delayBefore: 0
-      delayAfter: 0.15
-      time: 0.35
+      delayAfter: 0.3
+      time: 0.5
       setStartValue: 0
       startValue: {x: 0, y: 0, z: 0}
       value3: {x: 0, y: 0, z: 0}
@@ -1014,6 +1011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
@@ -1094,10 +1092,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -1105,6 +1107,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   loop: 1
   nodes: []
   action:
@@ -1134,6 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disable: 0
   sound: 0
   whenStartInAnimations: []
   test2: 0
