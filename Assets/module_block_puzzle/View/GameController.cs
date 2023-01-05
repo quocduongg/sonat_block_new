@@ -609,52 +609,6 @@ namespace BlockPuzzle
             }
 
 
-//              foreach (var product in trade.Products)
-//                if (product.quantity == Quantity.CustomProperty || product.quantity == Quantity.Gold)
-//                    foreach (var price in trade.Prices)
-//                    {
-//                        string virtual_currency_name = product.quantity.ToString();
-//                        if (product.quantity == Quantity.CustomProperty)
-//                            virtual_currency_name = ((CustomPlayerDataProperty) product.index).ToString();
-//                        switch (price.quantity)
-//                        {
-//                            default:
-//                                if (price is ShopPrice)
-//                                {
-//                                    // is shop item;
-//
-//                                    var item_id = GetItemId(price);
-//
-//                                    if (price.quantity == Quantity.IapBuying)
-//                                        item_id = Kernel.GetDatabase<ShopDatabase>()
-//                                            .GetDescriptor((price as ShopPrice).priceKey.key)
-//                                            .storeProductId;
-//
-//                                    new SonatLogEarnVirtualCurrency()
-//                                    {
-//                                        virtual_currency_name = virtual_currency_name.ToLower(),
-//                                        value = product.amount,
-//                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
-//                                        item_type = GetItemType(price),
-//                                        item_id = trade.SpendLog.itemId
-//                                    }.Post();
-//                                }
-//                                else if (price.quantity == Quantity.WatchAds)
-//                                {
-//                                    new SonatLogEarnVirtualCurrency()
-//                                    {
-//                                        virtual_currency_name = virtual_currency_name.ToLower(),
-//                                        value = product.amount,
-//                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
-//                                        item_type = "ads",
-//                                        item_id = trade.SpendLog.itemId
-//                                    }.Post();
-//                                }
-//
-//                                break;
-//                        }
-//                    }
-//
             string GetItemType(Product product)
             {
                 if (product.quantity == Quantity.CustomProperty)

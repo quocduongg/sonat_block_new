@@ -20757,7 +20757,6 @@ MonoBehaviour:
   useClickOffset: 0
   dragItemState: 0
   indicateRotateShop: []
-  eventNameClaimBox: classic_claim_progress
   navigations: []
   myBoardSettings:
     complimentClampPosX: 3.4
