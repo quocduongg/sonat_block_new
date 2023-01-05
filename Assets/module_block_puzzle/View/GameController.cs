@@ -513,46 +513,148 @@ namespace BlockPuzzle
             return false;
         }
 
-        protected override void LogSpendVirtualCurrency<T, T2>(Trade<T, T2> trade)
+//        protected override void LogSpendVirtualCurrency<T, T2>(Trade<T, T2> trade)
+//        {
+//            foreach (var price in trade.Prices)
+//                if (price.quantity == Quantity.Diamond || price.quantity == Quantity.Gold)
+//                    foreach (var product in trade.Products)
+//                    {
+//                        switch (product.quantity)
+//                        {
+//                            case Quantity.SystemAction:
+////                                Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
+////                                    $"{RootView.rootView.gameController.GetLogName(product.index, BuiltInEnumType.ProductSystemAction.ToString(), "SystemAction_")}",
+////                                    price.amount, price.quantity.ToString().ToLower());
+//                                break;
+//                            case Quantity.GameAction:
+////                                Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
+////                                    $"{RootView.rootView.gameController.GetLogName(product.index, BuiltInEnumType.ProductGameAction.ToString(), "GameAction_")}",
+////                                    price.amount, price.quantity.ToString().ToLower());
+//                                break;
+//                            default:
+//                                if (price is ShopPrice)
+//                                {
+//                                    // is shop item;
+//                                    new SonatLogSpendVirtualCurrency()
+//                                    {
+//                                        virtual_currency_name = price.quantity.ToString().ToLower(),
+//                                        value = price.amount,
+//                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
+//                                        item_type = GetItemType(product),
+//                                        item_id = GetItemId(product),
+//                                    }.Post();
+//                                }
+//
+////                                else
+////                                    Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
+////                                        RootView.rootView.gameController.GetLogName(product), price.amount,
+////                                        price.quantity.ToString().ToLower());
+//                                break;
+//                        }
+//                    }
+//
+//            string GetItemType(Product product)
+//            {
+//                if (product.quantity == Quantity.CustomProperty)
+//                {
+//                    var custom = (CustomPlayerDataProperty) product.index;
+//                    if (custom == CustomPlayerDataProperty.Rotate)
+//                        return "booster";
+//                    return ((CustomPlayerDataProperty) product.index).ToString().ToLower();
+//                }
+//
+//                return product.quantity.ToString().ToLower();
+//            }
+//
+//            string GetItemId(Product product)
+//            {
+//                if (product.quantity == Quantity.CustomProperty)
+//                {
+//                    var custom = (CustomPlayerDataProperty) product.index;
+//                    if (custom == CustomPlayerDataProperty.Rotate)
+//                        return "rotate";
+//                    return GetItemType(product) + "_" + ((CustomPlayerDataProperty) product.index).ToString().ToLower();
+//                }
+//
+//                return product.quantity.ToString().ToLower();
+//            }
+//        }
+
+        public override void CheckLogVirtualCurrency<T, T2>(Trade<T, T2> trade)
         {
-            foreach (var price in trade.Prices)
-                if (price.quantity == Quantity.Diamond || price.quantity == Quantity.Gold)
-                    foreach (var product in trade.Products)
-                    {
-                        switch (product.quantity)
-                        {
-                            case Quantity.SystemAction:
-//                                Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
-//                                    $"{RootView.rootView.gameController.GetLogName(product.index, BuiltInEnumType.ProductSystemAction.ToString(), "SystemAction_")}",
-//                                    price.amount, price.quantity.ToString().ToLower());
-                                break;
-                            case Quantity.GameAction:
-//                                Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
-//                                    $"{RootView.rootView.gameController.GetLogName(product.index, BuiltInEnumType.ProductGameAction.ToString(), "GameAction_")}",
-//                                    price.amount, price.quantity.ToString().ToLower());
-                                break;
-                            default:
-                                if (price is ShopPrice)
-                                {
-                                    // is shop item;
-                                    new SonatLogSpendVirtualCurrency()
-                                    {
-                                        virtual_currency_name = price.quantity.ToString().ToLower(),
-                                        value = price.amount,
-                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
-                                        item_type = GetItemType(product),
-                                        item_id = GetItemId(product),
-                                    }.Post();
-                                }
+            if (trade.EarnLog != null)
+            {
+                string virtual_currency_name = trade.Product.quantity.ToString();
+                new SonatLogEarnVirtualCurrency()
+                {
+                    virtual_currency_name = virtual_currency_name.ToLower(),
+                    value = trade.Product.amount,
+                    placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
+                    item_type = ((LogItemType) trade.EarnLog.itemType).ToString().ToLower(),
+                    item_id = trade.EarnLog.itemId
+                }.Post();
+            }
+            
+            if (trade.SpendLog != null)
+            {
+                string virtual_currency_name = trade.Price.quantity.ToString();
+                new SonatLogEarnVirtualCurrency()
+                {
+                    virtual_currency_name = virtual_currency_name.ToLower(),
+                    value = trade.Price.amount,
+                    placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
+                    item_type = ((LogItemType) trade.SpendLog.itemType).ToString().ToLower(),
+                    item_id = trade.SpendLog.itemId
+                }.Post();
+            }
 
-//                                else
-//                                    Kernel.Resolve<FireBaseController>().EventSpendVirtualCurrency(
-//                                        RootView.rootView.gameController.GetLogName(product), price.amount,
-//                                        price.quantity.ToString().ToLower());
-                                break;
-                        }
-                    }
 
+//              foreach (var product in trade.Products)
+//                if (product.quantity == Quantity.CustomProperty || product.quantity == Quantity.Gold)
+//                    foreach (var price in trade.Prices)
+//                    {
+//                        string virtual_currency_name = product.quantity.ToString();
+//                        if (product.quantity == Quantity.CustomProperty)
+//                            virtual_currency_name = ((CustomPlayerDataProperty) product.index).ToString();
+//                        switch (price.quantity)
+//                        {
+//                            default:
+//                                if (price is ShopPrice)
+//                                {
+//                                    // is shop item;
+//
+//                                    var item_id = GetItemId(price);
+//
+//                                    if (price.quantity == Quantity.IapBuying)
+//                                        item_id = Kernel.GetDatabase<ShopDatabase>()
+//                                            .GetDescriptor((price as ShopPrice).priceKey.key)
+//                                            .storeProductId;
+//
+//                                    new SonatLogEarnVirtualCurrency()
+//                                    {
+//                                        virtual_currency_name = virtual_currency_name.ToLower(),
+//                                        value = product.amount,
+//                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
+//                                        item_type = GetItemType(price),
+//                                        item_id = trade.SpendLog.itemId
+//                                    }.Post();
+//                                }
+//                                else if (price.quantity == Quantity.WatchAds)
+//                                {
+//                                    new SonatLogEarnVirtualCurrency()
+//                                    {
+//                                        virtual_currency_name = virtual_currency_name.ToLower(),
+//                                        value = product.amount,
+//                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
+//                                        item_type = "ads",
+//                                        item_id = trade.SpendLog.itemId
+//                                    }.Post();
+//                                }
+//
+//                                break;
+//                        }
+//                    }
+//
             string GetItemType(Product product)
             {
                 if (product.quantity == Quantity.CustomProperty)
@@ -580,80 +682,6 @@ namespace BlockPuzzle
             }
         }
 
-        protected override void LogEarnVirtualCurrency<T, T2>(Trade<T, T2> trade)
-        {
-            foreach (var product in trade.Products)
-                if (product.quantity == Quantity.CustomProperty || product.quantity == Quantity.Gold)
-                    foreach (var price in trade.Prices)
-                    {
-                        string virtual_currency_name = product.quantity.ToString();
-                        if (product.quantity == Quantity.CustomProperty)
-                            virtual_currency_name = ((CustomPlayerDataProperty) product.index).ToString();
-                        switch (price.quantity)
-                        {
-                            default:
-                                if (price is ShopPrice)
-                                {
-                                    // is shop item;
-
-                                    var item_id = GetItemId(price);
-
-                                    if (price.quantity == Quantity.IapBuying)
-                                        item_id = Kernel.GetDatabase<ShopDatabase>()
-                                            .GetDescriptor((price as ShopPrice).priceKey.key)
-                                            .storeProductId;
-
-                                    new SonatLogEarnVirtualCurrency()
-                                    {
-                                        virtual_currency_name = virtual_currency_name.ToLower(),
-                                        value = product.amount,
-                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
-                                        item_type = GetItemType(price),
-                                        item_id = trade.SpendLog.itemId
-                                    }.Post();
-                                }
-                                else if (price.quantity == Quantity.WatchAds)
-                                {
-                                    new SonatLogEarnVirtualCurrency()
-                                    {
-                                        virtual_currency_name = virtual_currency_name.ToLower(),
-                                        value = product.amount,
-                                        placement = ((LogPlacement) trade.Placement).ToString().ToLower(),
-                                        item_type = "ads",
-                                        item_id = trade.SpendLog.itemId
-                                    }.Post();
-                                }
-
-                                break;
-                        }
-                    }
-
-            string GetItemType(Product product)
-            {
-                if (product.quantity == Quantity.CustomProperty)
-                {
-                    var custom = (CustomPlayerDataProperty) product.index;
-                    if (custom == CustomPlayerDataProperty.Rotate)
-                        return "booster";
-                    return ((CustomPlayerDataProperty) product.index).ToString().ToLower();
-                }
-
-                return product.quantity.ToString().ToLower();
-            }
-
-            string GetItemId(Product product)
-            {
-                if (product.quantity == Quantity.CustomProperty)
-                {
-                    var custom = (CustomPlayerDataProperty) product.index;
-                    if (custom == CustomPlayerDataProperty.Rotate)
-                        return "rotate";
-                    return GetItemType(product) + "_" + ((CustomPlayerDataProperty) product.index).ToString().ToLower();
-                }
-                
-                return product.quantity.ToString().ToLower();
-            }
-        }
 
         public void Test()
         {

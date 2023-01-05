@@ -225,11 +225,13 @@ namespace BlockPuzzle
         DailyReward = 2,
         Achievement = 3,
         Quest = 4,
-        CompleteLevel = 5,
-        Subscription = 6,
+        Spin = 5,
+        Shop = 6,
+        CompleteLevel = 7,
+        Subscription = 8,
+        BuyIap = 9,
         
-        
-        Collecting = 20
+        Collecting = 100
     }
 
     [Flags]
