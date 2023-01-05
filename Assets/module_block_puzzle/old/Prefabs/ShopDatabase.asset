@@ -88,9 +88,7 @@ MonoBehaviour:
     delayToShow: 0
     displayRate: 1
   shopItems:
-  - name: NoAds
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -106,12 +104,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 0
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Gem1
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -127,12 +129,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 1
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Gem2
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -148,12 +154,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 2
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Gem3
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -169,12 +179,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 3
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Gem4
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -190,12 +204,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 4
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Gem5
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -211,12 +229,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 5
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Gem6
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -232,12 +254,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 6
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Gem7
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -253,12 +279,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 7
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Vip
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
@@ -274,19 +304,23 @@ MonoBehaviour:
       parameter: 0
       parameter2: 0
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Vip2
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 1
       parameter: 0
       parameter2: 0
       index: 0
       priceKey:
-        key: 10
+        key: 11
         stockType: 0
         stock: 0
     products:
@@ -295,12 +329,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 0
       index: 1
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Start Bundle
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 21
       amount: 150
       parameter: 0
@@ -316,12 +354,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 4
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
-  - name: Use Hammer
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 1
       amount: 150
       parameter: 0
@@ -337,12 +379,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 0
       index: 3
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Use swap
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 1
       amount: 150
       parameter: 0
@@ -358,12 +404,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 0
       index: 2
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Undo
-    rewardAdsAsPrice: 1
-    price:
+  - price:
       quantity: 1
       amount: 150
       parameter: 0
@@ -379,12 +429,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 0
       index: 1
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: 
     takeRandom: 0
     ignoreSave: 0
-  - name: Buy Rotate 1
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 0
       amount: 30
       parameter: 0
@@ -400,12 +454,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 1
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
-  - name: Buy Rotate 1 50%
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 0
       amount: 15
       parameter: 0
@@ -421,12 +479,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 1
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
-  - name: Buy Rotate 2
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 0
       amount: 300
       parameter: 0
@@ -442,12 +504,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 2
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
-  - name: Buy Rotate 2 50%
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 0
       amount: 150
       parameter: 0
@@ -463,12 +529,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 2
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
-  - name: Buy Rotate 3
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 0
       amount: 500
       parameter: 0
@@ -484,12 +554,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 3
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
-  - name: Buy Rotate 3 50%
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 0
       amount: 250
       parameter: 0
@@ -505,12 +579,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 3
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
-  - name: Buy Rotate 4
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 0
       amount: 1200
       parameter: 0
@@ -526,12 +604,16 @@ MonoBehaviour:
       parameter: 0
       parameter2: 4
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
-  - name: Buy Rotate 4 50%
-    rewardAdsAsPrice: 0
-    price:
+  - price:
       quantity: 0
       amount: 600
       parameter: 0
@@ -547,6 +629,12 @@ MonoBehaviour:
       parameter: 0
       parameter2: 4
       index: 0
+    spendOnLog:
+      itemType: 0
+      itemId: 
+    earnFromLog:
+      itemType: 0
+      itemId: 
     description: Buy Rotate by gem
     takeRandom: 0
     ignoreSave: 0
@@ -565,7 +653,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: get_x2_daily
+    adsLog: 
   - name: ShopDailyGift
     key: 1
     countDownType: 1
@@ -580,7 +668,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: get_daily_shop
+    adsLog: 
   - name: Shop Ads Rotate
     key: 9
     countDownType: 0
@@ -595,7 +683,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: get_rorate_shop
+    adsLog: 
   - name: Shop Ads Gem
     key: 2
     countDownType: 0
@@ -610,7 +698,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: get_coin_shop
+    adsLog: 
   - name: New Block Gem
     key: 3
     countDownType: 0
@@ -625,7 +713,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: 
+    adsLog: 
   - name: PlayGame Gem
     key: 4
     countDownType: 0
@@ -640,7 +728,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: 
+    adsLog: 
   - name: StartFromAds
     key: 5
     countDownType: 0
@@ -655,7 +743,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: 
+    adsLog: 
   - name: NextGoalAds
     key: 6
     countDownType: 3
@@ -670,7 +758,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: 
+    adsLog: 
   - name: Spin
     key: 7
     countDownType: 1
@@ -685,7 +773,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: get_spin
+    adsLog: 
   - name: HintJigsaw
     key: 10
     countDownType: 0
@@ -700,7 +788,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: hint_jigsaw
+    adsLog: 
   - name: Unlock Jigsaw
     key: 11
     countDownType: 0
@@ -715,7 +803,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    logName: get_unlock_level
+    adsLog: 
   subscriptionItems:
   - key: 0
     storeProductId: vipmember
@@ -727,6 +815,7 @@ MonoBehaviour:
       parameter: 0
       parameter2: 0
       index: 0
+    logName: 
   rewards:
   - quantity: 0
     amount: 50
