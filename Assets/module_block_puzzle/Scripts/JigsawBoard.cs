@@ -138,7 +138,8 @@ namespace BlockPuzzle
             new SonatLogLevelStart()
             {
                 level = i.ToString(),
-                mode = "jigsaw"
+                mode = "jigsaw",
+                setUserProperty = false
             }.Post();
         }
 

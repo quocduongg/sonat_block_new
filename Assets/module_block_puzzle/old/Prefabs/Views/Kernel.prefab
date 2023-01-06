@@ -641,13 +641,13 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 2aeb5adc1564ec74c92ed1531d20e3b9, type: 3}
     volume: 1
   - key: 10
-    audioClip: {fileID: 8300000, guid: 4213a8970e7aacf498ef26175dfd0843, type: 3}
+    audioClip: {fileID: 8300000, guid: 05f5ffa171436b24e85751321b2f2d28, type: 3}
     volume: 1
   - key: 11
-    audioClip: {fileID: 8300000, guid: ad4963401725c1148ba2d4abaa681a92, type: 3}
+    audioClip: {fileID: 8300000, guid: eca66ec589d107448b39d44eb1176365, type: 3}
     volume: 1
   - key: 12
-    audioClip: {fileID: 8300000, guid: 3b8060f05e15903429c29a4c8a4735b7, type: 3}
+    audioClip: {fileID: 8300000, guid: 967f76f6e3be8ec4fb7dfcc7bda7d212, type: 3}
     volume: 1
   - key: 113
     audioClip: {fileID: 8300000, guid: 89e89fbbc8a8d39429d7ad76acbb75ba, type: 3}
@@ -735,8 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2159129696bc794db0bb304927b209e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkRegisterOnStart:
-  - {fileID: 0}
+  checkRegisterOnStart: []
 --- !u!1 &8435826600656683605
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +911,7 @@ MonoBehaviour:
     defaultString: 0,1
     defaultInt: 1800
     defaultFloat: 0
-    defaultBoolean: 0
+    defaultBoolean: 1
     jsonTextAsset: {fileID: 0}
     key: 112
   defaultConfigs2:
@@ -973,7 +972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fff6e39608f92459265689d2b680a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  facebookController: {fileID: 0}
+  facebookController: {fileID: 8435826600656683607}
   totalAvatar: 8
 --- !u!1 &8435826601139006070
 GameObject:
