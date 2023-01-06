@@ -608,7 +608,6 @@ namespace BlockPuzzle
                 }.Post();
             }
 
-
             string GetItemName(Product product)
             {
                 if (product.quantity == Quantity.CustomProperty)
@@ -621,19 +620,6 @@ namespace BlockPuzzle
 
                 return product.quantity.ToString().ToLower();
             }
-
-//            string GetItemId(Product product)
-//            {
-//                if (product.quantity == Quantity.CustomProperty)
-//                {
-//                    var custom = (CustomPlayerDataProperty) product.index;
-//                    if (custom == CustomPlayerDataProperty.Rotate)
-//                        return "rotate";
-//                    return GetItemType(product) + "_" + ((CustomPlayerDataProperty) product.index).ToString().ToLower();
-//                }
-//
-//                return product.quantity.ToString().ToLower();
-//            }
         }
 
 
