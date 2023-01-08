@@ -150,6 +150,14 @@ namespace BlockPuzzle
     {
         Tutorial,
     }
+    
+    public enum CustomWaveDataProperty
+    {
+    }
+    
+    public enum AchievementEnum
+    {
+    }
 
     public enum ProductGameAction
     {

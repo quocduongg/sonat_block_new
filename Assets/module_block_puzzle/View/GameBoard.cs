@@ -76,6 +76,7 @@ namespace BlockPuzzle
         [NonSerialized] public IntReactiveProperty notEnoughSpace = new IntReactiveProperty();
 
         protected override IActiveTutorialComponents IActiveTutorialComponents => gameTutorial;
+        protected override string NameSpace => "BlockPuzzle";
 
 
         [SerializeField] private BoardSetting boardSetting;
@@ -1764,11 +1765,6 @@ namespace BlockPuzzle
             x = null;
             Debug.Log(temp);
             Debug.Log(x);
-        }
-
-        public override string GetLogName(BuiltInEnumType itemType, int key)
-        {
-            return "null";
         }
     }
 }

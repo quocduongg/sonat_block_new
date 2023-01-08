@@ -304,15 +304,6 @@ namespace BlockPuzzle
             };
         }
 
-        protected override Type[] LogTypes => new[]
-        {
-            typeof(ShopItemKey),
-            typeof(AdsItemKey),
-            typeof(QuestEnum),
-            typeof(ProductGameAction),
-            typeof(ProductSystemAction),
-            typeof(SoundEnum),
-        };
 
         public override bool IsOfferOkayToShow(int key)
         {
