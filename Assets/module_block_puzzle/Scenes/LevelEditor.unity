@@ -1152,6 +1152,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1177,7 +1178,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   target: {fileID: 108726168}
   positions:
@@ -1613,6 +1615,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1640,7 +1643,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   mathOperator: 0
@@ -1736,6 +1740,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1761,7 +1766,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   render: {fileID: 188833947}
   orders:
@@ -3763,6 +3769,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -3788,7 +3795,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   textMesh: {fileID: 765008154}
   customText: {fileID: 0}
@@ -4366,6 +4374,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -4391,7 +4400,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   textMesh: {fileID: 802386653}
   customText: {fileID: 0}
@@ -5856,6 +5866,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -5881,7 +5892,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   target: {fileID: 916476811}
   positions:
@@ -11834,8 +11846,13 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   score: 30
-  star: 13
   newBest: 0
+  setters:
+  - dataEnum: 30
+    propertyName: 
+    view: {fileID: 0}
+    customPropertyEnum: 2
+    setValue: 12
   pointParameter:
     col: 0
     row: 0
@@ -12948,6 +12965,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -12973,7 +12991,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   render: {fileID: 1409371080}
   orders:
@@ -20262,6 +20281,10 @@ PrefabInstance:
       propertyPath: popupName
       value: popup_game_over
       objectReference: {fileID: 0}
+    - target: {fileID: 1790032141916160521, guid: 973bb786ebf1faa4087c3bf887135403, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5210562872368669448, guid: 973bb786ebf1faa4087c3bf887135403, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -20349,6 +20372,22 @@ PrefabInstance:
     - target: {fileID: 5210562872368669449, guid: 973bb786ebf1faa4087c3bf887135403, type: 3}
       propertyPath: m_Name
       value: PopupGameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 5210562872368669449, guid: 973bb786ebf1faa4087c3bf887135403, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5581869936833102952, guid: 973bb786ebf1faa4087c3bf887135403, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 85.56149
+      objectReference: {fileID: 0}
+    - target: {fileID: 5581869936833102952, guid: 973bb786ebf1faa4087c3bf887135403, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 85.56149
+      objectReference: {fileID: 0}
+    - target: {fileID: 5581869936833102952, guid: 973bb786ebf1faa4087c3bf887135403, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 85.56149
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 973bb786ebf1faa4087c3bf887135403, type: 3}
