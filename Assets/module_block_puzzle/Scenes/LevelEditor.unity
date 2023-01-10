@@ -19227,15 +19227,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5304727265300141272, guid: 94b07a4513c09fd40bdf1d70734d96cd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 94.21001
+      value: 85.56149
       objectReference: {fileID: 0}
     - target: {fileID: 5304727265300141272, guid: 94b07a4513c09fd40bdf1d70734d96cd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 94.21001
+      value: 85.56149
       objectReference: {fileID: 0}
     - target: {fileID: 5304727265300141272, guid: 94b07a4513c09fd40bdf1d70734d96cd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 94.21001
+      value: 85.56149
       objectReference: {fileID: 0}
     - target: {fileID: 6141686391275918544, guid: 94b07a4513c09fd40bdf1d70734d96cd, type: 3}
       propertyPath: m_Enabled
@@ -20657,6 +20657,22 @@ PrefabInstance:
     - target: {fileID: 910815007, guid: f063099db2906a7478819171448cac4b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 960773423, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: showInters
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 960773423, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: showIntersLog
+      value: classic_to_jisaw_mode
+      objectReference: {fileID: 0}
+    - target: {fileID: 960773423, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: conditionLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 960773423, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: visitCondition
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1999693482, guid: f063099db2906a7478819171448cac4b, type: 3}
       propertyPath: m_IsActive

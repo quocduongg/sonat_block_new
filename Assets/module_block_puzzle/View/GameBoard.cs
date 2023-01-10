@@ -1702,6 +1702,12 @@ namespace BlockPuzzle
                         var currencyLog = new TradeLog((int) LogItemType.Collecting, "star");
                         var trade = new Trade<Product,Product>(price,currentGameSetting.boxRewards[product.parameter],(int)LogPlacement.GamePlay,currencyLog,null);
                         var input = new ShowRewardInput(trade,rewardTypeFlag,1,product.parameter,2f);
+                        input.logInterstitial = new SonatLogShowInterstitial()
+                        {
+                            placement = "classic_claim_progress",
+                            level = PlayerData.playTimes,
+                            mode = "classic"
+                        };
                         //parameter = 1, // 0 = no tween box, 1 2 3 = tween box
                         // parameter2 = product.parameter, // index of box
                         RootView.rootView.screenRoot.ShowReward(input);
