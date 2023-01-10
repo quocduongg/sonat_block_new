@@ -50,7 +50,7 @@ namespace BlockPuzzle
         [SerializeField] private GameTutorial gameTutorial;
         [SerializeField] private TweenDisplayScript starProgress;
         [SerializeField] private bool turnOnOnlyItemMatch;
-
+        [SerializeField] private ToggleScript[] hintMode;
 
         private IDisposable _navigationDisposable;
         private int _currentNavigation;
@@ -258,6 +258,7 @@ namespace BlockPuzzle
         protected override void InitGame()
         {
             base.InitGame();
+            HintMode(false);
             _freeToRotate.BoolValue = true;
             Debug.Log(PlayerData.playTimes);
             BoardSpecialState = BoardSpecialState.None;
@@ -304,8 +305,11 @@ namespace BlockPuzzle
 //                        Debug.Log(_secondsFromAdBreak+"/"+_secondsToAdBreak);
                         CheckShowAdBreak();
                         _waitForHint++;
-                        if (_waitForHint % currentGameSetting.timeToHint == 0)
+                        if (_waitForHint % currentGameSetting.timeToHint == 0 && PlayerData.tutorialStep == -1)
                             HintPlace();
+
+                        if (_waitForHint == currentGameSetting.timeHintJigsawMode)
+                            HintMode(true);
                     }
 
                     CheckGameNavigation();
@@ -1346,6 +1350,7 @@ namespace BlockPuzzle
         {
             BgTilePoolIdleHint.ReturnAll();
             _waitForHint = 0;
+            HintMode(false);
         }
 
         private void HintPlace()
@@ -1375,6 +1380,11 @@ namespace BlockPuzzle
                     hintTile.SetColor(color);
                 }
             }
+        }
+        
+        private void HintMode(bool hint)
+        {
+            hintMode.OnChanged(hint);
         }
 
 

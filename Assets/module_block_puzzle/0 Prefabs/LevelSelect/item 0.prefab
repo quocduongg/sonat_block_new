@@ -215,6 +215,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -240,7 +241,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   correspondBindings:
   - {fileID: 5765041865731618474}
@@ -283,6 +285,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -308,7 +311,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   font: {fileID: 1596054737}
 --- !u!114 &1596054737
@@ -336,6 +340,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -361,7 +366,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   prefix: 
   fontData: {fileID: 11400000, guid: cfc0fab678d6e124ba70f4b6901e7a1a, type: 2}
@@ -708,6 +714,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -735,7 +742,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   setActive: 1
@@ -770,6 +778,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -795,7 +804,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 2
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   correspondBindings:
   - {fileID: 3338045411817048675}
@@ -838,6 +848,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -863,7 +874,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 1
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   target: {fileID: 0}
   target2: {fileID: 6724298922804902957}
@@ -981,6 +993,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1006,7 +1019,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   correspondBindings: []
   correspondSetIndex2:
@@ -1082,6 +1096,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1107,7 +1122,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   target: {fileID: 0}
   target2: {fileID: 3907858462466556806}
@@ -1466,6 +1482,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1491,7 +1508,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 2
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   correspondBindings: []
   correspondSetIndex2:
@@ -1541,6 +1559,7 @@ MonoBehaviour:
   changeScripts: []
   toggleBindings:
   - {fileID: 4683404554865285804}
+  - {fileID: 294970758746069796}
   tweenScripts: []
   testChanged: 0
 --- !u!1 &3907858462983689437
@@ -1645,6 +1664,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1670,7 +1690,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 2
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   correspondBindings:
   - {fileID: 1971734781}
@@ -1719,6 +1740,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1744,7 +1766,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 1
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   target: {fileID: 0}
   target2: {fileID: 3907858462983689438}
@@ -1865,6 +1888,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1890,7 +1914,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   toggles:
   - {fileID: 3907858463867581265}
@@ -2207,6 +2232,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -2232,7 +2258,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   setActive: 1
@@ -2273,6 +2300,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4873396099995774384}
+  - {fileID: 6544941484402224411}
   m_Father: {fileID: 3907858462818893096}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2360,6 +2388,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -2385,7 +2414,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   setActive: 1
@@ -2543,6 +2573,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -2568,7 +2599,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   setActive: 1
@@ -2636,3 +2668,306 @@ MonoBehaviour:
   isFinish: 1
   positionAdjust: {x: 10, y: -50}
   button: {fileID: 8644458058080933784}
+--- !u!1 &7993026794503260112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6544941484402224411}
+  - component: {fileID: 8366128903072221693}
+  - component: {fileID: 2089565146303212828}
+  - component: {fileID: 2780846269624667505}
+  - component: {fileID: 294970758746069796}
+  - component: {fileID: 706685215319772666}
+  m_Layer: 5
+  m_Name: hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &6544941484402224411
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993026794503260112}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3327414978547983957}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27.5, y: -56.9}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8366128903072221693
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993026794503260112}
+  m_CullTransparentMesh: 1
+--- !u!114 &2089565146303212828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993026794503260112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5935dd55a5549e54dbf75485099b8505, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2780846269624667505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993026794503260112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee09664e37e42f747bece96077b8131c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testStartAction: 0
+  turnOff: 0
+  t1: 0
+  t2: 0
+  t3: 0
+  settings:
+    startOnEnable: 0
+    inThenOutOnStart: 0
+    inIncludeOut: 0
+    others: []
+    nextInThenOut: {fileID: 0}
+    resetOnStart: 0
+    deactiveAfterOut: 1
+    reverse: 0
+    animInClip: {fileID: 0}
+    animOutClip: {fileID: 0}
+    animInSound: 0
+    animOutSound: 0
+    whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
+    delayBeforeIn: 5
+    delayAfterOut: 0
+    toggleTrueOnIn: 1
+    toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
+    indexBindings: []
+    afterInCallBack: 0
+    particleTimeAdjust: 0
+    afterInParticleSystems: []
+    onStartParticleSystems: []
+  state: 2
+  index: 0
+  busy: 0
+  waitToOut: 0
+  scale: 0
+  scaleLoopType: 1
+  scaleFrom: {x: 1, y: 1, z: 1}
+  scaleTo: {x: 1.1, y: 1.1, z: 1.1}
+  scaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleTime: 1
+  fade: 0
+  fadeLoopType: 1
+  fadeFrom: 1
+  fadeTo: 0
+  fadeTime: 1
+  fadeCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rotate: 0
+  rotateLoopType: 0
+  rotateFrom: {x: 0, y: 0, z: 0}
+  rotateTo: {x: 0, y: 0, z: 360}
+  rotateTime: 3
+  rotateCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rotateAdd: 0
+  rotateSpeed: 5
+  rotateCoordinate: 0
+  move: 1
+  moveLoopType: 1
+  moveFrom: {x: 8.3, y: -26.2, z: 0}
+  moveTo: {x: 27.5, y: -56.9, z: 0}
+  moveTime: 0.5
+  moveCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  idleTime: -1
+  loopCount: -1
+  setlocal: 0
+--- !u!114 &294970758746069796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993026794503260112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c196b147089eb14796fd6ad9c867196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disable: 0
+  sound: 0
+  whenStartInAnimations: []
+  test2: 0
+  testToggle: 0
+  testToggle2: 0
+  others: []
+  reverse: 0
+  custom: 0
+  testOnOff: 0
+  testLoadtoggle: 0
+  testBreak: 0
+  animators:
+  - {fileID: 2780846269624667505}
+  useLast: 1
+--- !u!114 &706685215319772666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7993026794503260112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disable: 0
+  sound: 0
+  whenStartInAnimations: []
+  test2: 0
+  testToggle: 0
+  testToggle2: 0
+  others: []
+  reverse: 0
+  custom: 0
+  testOnOff: 0
+  testLoadtoggle: 0
+  testBreak: 0
+  otherReverses: []
+  delayDeactive: 0
+  delayDeactiveOnActive: 0
+  lastValue: 0

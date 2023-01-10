@@ -34,6 +34,7 @@ namespace BlockPuzzle
         public Product[] boxRewards;
         [SerializeField] private TextAsset jigsawCollection;
         public bool scoringInTutorial;
+        public int timeHintJigsawMode = 10;
 
 
         public int LastStarCondition => starBoxProgress[starBoxProgress.Length - 1];

@@ -43,3 +43,5 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   jigsawCollection: {fileID: 4900000, guid: d8a77a166475c064db4bae0c9a2822c4, type: 3}
+  scoringInTutorial: 0
+  timeHintJigsawMode: 10
