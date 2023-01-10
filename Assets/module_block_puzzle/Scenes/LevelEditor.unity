@@ -514,7 +514,7 @@ MonoBehaviour:
   fps: 2
   vSync: 0
   changeFpsButton: {fileID: 493062026}
-  changeVSyncButton: {fileID: 910815008}
+  changeVSyncButton: {fileID: 0}
   setTargetFps: 0
 --- !u!4 &56548307
 Transform:
@@ -5537,17 +5537,6 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   testProduct123: 0
---- !u!114 &910815008 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 910815008, guid: f063099db2906a7478819171448cac4b, type: 3}
-  m_PrefabInstance: {fileID: 7375372331180687283}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &916476810
 GameObject:
   m_ObjectHideFlags: 0
@@ -11735,7 +11724,6 @@ MonoBehaviour:
   targets:
   - {fileID: 1088570770}
   - {fileID: 960773420}
-  worldToCanvas: 0
   setOnStart: 0
 --- !u!1 &1304881436
 GameObject:
@@ -12126,6 +12114,7 @@ MonoBehaviour:
     match: 1
   canvasScaler: {fileID: 940941009}
   applyOnAwake: 0
+  copyPos: []
 --- !u!224 &1342071662 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6507211767567892968, guid: f063099db2906a7478819171448cac4b, type: 3}
@@ -15423,7 +15412,6 @@ MonoBehaviour:
   keepY: 0
   targets:
   - {fileID: 1342071662}
-  worldToCanvas: 0
   setOnStart: 0
 --- !u!212 &1788688290
 SpriteRenderer:
@@ -20453,6 +20441,8 @@ MonoBehaviour:
     prefabs:
     - {fileID: 6919827344245496681, guid: 8aa60bb2015bca44ca1166b765cfe05b, type: 3}
   testGameOver: 104
+  currentTutorial:
+    value: 0
   jigsawBoard: {fileID: 851475956}
   bgTiles:
     prefabs:
@@ -20656,13 +20646,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 761178246, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 761178248, guid: f063099db2906a7478819171448cac4b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1463652987}
-    - target: {fileID: 1999693482, guid: f063099db2906a7478819171448cac4b, type: 3}
+    - target: {fileID: 910815007, guid: f063099db2906a7478819171448cac4b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999693482, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4196035732514855423, guid: f063099db2906a7478819171448cac4b, type: 3}
       propertyPath: speed

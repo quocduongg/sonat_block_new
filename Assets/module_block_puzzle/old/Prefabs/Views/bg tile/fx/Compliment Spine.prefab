@@ -250,6 +250,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -275,10 +276,11 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   sounds: 0a0000000b0000000c000000
-  delay: 0
+  delay: 0.3
 --- !u!114 &5751441717674004409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,6 +306,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -329,7 +332,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   skinNames:
   - Cool
