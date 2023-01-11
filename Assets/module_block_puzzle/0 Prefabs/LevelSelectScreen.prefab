@@ -82,6 +82,7 @@ MonoBehaviour:
   showInters: 1
   showIntersLog: jigsaw_select_to_home
   conditionLevel: 0
+  visitCondition: 0
 --- !u!114 &352621208736657643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5298,6 +5299,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -5323,7 +5325,8 @@ MonoBehaviour:
     othersComputedIndex2: []
     index2ToOther1: []
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoadIndex1: -1
   logDebug: 0
   toggles:
   - {fileID: 3582282961033453544}
@@ -5435,6 +5438,8 @@ MonoBehaviour:
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -5442,6 +5447,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   times: 4
   duration: 0.15
   startT: 0.5
@@ -5508,6 +5514,8 @@ MonoBehaviour:
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -5515,6 +5523,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   times: 4
   duration: 0.15
   startT: 0
@@ -6050,6 +6059,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   key: 15
+  logShowInterstitial: {fileID: 0}
   progressFill:
   - {fileID: 5231067182263335065}
   takeButtons: []
@@ -6073,10 +6083,11 @@ MonoBehaviour:
   - {fileID: 7168122895445734087}
   showReward: 1
   adsMultiple: 2
+  placement: 4
+  rewardTypeFlag1: 1
+  rewardTypeFlag2: 1
   delay: 0.5
   testAdd: 3
-  logName: jigsaw_claim_progress
-  logAds: get_x2_jigsaw_progress
 --- !u!1 &3582282961429510111
 GameObject:
   m_ObjectHideFlags: 0
@@ -6611,7 +6622,7 @@ MonoBehaviour:
   onActives: []
   checkers: []
   checkShowPopups: 
-  placementName: level_select_screen
+  screenName: 
 --- !u!223 &3582282961908652539
 Canvas:
   m_ObjectHideFlags: 0
@@ -6717,6 +6728,7 @@ MonoBehaviour:
     match: 0
   canvasScaler: {fileID: 0}
   applyOnAwake: 0
+  copyPos: []
 --- !u!1 &3582282962274384209
 GameObject:
   m_ObjectHideFlags: 0
@@ -6909,6 +6921,7 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   testProduct123: 0
+  testValueTween3: 0
   testValueTween: 0
   testValueTween2: 0
   trueValue: 0
@@ -6945,6 +6958,8 @@ MonoBehaviour:
   onTweenAnimComplete: []
   delay: 0
   speed: 10
+  time: 2
+  velocity: 0
 --- !u!114 &3484251173472885890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7903,7 +7918,7 @@ PrefabInstance:
     - target: {fileID: 839562497, guid: 629ce61726c1ef0439cd3a29333f2b4d, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -5597284053198306680, guid: c700b2189f7530c43afe02a47df40b7e, type: 2}
+      objectReference: {fileID: -2470640543275738129, guid: 4b4ffddf3c0e9bb4ab5a33c5b076748b, type: 2}
     - target: {fileID: 1085664945, guid: 629ce61726c1ef0439cd3a29333f2b4d, type: 3}
       propertyPath: m_Name
       value: img_cm_coinsx4
@@ -8153,7 +8168,7 @@ PrefabInstance:
     - target: {fileID: 839562497, guid: 629ce61726c1ef0439cd3a29333f2b4d, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: -5597284053198306680, guid: c700b2189f7530c43afe02a47df40b7e, type: 2}
+      objectReference: {fileID: -2470640543275738129, guid: 4b4ffddf3c0e9bb4ab5a33c5b076748b, type: 2}
     - target: {fileID: 839562497, guid: 629ce61726c1ef0439cd3a29333f2b4d, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4280212463

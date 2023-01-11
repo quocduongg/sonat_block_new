@@ -1356,13 +1356,11 @@ MonoBehaviour:
   - {fileID: 6189953873654489626}
   - {fileID: 2146509075}
   - {fileID: 7299754277114938227}
-  - {fileID: 7299754277114938227}
   - {fileID: 4499687871128556537}
   - {fileID: 4143060301530383473}
   - {fileID: 8893668933307870063}
   - {fileID: 2122862761441391202}
   - {fileID: 8663867848386075574}
-  - {fileID: 4606464812236517974}
   levelBindings:
   - {fileID: 1425088421}
   - {fileID: 1596054737}
@@ -1558,9 +1556,10 @@ MonoBehaviour:
   bindings: []
   changeScripts: []
   toggleBindings:
-  - {fileID: 4683404554865285804}
   - {fileID: 294970758746069796}
   tweenScripts: []
+  toggleOnEnableBindings:
+  - {fileID: 294970758746069796}
   testChanged: 0
 --- !u!1 &3907858462983689437
 GameObject:
@@ -1966,7 +1965,7 @@ GameObject:
   - component: {fileID: 9162285611662597494}
   - component: {fileID: 7105990563213756947}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: img_ico_countdown-clock 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2039,17 +2038,16 @@ GameObject:
   m_Component:
   - component: {fileID: 150514269863596680}
   - component: {fileID: 249377601873624212}
+  - component: {fileID: 4606464812236517974}
   - component: {fileID: 4171370518189798980}
   - component: {fileID: 529319841484693748}
-  - component: {fileID: 4683404554865285804}
-  - component: {fileID: 4606464812236517974}
   m_Layer: 5
-  m_Name: next day
+  m_Name: next day (temporary disable)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &150514269863596680
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2078,6 +2076,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6201524157467285071}
   m_CullTransparentMesh: 1
+--- !u!114 &4606464812236517974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201524157467285071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e9406fd5b59d4e4aa3f8e5424026667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
+  lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sound: 0
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn: 0
+  testLoad: 0
+  testLoadIndex1: -1
+  logDebug: 0
+  toggles: []
+  setActive: 1
+  reverse: 0
+  activeWhenZero: 0
+  containsAllState: 0
+  containsAllStateExcept: 0
+  activeState: 16
+  exceptState: 2
 --- !u!114 &4171370518189798980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2179,96 +2239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f008d157849cdce46a0a5c0e522802f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4683404554865285804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6201524157467285071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disable: 0
-  sound: 0
-  whenStartInAnimations: []
-  test2: 0
-  testToggle: 0
-  testToggle2: 0
-  others: []
-  reverse: 0
-  custom: 0
-  testOnOff: 0
-  testLoadtoggle: 0
-  testBreak: 0
-  otherReverses: []
-  delayDeactive: 0
-  delayDeactiveOnActive: 0
-  lastValue: 0
---- !u!114 &4606464812236517974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6201524157467285071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e9406fd5b59d4e4aa3f8e5424026667, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testFunction:
-    method: functionName
-    parameter1: 0
-    parameter2: 0
-  logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
-  reloadOnEnable: 0
-  onChangedRandomOnEnable: 0
-  lastValue: 0
-  index2: 0
-  sound: 0
-  add: 0
-  divide: -1
-  mod: -1
-  others: []
-  othersComputed: []
-  othersIndex2: []
-  othersComputedIndex2: []
-  index2ToOther1: []
-  sharedSetting:
-    descriptions: 
-    lastValue: 0
-    index2: 0
-    sound: 0
-    add: 0
-    divide: -1
-    mod: -1
-    others: []
-    othersComputed: []
-    othersIndex2: []
-    othersComputedIndex2: []
-    index2ToOther1: []
-  btn: 0
-  testLoad: 0
-  testLoadIndex1: -1
-  logDebug: 0
-  toggles: []
-  setActive: 1
-  reverse: 0
-  activeWhenZero: 0
-  containsAllState: 0
-  containsAllStateExcept: 0
-  activeState: 16
-  exceptState: 2
 --- !u!1 &7555817466475488392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,7 +2651,6 @@ GameObject:
   - component: {fileID: 2089565146303212828}
   - component: {fileID: 2780846269624667505}
   - component: {fileID: 294970758746069796}
-  - component: {fileID: 706685215319772666}
   m_Layer: 5
   m_Name: hand
   m_TagString: Untagged
@@ -2730,7 +2699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2942,32 +2911,5 @@ MonoBehaviour:
   testBreak: 0
   animators:
   - {fileID: 2780846269624667505}
-  useLast: 1
---- !u!114 &706685215319772666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7993026794503260112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disable: 0
-  sound: 0
-  whenStartInAnimations: []
-  test2: 0
-  testToggle: 0
-  testToggle2: 0
-  others: []
-  reverse: 0
-  custom: 0
-  testOnOff: 0
-  testLoadtoggle: 0
-  testBreak: 0
-  otherReverses: []
-  delayDeactive: 0
-  delayDeactiveOnActive: 0
-  lastValue: 0
+  triggerLastOnEnable1: 0
+  useLast: 0

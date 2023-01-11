@@ -5454,6 +5454,7 @@ MonoBehaviour:
   testBreak: 0
   animators:
   - {fileID: 869833407}
+  triggerLastOnEnable1: 0
   useLast: 1
 --- !u!1 &909347608
 GameObject:
@@ -11474,6 +11475,7 @@ MonoBehaviour:
   - {fileID: 1884813421}
   - {fileID: 1504160994}
   tweenScripts: []
+  toggleOnEnableBindings: []
   testChanged: 0
 --- !u!114 &1184692456
 MonoBehaviour:
@@ -15813,6 +15815,7 @@ MonoBehaviour:
   testBreak: 0
   animators:
   - {fileID: 1825852209}
+  triggerLastOnEnable1: 0
   useLast: 1
 --- !u!1 &1827188324
 GameObject:
@@ -17217,7 +17220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -20059,6 +20062,7 @@ PrefabInstance:
       objectReference: {fileID: -2470640543275738129, guid: 4b4ffddf3c0e9bb4ab5a33c5b076748b, type: 2}
     m_RemovedComponents:
     - {fileID: 5454207304119448338, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+    - {fileID: 5454207304051537648, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
 --- !u!1001 &3614879035016307716
 PrefabInstance:
