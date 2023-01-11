@@ -642,10 +642,11 @@ MonoBehaviour:
   key: 3
   screenClassName: 
   transition: 1
-  clearGame: 0
-  showInters: 0
+  clearGame: 1
+  showInters: 1
   showIntersLog: 
   conditionLevel: 1
+  visitCondition: 0
 --- !u!114 &6107141318105416104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -867,7 +868,7 @@ RectTransform:
   m_GameObject: {fileID: 1950055595903340142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 94.21001, y: 94.21001, z: 94.21001}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 958547321183398932}
   m_RootOrder: 0
@@ -5591,7 +5592,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950055595903340142}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6577,7 +6578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5210562872368669448
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6636,6 +6637,9 @@ MonoBehaviour:
   checkers: []
   dependencies:
   - {fileID: 883642529577497321}
+  popupName: popup_game_over
+  skipLog: 0
+  loadDependency: 0
   addHandler: 0
 --- !u!114 &883642529577497321
 MonoBehaviour:
@@ -7153,7 +7157,7 @@ MonoBehaviour:
   - {fileID: 1554357143}
   toggleOnTweens: []
   onTweenAnimComplete: []
-  delay: 0
+  delay: 2
   speed: 35
   time: 0.8
   velocity: 20
@@ -7206,6 +7210,7 @@ MonoBehaviour:
   changeScripts: []
   toggleBindings: []
   tweenScripts: []
+  toggleOnEnableBindings: []
   testChanged: 0
 --- !u!1 &7961238691366226388
 GameObject:

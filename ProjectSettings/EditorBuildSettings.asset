@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/sonat_sdk/Scenes/Start.unity
+    guid: 980f802609475b44b968e47c47cd5b7c
+  - enabled: 0
     path: Assets/module_block_puzzle/Scenes/LevelEditor.unity
     guid: 6ffe8e1357e9b36449e5debbd331b035
   m_configObjects: {}
