@@ -132,7 +132,7 @@ namespace BlockPuzzle
             var price = new Product(Quantity.Spin, -1, 0, 0, 0);
             var currencyLog = new TradeLog((int) BaseLogItemType.Spin, "spin");
             var trade = new Trade<Product,Product>(price,rewardViews[rewardsIndex].Product,placement,currencyLog,null);
-            var input = new ShowRewardInput(trade,rewardTypeFlag,1,trade.Product.parameter,multi);
+            var input = new ShowRewardInput(trade,rewardTypeFlag,1,trade.Product.parameter,multi,"spin");
             //parameter = 1, // 0 = no tween box, 1 2 3 = tween box
             // parameter2 = product.parameter, // index of box
             RootView.rootView.screenRoot.ShowReward(input);

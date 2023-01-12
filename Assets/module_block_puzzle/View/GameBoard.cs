@@ -1713,7 +1713,7 @@ namespace BlockPuzzle
                         var rewardTypeFlag = (int) (RewardTypeFlag.IsReward | RewardTypeFlag.ClaimMultipleWithAdsPopup | RewardTypeFlag.IsOpenBox);
                         var currencyLog = new TradeLog((int) LogItemType.Collecting, "star");
                         var trade = new Trade<Product,Product>(price,currentGameSetting.boxRewards[product.parameter],(int)LogPlacement.GamePlay,currencyLog,null);
-                        var input = new ShowRewardInput(trade,rewardTypeFlag,1,product.parameter,2f);
+                        var input = new ShowRewardInput(trade,rewardTypeFlag,1,product.parameter,2f,"classic_claim_progress");
                         input.logInterstitial = new SonatLogShowInterstitial()
                         {
                             placement = "classic_claim_progress",

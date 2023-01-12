@@ -639,8 +639,7 @@ MonoBehaviour:
     takeRandom: 0
     ignoreSave: 0
   adsItems:
-  - name: DoubleDailyGift
-    key: 0
+  - key: 0
     countDownType: 1
     countToGetReward: 1
     maxInDay: 1
@@ -654,8 +653,7 @@ MonoBehaviour:
     adsTimeGap: 0
     customCondition: 0
     adsLog: 
-  - name: ShopDailyGift
-    key: 1
+  - key: 1
     countDownType: 1
     countToGetReward: 1
     maxInDay: 1
@@ -669,8 +667,7 @@ MonoBehaviour:
     adsTimeGap: 0
     customCondition: 0
     adsLog: 
-  - name: Shop Ads Rotate
-    key: 9
+  - key: 9
     countDownType: 0
     countToGetReward: 1
     maxInDay: 1
@@ -684,8 +681,7 @@ MonoBehaviour:
     adsTimeGap: 0
     customCondition: 0
     adsLog: shop_ads_rotate
-  - name: Shop Ads Gem
-    key: 2
+  - key: 2
     countDownType: 0
     countToGetReward: 1
     maxInDay: 1
@@ -699,8 +695,7 @@ MonoBehaviour:
     adsTimeGap: 0
     customCondition: 0
     adsLog: shop_ads_gem
-  - name: New Block Gem
-    key: 3
+  - key: 3
     countDownType: 0
     countToGetReward: 1
     maxInDay: 1
@@ -714,8 +709,7 @@ MonoBehaviour:
     adsTimeGap: 0
     customCondition: 0
     adsLog: 
-  - name: PlayGame Gem
-    key: 4
+  - key: 4
     countDownType: 0
     countToGetReward: 1
     maxInDay: 1
@@ -729,8 +723,7 @@ MonoBehaviour:
     adsTimeGap: 0
     customCondition: 0
     adsLog: 
-  - name: StartFromAds
-    key: 5
+  - key: 5
     countDownType: 0
     countToGetReward: 1
     maxInDay: 1
@@ -744,8 +737,7 @@ MonoBehaviour:
     adsTimeGap: 0
     customCondition: 0
     adsLog: 
-  - name: NextGoalAds
-    key: 6
+  - key: 6
     countDownType: 3
     countToGetReward: 1
     maxInDay: 100
@@ -759,8 +751,7 @@ MonoBehaviour:
     adsTimeGap: 0
     customCondition: 0
     adsLog: 
-  - name: Spin
-    key: 7
+  - key: 7
     countDownType: 1
     countToGetReward: 1
     maxInDay: 3
@@ -773,9 +764,8 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    adsLog: 
-  - name: HintJigsaw
-    key: 10
+    adsLog: spin
+  - key: 10
     countDownType: 0
     countToGetReward: 1
     maxInDay: 3
@@ -788,9 +778,8 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    adsLog: 
-  - name: Unlock Jigsaw
-    key: 11
+    adsLog: hint_jigsaw
+  - key: 11
     countDownType: 0
     countToGetReward: 1
     maxInDay: 3
@@ -803,7 +792,7 @@ MonoBehaviour:
     takeRandom: 0
     adsTimeGap: 0
     customCondition: 0
-    adsLog: 
+    adsLog: get_unlock_level
   subscriptionItems:
   - key: 0
     storeProductId: vipmember
