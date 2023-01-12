@@ -11,7 +11,7 @@ using UnityEngine.UI;
 
 namespace BlockPuzzle
 {
-    public class JigsawBoard : CurrentGameView
+    public class JigsawBoard : CurrentGameView , ILogParameterValueRetriever
     {
         
         [SerializeField] private SpriteRenderer boardFill;
@@ -46,6 +46,7 @@ namespace BlockPuzzle
             tiles.Init(null, 0);
             SubjectController.ScreenClosed.Where(x => x is PlayScreen2).Subscribe(data =>
             {
+                IsPlaying = false;
                 StopInput();
                 gameObject.SetActive(false);
             });
@@ -55,7 +56,7 @@ namespace BlockPuzzle
                 {
                     Pause.Value = false;
                     Time.timeScale = 1;
-                    Kernel.Resolve<AdsManager>().ShowInterstitial("jigsaw_to_home", false, PlayerData.playTimes);
+                    Kernel.Resolve<AdsManager>().ShowInterstitial("jigsaw_to_home".CreateDefaultLogInterstitial(), false, false);
 //                    ScreenRoot.popupManager.CloseAllPopUpInstant();
                     ScreenRoot.Show<HomeScreen>(true);
                     Clear();
@@ -203,11 +204,12 @@ namespace BlockPuzzle
 
         private void OnDisable()
         {
+            IsPlaying = false;
             StopInput();
         }
 
         private IDisposable _inputDisposable;
-
+        public bool IsPlaying { get; set; }
         public void StartInput(float delay)
         {
             if (delay > 0)
@@ -217,21 +219,35 @@ namespace BlockPuzzle
 
             void Input()
             {
+                IsPlaying = true;
                 _inputDisposable?.Dispose();
                 _inputDisposable = InputHandle().AddToGameDisposable();
             }
         }
 
+        private float t = 0f;
         public void StopInput()
         {
+            t = 0;
             _inputDisposable?.Dispose();
         }
-
+        
+        [SerializeField] protected BaseFrameworkViewCheck[] continuouslyChecks;
         private IDisposable InputHandle()
         {
             return this.UpdateAsObservable()
                 .Where(c => ValidInput())
-                .Subscribe(_ => { OnInputUpdate(); }).AddToGameDisposable();
+                .Subscribe(_ =>
+                {
+                    t += Time.deltaTime;
+                    if (t > 1)
+                    {
+                        foreach (var baseFrameworkViewCheck in continuouslyChecks)
+                            baseFrameworkViewCheck.Check();
+                        t = 0;
+                    }
+                    OnInputUpdate();
+                }).AddToGameDisposable();
         }
 
 //        private bool _itemClicked;
@@ -622,5 +638,8 @@ namespace BlockPuzzle
                    && !ScreenRoot.popupManager.AnyPopupShow
                    && !ScreenRoot.dialogController.IsBusy();
         }
+
+        public int Level => _levelIndex+1;
+        public string Mode => "jigsaw";
     }
 }

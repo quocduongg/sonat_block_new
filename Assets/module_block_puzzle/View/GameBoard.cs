@@ -305,6 +305,8 @@ namespace BlockPuzzle
 //                        Debug.Log(_secondsFromAdBreak+"/"+_secondsToAdBreak);
                         CheckShowAdBreak();
                         _waitForHint++;
+                        foreach (var baseFrameworkViewCheck in continuouslyChecks)
+                            baseFrameworkViewCheck.Check();
                         if (_waitForHint % currentGameSetting.timeToHint == 0 && PlayerData.tutorialStep == -1)
                             HintPlace();
 

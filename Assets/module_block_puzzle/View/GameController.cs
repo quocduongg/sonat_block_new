@@ -28,7 +28,7 @@ namespace BlockPuzzle
         public static CurrentGameSetting currentGameSetting;
     }
 
-    public partial class GameController : GameSaveController<BoardState, Level>
+    public partial class GameController : GameSaveController<BoardState, Level> 
     {
         [SerializeField] private bool useRemoteConfig = true;
         [SerializeField] private CurrentGameSetting currentGameSetting;
@@ -618,5 +618,9 @@ namespace BlockPuzzle
         {
             Debug.Log(1.56f);
         }
+
+        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : PlayerData.playTimes;
+
+        public override string Mode => JigsawBoard.IsPlaying ? JigsawBoard.Mode : "classic";
     }
 }
