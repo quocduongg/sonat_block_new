@@ -619,8 +619,8 @@ namespace BlockPuzzle
             Debug.Log(1.56f);
         }
 
-        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : PlayerData.playTimes;
+        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : base.Level;
 
-        public override string Mode => JigsawBoard.IsPlaying ? JigsawBoard.Mode : "classic";
+        public override string Mode => JigsawBoard.IsPlaying ? JigsawBoard.Mode : base.Mode;
     }
 }
