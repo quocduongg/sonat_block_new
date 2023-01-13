@@ -548,6 +548,7 @@ MonoBehaviour:
   remoteDatabases:
   - {fileID: 230797455448002833}
   - {fileID: 6498631666485309109}
+  parameterValueRetriever: {fileID: 0}
   gameController: {fileID: 0}
   screenRoot: {fileID: 0}
   audioManager: {fileID: 807722221364275783}
@@ -557,6 +558,7 @@ MonoBehaviour:
     value: 0
   gameState:
     value: 0
+  duongLogVirtualCurrency: 0
 --- !u!114 &807722221364275783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,6 +781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67460a7d48a92094394cad6596a501f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  login: 0
+  forceInitialized: 1
 --- !u!1 &8435826600925821222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inFocusIntersLevelCondition: 1
   isVideoReady: 0
+  testSwitch: 0
   videoAdsReady:
     value: 0
 --- !u!114 &8435826601954190705
@@ -1190,6 +1195,7 @@ MonoBehaviour:
   showBanner: 1
   testAds: 0
   logFail: 0
+  loadNative: 0
   useOpenAdsAsInterstitial:
     value: 0
   testDeviceIds:
@@ -1199,7 +1205,7 @@ MonoBehaviour:
   interstitialId: ca-app-pub-8652816628411018/3323224495
   videoId: ca-app-pub-8652816628411018/5594164618
   openId: ca-app-pub-8652816628411018/7946614721
-  nativeBannerId: 
+  nativeBannerId: ca-app-pub-8652816628411018/7711028543
   bannerId_ios: 
   interstitialId_ios: 
   videoId_ios: 

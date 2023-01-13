@@ -18639,15 +18639,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8435826601954190705, guid: 9f38948603de25b4f9131856df952cb8, type: 3}
       propertyPath: testAds
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8435826601954190705, guid: 9f38948603de25b4f9131856df952cb8, type: 3}
       propertyPath: loadNative
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8435826601954190705, guid: 9f38948603de25b4f9131856df952cb8, type: 3}
-      propertyPath: nativeBannerId
-      value: ca-app-pub-8652816628411018/1846491294
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f38948603de25b4f9131856df952cb8, type: 3}
