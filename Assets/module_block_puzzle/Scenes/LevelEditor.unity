@@ -20543,6 +20543,10 @@ PrefabInstance:
       value: -79
       objectReference: {fileID: 0}
     - target: {fileID: 6877520739942066812, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
+      propertyPath: bindings.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6877520739942066812, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
       propertyPath: bindings.Array.data[7]
       value: 
       objectReference: {fileID: 4072675516210143668, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
