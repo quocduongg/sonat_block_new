@@ -15951,23 +15951,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1872650909 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3367818956908698361, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-  m_PrefabInstance: {fileID: 3767869001533417121}
-  m_PrefabAsset: {fileID: 0}
---- !u!225 &1872650913
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872650909}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1884813417
 GameObject:
   m_ObjectHideFlags: 0
@@ -20399,46 +20382,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -79
       objectReference: {fileID: 0}
-    - target: {fileID: 1051842043531020004, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: nativeAds
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1051842043531020004, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: popupName
-      value: popup_rate_us
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270553514127385672, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: fadeIn.time
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270553514127385672, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: fadeOut.time
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270553514127385672, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: fadeIn.active
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270553514127385672, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: moveIn.active
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270553514127385672, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: fadeOut.active
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270553514127385672, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: moveOut.active
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270553514127385672, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: settings.animInSound
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270553514127385672, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: settings.animOutSound
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1964740658095806033, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
       propertyPath: m_SizeDelta.x
       value: -184.20001
@@ -20551,10 +20494,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4487329004801042115, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 86
-      objectReference: {fileID: 0}
     - target: {fileID: 4552946337236919537, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -20603,6 +20542,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -79
       objectReference: {fileID: 0}
+    - target: {fileID: 6877520739942066812, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
+      propertyPath: bindings.Array.data[7]
+      value: 
+      objectReference: {fileID: 4072675516210143668, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
 --- !u!1 &4226376015818717373

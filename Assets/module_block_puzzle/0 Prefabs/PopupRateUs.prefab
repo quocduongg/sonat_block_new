@@ -252,6 +252,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -267,7 +268,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -276,27 +277,26 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
+  othersWhenOn: []
   toggles: []
   mathOperator: 0
   mathValue: 0
   defaultCompare:
     mathEquality: 0
     value: 5
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 1
   reverse: 0
   setInteractable: 1
   excepts: 
-  mathEquality: 0
-  compareValue: 5
-  builtInEnumType: 0
 --- !u!114 &30141377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -657,7 +658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -857,6 +859,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -872,7 +875,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -881,27 +884,26 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
+  othersWhenOn: []
   toggles: []
   mathOperator: 0
   mathValue: 0
   defaultCompare:
     mathEquality: 3
     value: 4
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 1
   reverse: 0
   setInteractable: 1
   excepts: 00000000
-  mathEquality: 3
-  compareValue: 4
-  builtInEnumType: 0
 --- !u!114 &460476498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,7 +916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -939,8 +942,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7919210850298683182}
-  - component: {fileID: 4612465462005336957}
-  - component: {fileID: 4072675516210143668}
   m_Layer: 5
   m_Name: _
   m_TagString: Untagged
@@ -969,88 +970,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &4612465462005336957
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876177986922381773}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &4072675516210143668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 876177986922381773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 186d7b40af89b4c4fa5e5d0563052940, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testFunction:
-    method: functionName
-    parameter1: 0
-    parameter2: 0
-  logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
-  reloadOnEnable: 0
-  lastValue: 0
-  index2: 0
-  sound: 0
-  add: 0
-  divide: -1
-  mod: -1
-  others: []
-  othersComputed: []
-  othersIndex2: []
-  othersComputedIndex2: []
-  index2ToOther1: []
-  sharedSetting:
-    descriptions: 
-    lastValue: 0
-    index2: 0
-    sound: 0
-    add: 0
-    divide: -1
-    mod: -1
-    others: []
-    othersComputed: []
-    othersIndex2: []
-    othersComputedIndex2: []
-    index2ToOther1: []
-  btn: 0
-  testLoad1: 0
-  logDebug: 0
-  toggles: []
-  mathOperator: 0
-  mathValue: 0
-  defaultCompare:
-    mathEquality: 0
-    value: 0
-    value2: 0
-    builtInEnumType: 0
-    retriever: {fileID: 0}
-  otherAndCompare: []
-  otherOrCompare: []
-  setActiveThis: 0
-  reverse: 0
-  setInteractable: 1
-  excepts: 
-  mathEquality: 5
-  compareValue: 1
-  builtInEnumType: 0
 --- !u!1 &1376865299662850789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1120,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1216,7 +1136,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -1225,9 +1145,11 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
+  othersWhenOn: []
   toggles:
   - {fileID: 8925802320693771582}
   mathOperator: 0
@@ -1235,18 +1157,15 @@ MonoBehaviour:
   defaultCompare:
     mathEquality: 5
     value: 2
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 0
   reverse: 0
   setInteractable: 0
   excepts: 
-  mathEquality: 5
-  compareValue: 2
-  builtInEnumType: 0
 --- !u!114 &8925802320693771582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1259,7 +1178,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1330,7 +1250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1496,6 +1417,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1511,7 +1433,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -1520,9 +1442,11 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
+  othersWhenOn: []
   toggles:
   - {fileID: 3357334967104218192}
   mathOperator: 0
@@ -1530,18 +1454,15 @@ MonoBehaviour:
   defaultCompare:
     mathEquality: 5
     value: 5
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 0
   reverse: 0
   setInteractable: 0
   excepts: 
-  mathEquality: 5
-  compareValue: 5
-  builtInEnumType: 0
 --- !u!114 &3357334967104218192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,7 +1475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1625,7 +1547,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1810,10 +1733,14 @@ MonoBehaviour:
     animInSound: 5
     animOutSound: 6
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -1821,6 +1748,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -2181,6 +2109,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -2196,7 +2125,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -2205,9 +2134,11 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
+  othersWhenOn: []
   toggles:
   - {fileID: 7567712952557101717}
   mathOperator: 0
@@ -2215,18 +2146,15 @@ MonoBehaviour:
   defaultCompare:
     mathEquality: 5
     value: 4
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 0
   reverse: 0
   setInteractable: 0
   excepts: 
-  mathEquality: 5
-  compareValue: 4
-  builtInEnumType: 0
 --- !u!114 &7567712952557101717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2239,7 +2167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -2310,7 +2239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -2390,6 +2320,7 @@ MonoBehaviour:
   testProduct123: 0
   locationManager: {fileID: 0}
   resumeIfHome: 1
+  nativeAds: 0
   close: {fileID: 0}
   testShow: 0
   adsToLog: {fileID: 0}
@@ -2399,6 +2330,9 @@ MonoBehaviour:
   activeOnShow: []
   checkers: []
   dependencies: []
+  popupName: 
+  skipLog: 0
+  loadDependency: 0
   star:
     value: 5
   starOnEnable: 0
@@ -2438,7 +2372,7 @@ MonoBehaviour:
   - {fileID: 8083962256293018314}
   - {fileID: 7797066574045906569}
   - {fileID: 6765504151796305918}
-  - {fileID: 4072675516210143668}
+  - {fileID: 0}
   changeScripts:
   - {fileID: 1813842327463744567}
   - {fileID: 8568261268531640833}
@@ -2447,6 +2381,7 @@ MonoBehaviour:
   - {fileID: 482851928}
   toggleBindings: []
   tweenScripts: []
+  toggleOnEnableBindings: []
   testChanged: 0
 --- !u!1 &4732910056395614218
 GameObject:
@@ -2598,6 +2533,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -2613,7 +2549,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -2622,9 +2558,11 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
+  othersWhenOn: []
   toggles:
   - {fileID: 8443745989009167211}
   mathOperator: 0
@@ -2632,18 +2570,15 @@ MonoBehaviour:
   defaultCompare:
     mathEquality: 5
     value: 3
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 0
   reverse: 0
   setInteractable: 0
   excepts: 
-  mathEquality: 5
-  compareValue: 3
-  builtInEnumType: 0
 --- !u!114 &8443745989009167211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2656,7 +2591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -2727,7 +2663,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -3047,6 +2984,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -3062,7 +3000,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -3071,9 +3009,11 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
+  othersWhenOn: []
   toggles:
   - {fileID: 7987830400446686675}
   mathOperator: 0
@@ -3081,18 +3021,15 @@ MonoBehaviour:
   defaultCompare:
     mathEquality: 5
     value: 1
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 0
   reverse: 0
   setInteractable: 0
   excepts: 
-  mathEquality: 5
-  compareValue: 1
-  builtInEnumType: 0
 --- !u!114 &7987830400446686675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,7 +3042,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aadb04c65213144a7752c030330884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -3176,7 +3114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
