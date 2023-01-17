@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8786295631446121512}
   - component: {fileID: 8786295631446121513}
   - component: {fileID: 3801293144754197672}
-  - component: {fileID: 6550655429842648638}
   - component: {fileID: 5751441717674004409}
   m_Layer: 0
   m_Name: Compliment Spine
@@ -64,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: f90cdfa046b8fe24bb22543a16b0300a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,67 +219,10 @@ MonoBehaviour:
   - {fileID: 8786295631446121513}
   indexBindings:
   - {fileID: 5751441717674004409}
-  - {fileID: 6550655429842648638}
   indexBindings2: []
   delayActives: []
   test: 0
   testOnRent: 0
---- !u!114 &6550655429842648638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8786295631446121518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb2665c21f2b06d4d856284d48058fb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testFunction:
-    method: functionName
-    parameter1: 0
-    parameter2: 0
-  logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
-  reloadOnEnable: 0
-  onChangedRandomOnEnable: 0
-  lastValue: 0
-  index2: 0
-  sound: 0
-  add: 0
-  divide: -1
-  mod: -1
-  others: []
-  othersComputed: []
-  othersIndex2: []
-  othersComputedIndex2: []
-  index2ToOther1: []
-  sharedSetting:
-    descriptions: 
-    lastValue: 0
-    index2: 0
-    sound: 0
-    add: 0
-    divide: -1
-    mod: -1
-    others: []
-    othersComputed: []
-    othersIndex2: []
-    othersComputedIndex2: []
-    index2ToOther1: []
-  btn: 0
-  testLoad: 0
-  testLoadIndex1: -1
-  logDebug: 0
-  sounds: 0a0000000b0000000c000000
-  delay: 0.3
 --- !u!114 &5751441717674004409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,9 +273,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   skinNames:
   - Cool

@@ -918,6 +918,13 @@ MonoBehaviour:
     defaultBoolean: 1
     jsonTextAsset: {fileID: 0}
     key: 112
+  - dataType: 1
+    defaultString: 0,1
+    defaultInt: 0
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 113
   defaultConfigs2:
   - dataType: 1
     defaultString: 
@@ -1194,13 +1201,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showBanner: 1
   testAds: 0
-  logFail: 0
-  loadNative: 0
+  logFail: 1
+  loadNative: 1
   useOpenAdsAsInterstitial:
     value: 0
-  testDeviceIds:
-  - B15BB24370A69E2E02CE1EA2F2E5BD10
-  - 6C1D2464995A4589012EC24CBFD4A6B2
+  testDeviceIds: []
   bannerId: ca-app-pub-8652816628411018/1846491294
   interstitialId: ca-app-pub-8652816628411018/3323224495
   videoId: ca-app-pub-8652816628411018/5594164618

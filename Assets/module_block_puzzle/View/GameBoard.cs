@@ -1077,7 +1077,6 @@ namespace BlockPuzzle
                 {
                     int complimentIndex = Mathf.Min(eat.Length - 2, 2);
                     var pos = BgPoints.GetAtPoint(eatPoint).value;
-
                     .25f.Timer(() =>
                     {
                         for (var i = 0; i < eat.Length; i++)
@@ -1102,6 +1101,13 @@ namespace BlockPuzzle
                             }
                         }
                     });
+
+                    if(complimentIndex == 0)
+                        ((int)SoundEnum.Cool).PlaySound();
+                    if(complimentIndex == 1)
+                        ((int)SoundEnum.Great).PlaySound();
+                    if(complimentIndex == 2)
+                        ((int)SoundEnum.Perfect).PlaySound();
 
                     0.25f.Timer(() =>
                     {
