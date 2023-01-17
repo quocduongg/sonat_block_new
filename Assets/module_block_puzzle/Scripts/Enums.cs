@@ -139,6 +139,7 @@ namespace BlockPuzzle
         WinJigsawPopupSound = 122,
         OpenChest = 123,
         StarSound = 124,
+        ChestShaking = 125,
     }
 
     public enum GlobalError

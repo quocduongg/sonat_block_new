@@ -15340,9 +15340,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   textMesh: {fileID: 104616465815675220}
   customText: {fileID: 0}
@@ -15869,9 +15869,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   setActive: 1
@@ -15968,9 +15968,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   setActive: 1
@@ -16145,6 +16145,7 @@ MonoBehaviour:
   testBreak: 0
   animators:
   - {fileID: 104616466021392868}
+  triggerLastOnEnable1: 0
   useLast: 0
 --- !u!114 &104616466021392865
 MonoBehaviour:
@@ -22948,9 +22949,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   setActive: 1
@@ -54577,9 +54578,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   toggles: []
   setActive: 1
@@ -54774,9 +54775,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   textMesh: {fileID: 104616467117086764}
   customText: {fileID: 0}
@@ -54940,28 +54941,26 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
+  othersWhenOn: []
   toggles: []
   mathOperator: 0
   mathValue: 0
   defaultCompare:
     mathEquality: 0
     value: 0
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 1
   reverse: 0
   setInteractable: 0
   excepts: 
-  mathEquality: 0
-  compareValue: 0
-  builtInEnumType: 0
 --- !u!1 &104616467161562099
 GameObject:
   m_ObjectHideFlags: 0
@@ -60546,9 +60545,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 4
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   target: {fileID: 0}
   target2: {fileID: 104616467309829885}
@@ -60617,9 +60616,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   sizes:
   - {x: 240, y: 240}
@@ -61321,9 +61320,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 7
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   target: {fileID: 0}
   target2: {fileID: 104616467494124933}
@@ -61395,9 +61394,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   sizes:
   - {x: 240, y: 240}
@@ -61488,6 +61487,7 @@ MonoBehaviour:
   testBreak: 0
   animators:
   - {fileID: 104616467501998776}
+  triggerLastOnEnable1: 0
   useLast: 0
 --- !u!114 &104616467501998775
 MonoBehaviour:
@@ -62059,28 +62059,26 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
+  othersWhenOn: []
   toggles: []
   mathOperator: 0
   mathValue: 0
   defaultCompare:
     mathEquality: 0
     value: 1
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 1
   reverse: 0
   setInteractable: 0
   excepts: 
-  mathEquality: 0
-  compareValue: 1
-  builtInEnumType: 0
 --- !u!1 &104616467532047415
 GameObject:
   m_ObjectHideFlags: 0
@@ -67594,6 +67592,7 @@ MonoBehaviour:
   changeScripts: []
   toggleBindings: []
   tweenScripts: []
+  toggleOnEnableBindings: []
   testChanged: 0
   tweenText: {fileID: 2347862849837479229}
   tween: 1
@@ -87530,6 +87529,7 @@ MonoBehaviour:
   testProduct123: 0
   locationManager: {fileID: 7878598480108679523}
   resumeIfHome: 1
+  nativeAds: 0
   close: {fileID: 0}
   testShow: 0
   adsToLog: {fileID: 0}
@@ -87684,9 +87684,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
   conditions:
   - condition: 0
@@ -87711,6 +87711,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 104616466215475202}
     m_Modifications:
+    - target: {fileID: 5998972102179291275, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
+      propertyPath: scoreSound
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998972102179291275, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
+      propertyPath: maxTimeTween
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998972102179291275, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
+      propertyPath: scoreSoundTime
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 5998972102355046602, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
       propertyPath: m_fontAsset
       value: 
