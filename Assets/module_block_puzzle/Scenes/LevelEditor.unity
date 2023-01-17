@@ -1587,6 +1587,7 @@ MonoBehaviour:
   toggles: []
   mathOperator: 0
   mathValue: 0
+  test: 
   defaultCompare:
     mathEquality: 4
     value: 0
@@ -3139,6 +3140,116 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c4aff71d175e64eadde668e799790b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &541383451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541383452}
+  - component: {fileID: 541383453}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &541383452
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541383451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1916597261}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &541383453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541383451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186d7b40af89b4c4fa5e5d0563052940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
+  lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sounds:
+    - value: 127
+      value2: 0.6
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn2: 0
+  btn: 0
+  testLoad: 0
+  logDebug: 0
+  othersWhenOn: []
+  toggles:
+  - {fileID: 1312034423}
+  mathOperator: 0
+  mathValue: 0
+  test: 
+  defaultCompare:
+    mathEquality: 0
+    value: 0
+    retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
+  otherAndCompare: []
+  otherOrCompare: []
+  setActiveThis: 0
+  reverse: 0
+  setInteractable: 0
+  excepts: 
 --- !u!1 &590317802
 GameObject:
   m_ObjectHideFlags: 0
@@ -11947,6 +12058,28 @@ MonoBehaviour:
   - {fileID: 849934515}
   - {fileID: 659024909}
   testShow: 0
+--- !u!114 &1312034423 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 104616467187990064, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+  m_PrefabInstance: {fileID: 104616467510489645}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e4ce982853f93428348adaedb58fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1312034425 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4770384669083534911, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+  m_PrefabInstance: {fileID: 104616467510489645}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186d7b40af89b4c4fa5e5d0563052940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1317583282
 GameObject:
   m_ObjectHideFlags: 0
@@ -16566,6 +16699,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &1916597261 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8537064556153477921, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+  m_PrefabInstance: {fileID: 104616467510489645}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1934165301
 GameObject:
   m_ObjectHideFlags: 0
@@ -18328,25 +18466,45 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 104616467187990064, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
-      propertyPath: sound
+      propertyPath: sounds.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770384669083534911, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: mathValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770384669083534911, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: defaultCompare.value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770384669083534911, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: sharedSetting.sounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770384669083534911, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: sharedSetting.sounds.Array.data[0].value
       value: 125
       objectReference: {fileID: 0}
-    - target: {fileID: 104616467187990064, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
-      propertyPath: sounds.Array.data[1].value2
+    - target: {fileID: 4770384669083534911, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: sharedSetting.sounds.Array.data[1].value
+      value: 127
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770384669083534911, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: sharedSetting.sounds.Array.data[1].value2
       value: 0.6
       objectReference: {fileID: 0}
-    - target: {fileID: 1355702325715119255, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
-      propertyPath: soundWhenOn.value
-      value: 126
+    - target: {fileID: 7878598480108679521, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: toggleOpenedByParameter.Array.size
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1355702325715119255, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
-      propertyPath: soundWhenOn.value2
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1355702325715119255, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
-      propertyPath: sharedSetting.sound2.value
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 7878598480108679521, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: toggleOpenedByParameter.Array.data[0]
+      value: 
+      objectReference: {fileID: 1312034425}
+    - target: {fileID: 7878598480108679521, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
+      propertyPath: toggleOpenedByParameter.Array.data[1]
+      value: 
+      objectReference: {fileID: 541383453}
     - target: {fileID: 7878598480108679525, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18433,7 +18591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878598480108679526, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
       propertyPath: m_Name
-      value: PopupAdsDoubleReward
+      value: PopupShowReward
       objectReference: {fileID: 0}
     - target: {fileID: 7878598480108679526, guid: 4097bd7e81a459c40bc187b36191c1f1, type: 3}
       propertyPath: m_IsActive
