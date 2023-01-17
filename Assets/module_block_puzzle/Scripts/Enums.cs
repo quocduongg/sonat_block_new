@@ -140,6 +140,8 @@ namespace BlockPuzzle
         OpenChest = 123,
         StarSound = 124,
         ChestShaking = 125,
+        ChestAppear = 126,
+        CoinAppear = 127,
     }
 
     public enum GlobalError

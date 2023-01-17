@@ -9963,7 +9963,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104616465668833704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10070,7 +10070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -15140,7 +15140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -15331,7 +15331,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -15716,7 +15716,7 @@ MonoBehaviour:
   intProgresses: []
   onFinishAllTargets: []
   excludeCase:
-    value1: -100
+    value: -100
     value2: .
   text: {fileID: 104616465883079535}
   customFontText: {fileID: 0}
@@ -15860,7 +15860,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -15879,6 +15879,9 @@ MonoBehaviour:
   activeWhenZero: 0
   containsAllState: 0
   containsAllStateExcept: 0
+  soundWhenOn:
+    value: 0
+    value2: 0
   activeState: 1
   exceptState: 0
 --- !u!1 &104616465889955992
@@ -15959,7 +15962,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -15978,6 +15981,9 @@ MonoBehaviour:
   activeWhenZero: 0
   containsAllState: 0
   containsAllStateExcept: 0
+  soundWhenOn:
+    value: 0
+    value2: 0
   activeState: 16
   exceptState: 0
 --- !u!1 &104616465957016693
@@ -16132,7 +16138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -16713,7 +16719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -21902,7 +21908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -21915,120 +21921,6 @@ MonoBehaviour:
   testBreak: 0
   otherReverses: []
   delayDeactive: 0.5
-  delayDeactiveOnActive: 0
-  lastValue: 0
---- !u!1 &104616466143197941
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 104616466143197940}
-  - component: {fileID: 104616466143197943}
-  - component: {fileID: 104616466143197942}
-  m_Layer: 5
-  m_Name: play sound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &104616466143197940
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104616466143197941}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4279544, y: 1.4279544, z: 0.999568}
-  m_Children: []
-  m_Father: {fileID: 104616467187990071}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8571415, y: 158.57143}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &104616466143197943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104616466143197941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5917bfe6a550962488a350241b5d78f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testStartAction: 0
-  turnOff: 0
-  t1: 0
-  t2: 0
-  t3: 0
-  settings:
-    startOnEnable: 1
-    inThenOutOnStart: 0
-    inIncludeOut: 0
-    others: []
-    nextInThenOut: {fileID: 0}
-    resetOnStart: 0
-    deactiveAfterOut: 0
-    reverse: 0
-    animInClip: {fileID: 0}
-    animOutClip: {fileID: 0}
-    animInSound: 123
-    animOutSound: 0
-    whenSoundStartIn: 0
-    delayScript: {fileID: 0}
-    delayScriptIndex: 0
-    delayBeforeIn: 0.7
-    delayAfterOut: 0
-    toggleTrueOnIn: 1
-    toggleScripts: []
-    toggleOutValue: 1
-    toggleOnOut: []
-    indexBindings: []
-    afterInCallBack: 0
-    particleTimeAdjust: 0
-    afterInParticleSystems: []
-    onStartParticleSystems: []
-  state: 2
-  index: 0
-  busy: 0
-  inTime: 1
-  outTime: 0
---- !u!114 &104616466143197942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104616466143197941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disable: 0
-  sound: 0
-  whenStartInAnimations: []
-  test2: 0
-  testToggle: 0
-  testToggle2: 0
-  others: []
-  reverse: 0
-  custom: 0
-  testOnOff: 0
-  testLoadtoggle: 0
-  testBreak: 0
-  otherReverses: []
-  delayDeactive: 0
   delayDeactiveOnActive: 0
   lastValue: 0
 --- !u!1 &104616466154083629
@@ -22940,7 +22832,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -22959,6 +22851,9 @@ MonoBehaviour:
   activeWhenZero: 0
   containsAllState: 0
   containsAllStateExcept: 0
+  soundWhenOn:
+    value: 0
+    value2: 0
   activeState: 8
   exceptState: 0
 --- !u!1 &104616466215475203
@@ -43248,7 +43143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -48316,7 +48211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -48376,7 +48271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -48792,7 +48687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -49230,7 +49125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -54127,7 +54022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -54569,7 +54464,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -54588,6 +54483,9 @@ MonoBehaviour:
   activeWhenZero: 0
   containsAllState: 0
   containsAllStateExcept: 0
+  soundWhenOn:
+    value: 0
+    value2: 0
   activeState: 16
   exceptState: 0
 --- !u!1 &104616467117087699
@@ -54766,7 +54664,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -54877,7 +54775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -54932,7 +54830,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -59920,7 +59818,6 @@ RectTransform:
   m_Children:
   - {fileID: 104616466963183087}
   - {fileID: 4916399791070896629}
-  - {fileID: 104616466143197940}
   m_Father: {fileID: 8537064556153477921}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -59950,7 +59847,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds:
+  - value: 125
+    value2: 0
+  - value: 127
+    value2: 0
   whenStartInAnimations:
   - {fileID: 104616466171897748}
   - {fileID: 104616465876282718}
@@ -59962,7 +59863,6 @@ MonoBehaviour:
   testToggle2: 0
   others:
   - {fileID: 4916399791070896628}
-  - {fileID: 104616466143197942}
   reverse: 0
   custom: 0
   testOnOff: 0
@@ -60535,7 +60435,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -60607,7 +60507,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -60753,7 +60653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -61310,7 +61210,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -61385,7 +61285,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -61474,7 +61374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -61641,7 +61541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -61995,7 +61895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -62050,7 +61950,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -62206,7 +62106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -67184,7 +67084,7 @@ MonoBehaviour:
   intProgresses: []
   onFinishAllTargets: []
   excludeCase:
-    value1: -100
+    value: -100
     value2: .
   text: {fileID: 2347862849837479227}
   customFontText: {fileID: 0}
@@ -67473,7 +67373,7 @@ MonoBehaviour:
   intProgresses: []
   onFinishAllTargets: []
   excludeCase:
-    value1: -100
+    value: -100
     value2: .
   text: {fileID: 2347862850147444092}
   customFontText: {fileID: 0}
@@ -77796,7 +77696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -87473,7 +87373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7878598480108679525
 RectTransform:
   m_ObjectHideFlags: 0
@@ -87675,7 +87575,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -87837,6 +87737,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
+--- !u!224 &5923092540406617367 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5998972102933385494, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
+  m_PrefabInstance: {fileID: 104616467221267457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5923092540183884452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5998972102635189925, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
+  m_PrefabInstance: {fileID: 104616467221267457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5923092540406617366 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5998972102933385495, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
@@ -87848,19 +87758,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 873479e65c7c5394394a50a165b039ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &5923092540406617367 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5998972102933385494, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
-  m_PrefabInstance: {fileID: 104616467221267457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5923092540183884451 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5998972102635189922, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
-  m_PrefabInstance: {fileID: 104616467221267457}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5923092540183884452 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5998972102635189925, guid: d2ab0108e008e494db19e9e18c51b88f, type: 3}
   m_PrefabInstance: {fileID: 104616467221267457}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &104616467496247257
