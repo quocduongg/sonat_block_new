@@ -20,7 +20,7 @@ namespace SpaceShooter
             {
                 if(adType == AdType.banner)
                     yield return new LogParameter("ad_placement", RootView.rootView.screenRoot.CurrentScreen.ScreenName);
-                if(adType == AdType.interstital)
+                if(adType == AdType.interstitial)
                     yield return new LogParameter("ad_placement", SonatAnalyticTracker.InterstitialLogName);
                 if(adType == AdType.rewarded_video)
                     yield return new LogParameter("ad_placement", SonatAnalyticTracker.RewardedLogName);
@@ -28,7 +28,7 @@ namespace SpaceShooter
 
             if (step == 12)
             {
-                if(adType == AdType.interstital)
+                if(adType == AdType.interstitial)
                     yield return new LogParameter("ad_duration", Time.unscaledTime - Kernel.Resolve<AdsManager>().TimeStartInters);
                 if(adType == AdType.rewarded_video)
                     yield return new LogParameter("ad_duration", Time.unscaledTime - Kernel.Resolve<AdsManager>().TimeStartVideo);
