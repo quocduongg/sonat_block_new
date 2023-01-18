@@ -676,7 +676,10 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: b59cf25e2cd00824b830fba088a1552c, type: 3}
     volume: 1
   - key: 128
-    audioClip: {fileID: 8300000, guid: b59cf25e2cd00824b830fba088a1552c, type: 3}
+    audioClip: {fileID: 8300000, guid: 794e9871b8383fb468a9e7d5c13d1e85, type: 3}
+    volume: 1
+  - key: 130
+    audioClip: {fileID: 8300000, guid: d4e112f6455277943aa8892dd9580aec, type: 3}
     volume: 1
   musicDictionary: []
   oneShotAudioSourceSound: {fileID: 5761224199807782293}

@@ -144,6 +144,7 @@ namespace BlockPuzzle
         CoinAppear = 127,
         RewardAppear = 128,
         RewardStart = 129,
+        CoinAppear2 = 130,
     }
 
     public enum GlobalError
