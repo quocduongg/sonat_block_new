@@ -19221,7 +19221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2319634729895672794, guid: 236d6b9c65cf4eb448ffe2b40a80a677, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2319634729895672795, guid: 236d6b9c65cf4eb448ffe2b40a80a677, type: 3}
       propertyPath: m_Pivot.x
@@ -19313,7 +19313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2319634729896441205, guid: 236d6b9c65cf4eb448ffe2b40a80a677, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 215.99988
       objectReference: {fileID: 0}
     - target: {fileID: 2319634730128388220, guid: 236d6b9c65cf4eb448ffe2b40a80a677, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -20046,12 +20046,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 940941012}
     m_Modifications:
     - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: testAdd
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: rewardTypeFlag1
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: rewardTypeFlag2
       value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: openDoubleAdsButton.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: openDoubleAdsButton.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: openDoubleAdsButton.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: openDoubleAdsButton.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063744939, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+      propertyPath: openDoubleAdsButton.Array.data[3]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3582282960765476113, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: skeleton
@@ -20171,11 +20195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3582282961908652542, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3582282962274384208, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1295.9999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3582282962582834268, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: m_Name
@@ -20199,7 +20223,7 @@ PrefabInstance:
       objectReference: {fileID: -2470640543275738129, guid: 4b4ffddf3c0e9bb4ab5a33c5b076748b, type: 2}
     - target: {fileID: 6569875399731338446, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8248017103147721034, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
       propertyPath: sound
@@ -20236,6 +20260,10 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5454207304119448338, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
     - {fileID: 5454207304051537648, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+    - {fileID: 3582282961033453551, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+    - {fileID: 7658830579927323861, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+    - {fileID: 7658830580731628148, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
+    - {fileID: 4992573741194602931, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: feea1cb9645baa74cabaad0a790f5c16, type: 3}
 --- !u!1001 &3614879035016307716
 PrefabInstance:
