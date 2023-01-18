@@ -1,5 +1,115 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &541383451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541383452}
+  - component: {fileID: 541383453}
+  m_Layer: 5
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &541383452
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541383451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8537064556153477921}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &541383453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541383451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186d7b40af89b4c4fa5e5d0563052940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
+  lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sounds:
+    - value: 127
+      value2: 0.6
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn2: 0
+  btn: 0
+  testLoad: 0
+  logDebug: 0
+  othersWhenOn: []
+  toggles:
+  - {fileID: 104616467187990064}
+  mathOperator: 0
+  mathValue: 0
+  test: 
+  defaultCompare:
+    mathEquality: 0
+    value: 0
+    retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
+  otherAndCompare: []
+  otherOrCompare: []
+  setActiveThis: 0
+  reverse: 0
+  setInteractable: 0
+  excepts: 
 --- !u!1 &104616465531663545
 GameObject:
   m_ObjectHideFlags: 0
@@ -9963,7 +10073,7 @@ ParticleSystemRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104616465668833704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -54912,6 +55022,7 @@ MonoBehaviour:
   toggles: []
   mathOperator: 0
   mathValue: 0
+  test: 
   defaultCompare:
     mathEquality: 0
     value: 0
@@ -59913,11 +60024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sounds:
-  - value: 125
-    value2: 0
-  - value: 127
-    value2: 0.6
+  sounds: []
   whenStartInAnimations:
   - {fileID: 104616466171897748}
   - {fileID: 104616465876282718}
@@ -60310,7 +60417,11 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sounds: []
+    sounds:
+    - value: 125
+      value2: 0
+    - value: 127
+      value2: 0.6
     add: 0
     divide: -1
     mod: -1
@@ -60328,9 +60439,10 @@ MonoBehaviour:
   - {fileID: 104616467187990064}
   mathOperator: 0
   mathValue: 0
+  test: 
   defaultCompare:
     mathEquality: 0
-    value: 0
+    value: 1
     retriever: {fileID: 0}
     builtInEnumType: 0
     percent100: 0
@@ -62104,6 +62216,7 @@ MonoBehaviour:
   toggles: []
   mathOperator: 0
   mathValue: 0
+  test: 
   defaultCompare:
     mathEquality: 0
     value: 1
@@ -67875,6 +67988,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 104616467187990071}
+  - {fileID: 541383452}
   m_Father: {fileID: 104616465889955995}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77848,6 +77962,114 @@ MonoBehaviour:
   delayDeactive: 0
   delayDeactiveOnActive: 4
   lastValue: 1
+--- !u!1 &5123176985608413453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5929455667655537135}
+  - component: {fileID: 1219701215860333010}
+  m_Layer: 5
+  m_Name: _play sound on Reward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5929455667655537135
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123176985608413453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7878598480108679525}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1219701215860333010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123176985608413453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186d7b40af89b4c4fa5e5d0563052940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
+  testProduct:
+    quantity: 0
+    amount: 0
+    parameter: 0
+    parameter2: 0
+    index: 0
+  testProduct123: 0
+  reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
+  lastValue: 0
+  index2: 0
+  sound: 0
+  add: 0
+  divide: -1
+  mod: -1
+  others: []
+  othersComputed: []
+  othersIndex2: []
+  othersComputedIndex2: []
+  index2ToOther1: []
+  sharedSetting:
+    descriptions: 
+    lastValue: 0
+    index2: 0
+    sounds: []
+    add: 0
+    divide: -1
+    mod: -1
+    others: []
+    othersComputed: []
+    othersIndex2: []
+    othersComputedIndex2: []
+    index2ToOther1: []
+  btn2: 0
+  btn: 0
+  testLoad: 0
+  logDebug: 0
+  othersWhenOn: []
+  toggles:
+  - {fileID: 104616467187990064}
+  mathOperator: 0
+  mathValue: 0
+  test: 
+  defaultCompare:
+    mathEquality: 0
+    value: 0
+    retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
+  otherAndCompare: []
+  otherOrCompare: []
+  setActiveThis: 0
+  reverse: 0
+  setInteractable: 0
+  excepts: 
 --- !u!1 &5334396584090947247
 GameObject:
   m_ObjectHideFlags: 0
@@ -87510,7 +87732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7878598480108679525
 RectTransform:
   m_ObjectHideFlags: 0
@@ -87524,6 +87746,7 @@ RectTransform:
   m_Children:
   - {fileID: 104616465889955995}
   - {fileID: 104616466066462152}
+  - {fileID: 5929455667655537135}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -87598,6 +87821,7 @@ MonoBehaviour:
   - {fileID: 104616467187990064}
   toggleOpenedByParameter:
   - {fileID: 4770384669083534911}
+  - {fileID: 541383453}
   productBindings:
   - {fileID: 2347862850427044717}
   - {fileID: 104616466992968909}

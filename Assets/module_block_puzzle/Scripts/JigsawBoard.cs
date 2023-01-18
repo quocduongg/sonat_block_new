@@ -13,7 +13,8 @@ namespace BlockPuzzle
 {
     public class JigsawBoard : CurrentGameView , ILogParameterValueRetriever
     {
-        
+        [SerializeField] [IndexAsEnum(BuiltInEnumType.SoundEnum)]
+        public IntFloat[] sounds;
         [SerializeField] private SpriteRenderer boardFill;
         [SerializeField] private SpriteRenderer board;
         [SerializeField] private PoolCollection<JigsawTile> tiles;
@@ -30,7 +31,7 @@ namespace BlockPuzzle
         [SerializeField] private Texture2D[] texture2Ds;
         [SerializeField] private Sprite[] bgs;
         [SerializeField] private Sprite[] bgFills;
-
+   
         public Texture2D[] mapTextures => texture2Ds;
 
         public Vector3 PositionAdjust
@@ -93,6 +94,8 @@ namespace BlockPuzzle
 
         public void StartLevel(int i)
         {
+            foreach (var intFloat in sounds)
+                intFloat.PlaySound();
             _levelIndex = i;
             levelBindings.OnChanged(i);
             CheckRegister();

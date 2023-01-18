@@ -596,7 +596,7 @@ MonoBehaviour:
     volume: 0.3
   - key: 107
     audioClip: {fileID: 8300000, guid: 929a834c60ac163479e9de1fa28deb2f, type: 3}
-    volume: 1
+    volume: 0.5
   - key: 111
     audioClip: {fileID: 8300000, guid: 6ea6bb1a1107dd34e94424a3bbfd3e78, type: 3}
     volume: 1
@@ -673,6 +673,9 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 74597f2135cbd834fb4a530f0e935022, type: 3}
     volume: 1
   - key: 113
+    audioClip: {fileID: 8300000, guid: b59cf25e2cd00824b830fba088a1552c, type: 3}
+    volume: 1
+  - key: 128
     audioClip: {fileID: 8300000, guid: b59cf25e2cd00824b830fba088a1552c, type: 3}
     volume: 1
   musicDictionary: []

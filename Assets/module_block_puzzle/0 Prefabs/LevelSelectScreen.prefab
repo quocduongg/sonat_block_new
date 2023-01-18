@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -5068,7 +5068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -5315,7 +5315,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -5324,30 +5324,29 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
   testLoad: 0
-  testLoadIndex1: -1
   logDebug: 0
+  othersWhenOn: []
   toggles:
   - {fileID: 3582282961033453544}
   - {fileID: 5778176167977219619}
   mathOperator: 0
   mathValue: 0
+  test: 
   defaultCompare:
     mathEquality: 0
     value: 0
-    value2: 0
-    builtInEnumType: 0
     retriever: {fileID: 0}
+    builtInEnumType: 0
+    percent100: 0
   otherAndCompare: []
   otherOrCompare: []
   setActiveThis: 0
   reverse: 0
   setInteractable: 0
   excepts: 
-  mathEquality: 0
-  compareValue: 2
-  builtInEnumType: 0
 --- !u!114 &3582282960765476113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5361,7 +5360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -5566,7 +5565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -5579,6 +5578,7 @@ MonoBehaviour:
   testBreak: 0
   animators:
   - {fileID: 7754076960264440938}
+  triggerLastOnEnable1: 0
   useLast: 1
 --- !u!1 &3582282960918255254
 GameObject:
@@ -5866,7 +5866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -6259,7 +6259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -6421,7 +6421,7 @@ MonoBehaviour:
     parameter2: 0
     index: 0
   testProduct123: 0
-  sound: 0
+  sound: 1
   actionBefore: []
   dButton: 0
   Enum: 6
@@ -6516,7 +6516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disable: 0
-  sound: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0

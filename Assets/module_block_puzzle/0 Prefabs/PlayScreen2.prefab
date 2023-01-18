@@ -135,7 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b72bd35a9335b749aac2e38c7920700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -145,6 +146,7 @@ MonoBehaviour:
   custom: 0
   testOnOff: 0
   testLoadtoggle: 0
+  testBreak: 0
   button: {fileID: 228787852}
   targets: []
   grayMaterial: {fileID: 0}
@@ -162,7 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b653e32b364a744a9dde6f142e94e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -172,11 +175,14 @@ MonoBehaviour:
   custom: 0
   testOnOff: 0
   testLoadtoggle: 0
+  testBreak: 0
   target: {fileID: 228787853}
   target2: {fileID: 0}
   target3: []
   whenOn: {r: 1, g: 1, b: 1, a: 1}
   whenOff: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  othersImages: []
+  otherTexts: []
 --- !u!114 &7448226683896704807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -199,6 +206,7 @@ MonoBehaviour:
   custom: 0
   testOnOff: 0
   testLoadtoggle: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -277,6 +285,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -292,7 +301,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -301,8 +310,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
   toggles: []
   setActive: 1
@@ -310,6 +320,9 @@ MonoBehaviour:
   activeWhenZero: 0
   containsAllState: 0
   containsAllStateExcept: 0
+  soundWhenOn:
+    value: 0
+    value2: 0
   activeState: 4
 --- !u!114 &538386296
 MonoBehaviour:
@@ -443,6 +456,7 @@ MonoBehaviour:
   playableBindings:
   - {fileID: 228787850}
   - {fileID: 228787851}
+  placement: 0
   notCloseCurrentDialog: 0
   takeRewardClickSound: 0
   key: 10
@@ -459,6 +473,7 @@ MonoBehaviour:
   progressText: {fileID: 0}
   countDownView: {fileID: 538386295}
   state: 0
+  rewardTypeFlag: 1
 --- !u!1 &804513705
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +670,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -670,7 +686,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -679,8 +695,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
   toggles: []
   setActive: 1
@@ -688,6 +705,9 @@ MonoBehaviour:
   activeWhenZero: 0
   containsAllState: 0
   containsAllStateExcept: 0
+  soundWhenOn:
+    value: 0
+    value2: 0
   activeState: 1
 --- !u!1 &522762363827365956
 GameObject:
@@ -937,7 +957,7 @@ MonoBehaviour:
   onActives: []
   checkers: []
   checkShowPopups: 
-  placementName: jigsaw_screen
+  screenName: 
 --- !u!223 &2319634729895672793
 Canvas:
   m_ObjectHideFlags: 0
@@ -1012,6 +1032,7 @@ MonoBehaviour:
     match: 0.2
   canvasScaler: {fileID: 0}
   applyOnAwake: 0
+  copyPos: []
 --- !u!1 &2319634729896441204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,7 +1155,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2319634730128388223}
   - component: {fileID: 2319634730128388194}
-  - component: {fileID: 5835133268295667208}
   - component: {fileID: 2319634730128388221}
   - component: {fileID: 2319634730128388220}
   - component: {fileID: 2314497294990579094}
@@ -1172,38 +1192,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2319634730128388222}
   m_CullTransparentMesh: 0
---- !u!114 &5835133268295667208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2319634730128388222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52c7cb251bfb14e4f9d8fa5ce7e323d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testFunction:
-    method: functionName
-    parameter1: 0
-    parameter2: 0
-  logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
-  sound: 1
-  actionBefore: []
-  dButton: 0
-  Enum: 3
-  value: 0
-  showInters: 0
-  showIntersLog: 
-  conditionLevel: 1
 --- !u!114 &2319634730128388221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,7 +1290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1312,6 +1301,7 @@ MonoBehaviour:
   custom: 0
   testOnOff: 0
   testLoadtoggle: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -1397,7 +1387,7 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!95 &1394894090766732760
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1410,10 +1400,11 @@ Animator:
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &2319634730881802627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1470,7 +1461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1480,6 +1472,7 @@ MonoBehaviour:
   custom: 0
   testOnOff: 0
   testLoadtoggle: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -1643,6 +1636,7 @@ MonoBehaviour:
   showInters: 0
   showIntersLog: 
   conditionLevel: 1
+  visitCondition: 0
 --- !u!114 &2146634345889055831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1675,7 +1669,7 @@ MonoBehaviour:
   m_PixelsPerUnitMultiplier: 1
 --- !u!95 &8574971774790208117
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1688,10 +1682,11 @@ Animator:
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &2799800480959884753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1748,7 +1743,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1758,6 +1754,7 @@ MonoBehaviour:
   custom: 0
   testOnOff: 0
   testLoadtoggle: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -1923,6 +1920,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -1938,7 +1936,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 1
     divide: -1
     mod: -1
@@ -1947,8 +1945,9 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
   logDebug: 0
   textMesh: {fileID: 9187821232534069064}
   customText: {fileID: 0}
