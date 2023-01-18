@@ -641,13 +641,13 @@ MonoBehaviour:
     volume: 1
   - key: 10
     audioClip: {fileID: 8300000, guid: 05f5ffa171436b24e85751321b2f2d28, type: 3}
-    volume: 1
+    volume: 0.65
   - key: 11
     audioClip: {fileID: 8300000, guid: eca66ec589d107448b39d44eb1176365, type: 3}
-    volume: 1
+    volume: 0.65
   - key: 12
     audioClip: {fileID: 8300000, guid: 967f76f6e3be8ec4fb7dfcc7bda7d212, type: 3}
-    volume: 1
+    volume: 0.65
   - key: 104
     audioClip: {fileID: 8300000, guid: d36d0e1bdbca71746b2caf2330ea84d2, type: 3}
     volume: 0
@@ -679,7 +679,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 87dd18d441f533947976ac5ecb9a99ed, type: 3}
     volume: 1
   - key: 130
-    audioClip: {fileID: 8300000, guid: d4e112f6455277943aa8892dd9580aec, type: 3}
+    audioClip: {fileID: 8300000, guid: 87dd18d441f533947976ac5ecb9a99ed, type: 3}
     volume: 1
   musicDictionary: []
   oneShotAudioSourceSound: {fileID: 5761224199807782293}
