@@ -589,14 +589,14 @@ MonoBehaviour:
     value: 0
   soundDictionary:
   - key: 1
-    audioClip: {fileID: 8300000, guid: 6ea6bb1a1107dd34e94424a3bbfd3e78, type: 3}
-    volume: 1
+    audioClip: {fileID: 8300000, guid: e4a49234063732240aa69cfc34f4a0a8, type: 3}
+    volume: 0.55
   - key: 106
     audioClip: {fileID: 8300000, guid: 00021afec79a4bc46afed0afe35b0dc9, type: 3}
     volume: 0.3
   - key: 107
-    audioClip: {fileID: 8300000, guid: 929a834c60ac163479e9de1fa28deb2f, type: 3}
-    volume: 0.5
+    audioClip: {fileID: 8300000, guid: d589992bf7a71b7468a9fe8f6f9dd6c3, type: 3}
+    volume: 0.7
   - key: 111
     audioClip: {fileID: 8300000, guid: 6ea6bb1a1107dd34e94424a3bbfd3e78, type: 3}
     volume: 1
@@ -650,16 +650,16 @@ MonoBehaviour:
     volume: 1
   - key: 104
     audioClip: {fileID: 8300000, guid: d36d0e1bdbca71746b2caf2330ea84d2, type: 3}
-    volume: 1
+    volume: 0
   - key: 103
     audioClip: {fileID: 8300000, guid: 7c77cb7d8f504aa4c8b4c68062034203, type: 3}
     volume: 1
   - key: 122
-    audioClip: {fileID: 8300000, guid: 7c77cb7d8f504aa4c8b4c68062034203, type: 3}
+    audioClip: {fileID: 8300000, guid: 68b70b204c560bb4aa3cd4484caaf6db, type: 3}
     volume: 1
   - key: 124
-    audioClip: {fileID: 8300000, guid: 89e89fbbc8a8d39429d7ad76acbb75ba, type: 3}
-    volume: 1
+    audioClip: {fileID: 8300000, guid: 663a8d1817728f04da469ef19e031da2, type: 3}
+    volume: 0.7
   - key: 126
     audioClip: {fileID: 8300000, guid: 8eaea040d29c84ff2b9501f59728a7e5, type: 3}
     volume: 1
@@ -676,7 +676,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: b59cf25e2cd00824b830fba088a1552c, type: 3}
     volume: 1
   - key: 128
-    audioClip: {fileID: 8300000, guid: 794e9871b8383fb468a9e7d5c13d1e85, type: 3}
+    audioClip: {fileID: 8300000, guid: 87dd18d441f533947976ac5ecb9a99ed, type: 3}
     volume: 1
   - key: 130
     audioClip: {fileID: 8300000, guid: d4e112f6455277943aa8892dd9580aec, type: 3}
@@ -995,7 +995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fff6e39608f92459265689d2b680a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  facebookController: {fileID: 8435826600656683607}
+  avatar: {fileID: 0}
   totalAvatar: 8
 --- !u!1 &8435826601139006070
 GameObject:
