@@ -557,7 +557,7 @@ namespace BlockPuzzle
                      (int) TutorialActionEnum
                          .RotateItem) && _draggingItem.Value.AddRotate())
                 {
-                    GameActionEvent.SaveBoard.OnNext();
+                    GameActionEvent.SaveGame.OnNext();
                     GameActionEvent.SavePlayerData.OnNext();
                     if (_onlyItemMatch.Value != null) // recalculate last item match
                         OnlyItemMatchChanged(_onlyItemMatch.Value);
@@ -593,7 +593,7 @@ namespace BlockPuzzle
                     SaveSlotItem.Appear();
                     _draggingItem.Value = null;
                     CheckSpawn();
-                    GameActionEvent.SaveBoard.OnNext();
+                    GameActionEvent.SaveGame.OnNext();
                     if (CurrentTutStep != null &&
                         CurrentTutStep.actionEnum == (int) TutorialActionEnum.DragToSaveSlot)
                         NextTut(CurrentTutStep.nextTutAdd, CurrentTutStep.actionBeforeNext);
@@ -806,7 +806,7 @@ namespace BlockPuzzle
             if (readyToSpawn)
             {
                 Spawn(null, true);
-                GameActionEvent.SaveBoard.OnNext();
+                GameActionEvent.SaveGame.OnNext();
             }
 
             if (!CheckPossibleToPlace())
@@ -1701,7 +1701,7 @@ namespace BlockPuzzle
                         starProgress.SetAll(currentGameSetting.starBoxProgress,
                             PlayerData.customPropertyList[(int) CustomPlayerDataProperty.Star].Value,
                             PlayerData.customPropertyList[(int) CustomPlayerDataProperty.BoxClaimed].Value - 1, true);
-                        GameActionEvent.SaveBoard.OnNext();
+                        GameActionEvent.SaveGame.OnNext();
                         GameActionEvent.SavePlayerData.OnNext();
                     }
                     else

@@ -250,7 +250,7 @@ namespace BlockPuzzle
             gameSave[(int) GameSaveKey.StartBestScore] = PlayerData.bestScore.Value;
             gameSave.AddState(CreateStateFromLevel(CurrentLevel));
             SaveLevel();
-            SaveBoard();
+            SaveGame();
             return gameSave;
         }
 

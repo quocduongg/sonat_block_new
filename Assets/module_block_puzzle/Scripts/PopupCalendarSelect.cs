@@ -8,15 +8,14 @@ namespace BlockPuzzle
     {
         [SerializeField] private JigsawBoard jigsawBoard;
         [SerializeField] protected PoolCollection<LevelSelect> selects;
-        [SerializeField] private Transform container;
         [SerializeField] private bool setAvatar = true;
 
         private LevelSelect[] _levels;
         protected override void Register()
         {
             base.Register();
-            selects.Init(container,-1);
-            selects.ViewFirst(0,container);
+            selects.Init(-1);
+            selects.ViewFirst(0);
             var collection = BlockPuzzleShortcut.currentGameSetting.JigsawCollection;
             _levels = new LevelSelect[collection.levels.Count];
             for (var i = 0; i < collection.levels.Count; i++)
