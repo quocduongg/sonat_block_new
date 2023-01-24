@@ -1117,6 +1117,7 @@ MonoBehaviour:
   btn2: 0
   btn: 0
   testLoad: 0
+  testLoad2: 0
   logDebug: 0
   target: {fileID: 108726168}
   positions:
@@ -1582,6 +1583,7 @@ MonoBehaviour:
   btn2: 0
   btn: 0
   testLoad: 0
+  testLoad2: 0
   logDebug: 0
   othersWhenOn: []
   toggles: []
@@ -1704,6 +1706,7 @@ MonoBehaviour:
   btn2: 0
   btn: 0
   testLoad: 0
+  testLoad2: 0
   logDebug: 0
   render: {fileID: 188833947}
   orders:
@@ -3618,6 +3621,7 @@ MonoBehaviour:
   btn2: 0
   btn: 0
   testLoad: 0
+  testLoad2: 0
   logDebug: 0
   textMesh: {fileID: 765008154}
   customText: {fileID: 0}
@@ -4223,6 +4227,7 @@ MonoBehaviour:
   btn2: 0
   btn: 0
   testLoad: 0
+  testLoad2: 0
   logDebug: 0
   textMesh: {fileID: 802386653}
   customText: {fileID: 0}
@@ -4677,10 +4682,12 @@ MonoBehaviour:
   boardFill: {fileID: 1976602541}
   board: {fileID: 440106745}
   tiles:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 6637696969919104461, guid: 892c7ed56d8e377469e913f233b8a296, type: 3}
     - {fileID: 4056528140113250473, guid: 317eb6cc3a18af8428be65f363f2674e, type: 3}
   items:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 1245791453531232165, guid: c486cab38ba34db459c1c3b873c6ebd9, type: 3}
   distanceX: 3
@@ -5710,6 +5717,7 @@ MonoBehaviour:
   btn2: 0
   btn: 0
   testLoad: 0
+  testLoad2: 0
   logDebug: 0
   target: {fileID: 916476811}
   positions:
@@ -11315,6 +11323,7 @@ MonoBehaviour:
   bannerUiBackground: {fileID: 1317583283}
   addHeight: 10
   iosHomeButtonHeight: 100
+  test: 0
 --- !u!114 &1147025811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12773,6 +12782,7 @@ MonoBehaviour:
   btn2: 0
   btn: 0
   testLoad: 0
+  testLoad2: 0
   logDebug: 0
   render: {fileID: 1409371080}
   orders:
@@ -13117,6 +13127,17 @@ MonoBehaviour:
   delayDeactive: 0
   delayDeactiveOnActive: 0
   lastValue: 0
+--- !u!114 &1458173719 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8435826600656683607, guid: 9f38948603de25b4f9131856df952cb8, type: 3}
+  m_PrefabInstance: {fileID: 807722221364275787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67460a7d48a92094394cad6596a501f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1462809520 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4484752541249564225, guid: 1a638709d23da7e4089f52c3788a0af6, type: 3}
@@ -18659,6 +18680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kernel
       objectReference: {fileID: 0}
+    - target: {fileID: 8435826601123372508, guid: 9f38948603de25b4f9131856df952cb8, type: 3}
+      propertyPath: facebookController
+      value: 
+      objectReference: {fileID: 1458173719}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f38948603de25b4f9131856df952cb8, type: 3}
 --- !u!1001 &985201136281724754
@@ -20903,22 +20928,27 @@ MonoBehaviour:
   onPlayScreens:
   - {fileID: 1447529444}
   - {fileID: 108726172}
-  continuouslyChecks:
-  - {fileID: 7191618404764780321}
   onStartGameAnims:
   - {fileID: 7191618404764780323}
   onWinAnims: []
   onGameOverAnims:
   - {fileID: 2002986246}
+  continuouslyChecks:
+  - {fileID: 7191618404764780321}
   boardBusyBinds: []
   genericPoolItem:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 6919827344245496681, guid: 8aa60bb2015bca44ca1166b765cfe05b, type: 3}
   testGameOver: 104
   currentTutorial:
     value: 0
+  naviSettings:
+    navigationTime: 15
+    navigations: []
   jigsawBoard: {fileID: 851475956}
   bgTiles:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 2504771244941133732, guid: b2544aab62c4b2b4bac68a9104a714c5, type: 3}
     - {fileID: 2504771244941133732, guid: b2544aab62c4b2b4bac68a9104a714c5, type: 3}
@@ -20926,23 +20956,29 @@ MonoBehaviour:
     - {fileID: 2504771244941133732, guid: b2544aab62c4b2b4bac68a9104a714c5, type: 3}
     - {fileID: 7182435225928186430, guid: d13e790c463e9a84b95275d436d280c8, type: 3}
   tiles:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 3719888263955586503, guid: b6ec3fa5576b16a428f7e5ee7e05da66, type: 3}
   blockEffects:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 5319754042891414541, guid: 6c8cb73de34902640bb1f79bdcfee87a, type: 3}
   scoreEffects:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 9088286276660859475, guid: cf26e54c3d2cf4f4d90be72bb68b7733, type: 3}
   complimentEffects:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 3801293144754197672, guid: abfd9895e6747714c9d50c3d82e00a25, type: 3}
   eatLines1:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 7636557951837849335, guid: cd939e94a76a23c4aad6681356dde46c, type: 3}
     - {fileID: 8329396984399338704, guid: 2eecf1395ba787443bacb05d1f37c498, type: 3}
     - {fileID: 5674536838540834538, guid: 47c34badc8a56894989762c2e5a5d737, type: 3}
   eatLines2:
+    container: {fileID: 0}
     prefabs:
     - {fileID: 7952304401103053185, guid: 92b59fd6dd86176449743f6d42f8dfc6, type: 3}
     - {fileID: 6076592092042245871, guid: 38e9a31b7e2abe34fb807b9f508c1ae0, type: 3}
@@ -20978,7 +21014,6 @@ MonoBehaviour:
   useClickOffset: 0
   dragItemState: 0
   indicateRotateShop: []
-  navigations: []
   myBoardSettings:
     complimentClampPosX: 3.4
   useRemoteConfig: 1

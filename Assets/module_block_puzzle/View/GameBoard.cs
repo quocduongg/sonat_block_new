@@ -52,11 +52,7 @@ namespace BlockPuzzle
         [SerializeField] private bool turnOnOnlyItemMatch;
         [SerializeField] private ToggleScript[] hintMode;
 
-        private IDisposable _navigationDisposable;
-        private int _currentNavigation;
-        private int _secondsFromLastAction;
-        private int _secondsFromAdBreak;
-        private int _secondsToAdBreak;
+       
 
         public BoardSpecialState BoardSpecialState { get; set; }
 
@@ -289,35 +285,15 @@ namespace BlockPuzzle
                 Positions.Add(positionPoint);
                 _bgPoints.SetAtPoint(point, positionPoint);
             }
+        }
 
-            UpdateActionTime();
-            _secondsFromAdBreak = 0;
-            _secondsToAdBreak = randomAdBreak.GetRandomBetween();
-            _navigationDisposable?.Dispose();
-            _navigationDisposable = Observable.Interval(TimeSpan.FromSeconds(1))
-                .Subscribe(data =>
-                {
-                    if (ValidInput() && !IsInTutorial())
-                    {
-                        if (_currentNavigation < 0)
-                            _secondsFromLastAction++;
-                        _secondsFromAdBreak++;
-//                        Debug.Log(_secondsFromAdBreak+"/"+_secondsToAdBreak);
-                        CheckShowAdBreak();
-                        _waitForHint++;
-                        foreach (var baseFrameworkViewCheck in continuouslyChecks)
-                            baseFrameworkViewCheck.Check();
-                        if (_waitForHint % currentGameSetting.timeToHint == 0 && PlayerData.tutorialStep == -1)
-                            HintPlace();
-
-                        if (_waitForHint == currentGameSetting.timeHintJigsawMode)
-                            HintMode(true);
-                    }
-
-                    CheckGameNavigation();
-                    PlayerData.logEachGame[(int) LogEachGameEnum.time_play]++;
-                })
-                .AddToGameDisposable();
+        protected override void CheckHint()
+        {
+            base.CheckHint();
+            if (_waitForHint % currentGameSetting.timeToHint == 0 && PlayerData.tutorialStep == -1)
+                HintPlace();
+            if (_waitForHint == currentGameSetting.timeHintJigsawMode)
+                HintMode(true);
         }
 
         [SerializeField] private float minDragDistance;
@@ -1352,8 +1328,6 @@ namespace BlockPuzzle
             return point;
         }
 
-        private int _waitForHint;
-
         public void ClearIdleHint()
         {
             BgTilePoolIdleHint.ReturnAll();
@@ -1639,25 +1613,6 @@ namespace BlockPuzzle
             }
         }
 
-        private void CheckShowAdBreak()
-        {
-            if ((_secondsFromAdBreak - _secondsToAdBreak) % 15 == 0)
-                UIDebugLog.Log(_secondsFromAdBreak + "/" + _secondsToAdBreak);
-            if (_secondsFromAdBreak >= _secondsToAdBreak && Kernel.Resolve<AdsManager>().IsInterstitialAdsReady() &&
-                !BoardBusy.Value)
-            {
-                if (ScreenRoot.dialogController.HasKey<DialogAdBreak>())
-                {
-                    ScreenRoot.dialogController.Resolve<DialogAdBreak>().Show();
-                    _secondsFromAdBreak = 0;
-                    _secondsToAdBreak = randomAdBreak.GetRandomBetween();
-                }
-                else
-                {
-                    Debug.LogError("duong : not contains DialogAdBreak");
-                }
-            }
-        }
 
         protected override void HandlerPause()
         {
@@ -1736,41 +1691,7 @@ namespace BlockPuzzle
                     throw new ArgumentOutOfRangeException();
             }
         }
-
-
-
-        [SerializeField] private IndexBindingScript[] navigations;
-
-        public override void UpdateActionTime()
-        {
-            _secondsFromLastAction = 0;
-            ClearGameNavigation();
-        }
-
-        private void ClearGameNavigation()
-        {
-            _currentNavigation = -1;
-            navigations.OnChanged(_currentNavigation);
-        }
-
-        private void CheckGameNavigation()
-        {
-            if (_secondsFromLastAction > currentGameSetting.navigationTime && _currentNavigation < 0
-                //  && Blocks.Count > currentGameSetting  .numberOfBlockToNavi
-            )
-                StartNavigation();
-        }
-
-        private void StartNavigation()
-        {
-            if (_currentNavigation < 0 && ValidInput())
-            {
-                _currentNavigation = UnityEngine.Random.Range(0, 3);
-                navigations.OnChanged(_currentNavigation);
-            }
-        }
-
-
+        
         // last 
         [SerializeField] private MyBoardSettingClass myBoardSettings;
 
