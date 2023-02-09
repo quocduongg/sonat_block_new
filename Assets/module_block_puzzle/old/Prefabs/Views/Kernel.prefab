@@ -559,6 +559,7 @@ MonoBehaviour:
   gameState:
     value: 0
   duongLogVirtualCurrency: 0
+  testRemote: 
 --- !u!114 &807722221364275783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,6 +938,20 @@ MonoBehaviour:
     defaultBoolean: 1
     jsonTextAsset: {fileID: 0}
     key: 113
+  - dataType: 1
+    defaultString: 0,1
+    defaultInt: 0
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 10
+  - dataType: 3
+    defaultString: 0,1
+    defaultInt: 0
+    defaultFloat: 0
+    defaultBoolean: 1
+    jsonTextAsset: {fileID: 0}
+    key: 11
   defaultConfigs2:
   - dataType: 1
     defaultString: 
@@ -995,7 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fff6e39608f92459265689d2b680a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  avatar: {fileID: 0}
+  facebookController: {fileID: 0}
   totalAvatar: 8
 --- !u!1 &8435826601139006070
 GameObject:
@@ -1214,7 +1229,6 @@ MonoBehaviour:
   showBanner: 1
   testAds: 0
   logFail: 1
-  loadNative: 1
   useOpenAdsAsInterstitial:
     value: 0
   testDeviceIds: []

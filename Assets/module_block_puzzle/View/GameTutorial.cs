@@ -197,6 +197,7 @@ namespace BlockPuzzle
                 }
         }
 
+        [SerializeField] private Transform[] spawnParents;
         private IEnumerator IeStartHand()
         {
             bindingActiveOnTutorial.OnChanged(true);
@@ -276,7 +277,7 @@ namespace BlockPuzzle
                     tutHandAnimator.StopAnim();
                     tutHandAnimator.Inject(new[]
                         {
-                            GameController.spawnItems[step.DragItemIndex].RootTransform.position,
+                            spawnParents[step.DragItemIndex].position,
                             GameController.BgPoints.GetAtPoint(step.PlacePoint).value
                         })
                         .Animator_In2(0);
@@ -301,7 +302,7 @@ namespace BlockPuzzle
                         {
                             tutHandAnimator.Inject(new[]
                                 {
-                                    GameController.spawnItems[i].transform.position,
+                                    spawnParents[step.DragItemIndex].position,
                                     GameController.spawnItems[3].transform.position
                                 })
                                 .Animator_In2(0);

@@ -4784,10 +4784,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -4795,6 +4799,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 1.5
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -5122,10 +5127,14 @@ MonoBehaviour:
     animInSound: 0
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0.5
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -5133,6 +5142,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   inThenOutIdleDelay: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
@@ -5434,6 +5444,7 @@ MonoBehaviour:
   showInters: 1
   showIntersLog: jisaw_complete
   conditionLevel: 0
+  visitCondition: 0
 --- !u!114 &5153191186653036493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5520,7 +5531,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -5602,6 +5614,7 @@ MonoBehaviour:
   testProduct123: 0
   locationManager: {fileID: 0}
   resumeIfHome: 1
+  nativeAds: 1
   close: {fileID: 0}
   testShow: 0
   adsToLog: {fileID: 0}
@@ -5613,6 +5626,9 @@ MonoBehaviour:
   activeOnShow: []
   checkers: []
   dependencies: []
+  popupName: 
+  skipLog: 0
+  loadDependency: 0
   bindsLevel:
   - {fileID: 5274153951127958796}
 --- !u!1 &7617749290529931458
@@ -5741,10 +5757,14 @@ MonoBehaviour:
     animInSound: 122
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
@@ -5752,6 +5772,7 @@ MonoBehaviour:
     onStartParticleSystems: []
   state: 2
   index: 0
+  busy: 0
   spineSequences:
   - track: 0
     animationName: Appear
@@ -5764,6 +5785,7 @@ MonoBehaviour:
     wait: 0
     delayAfter: 0
   skeleton: {fileID: 6734572978134507613}
+  skeleton2: {fileID: 0}
   activeAfter: 0
   testabc: 
 --- !u!1 &9165182665679661548
@@ -5867,6 +5889,7 @@ MonoBehaviour:
     index: 0
   testProduct123: 0
   reloadOnEnable: 0
+  onChangedRandomOnEnable: 0
   lastValue: 0
   index2: 0
   sound: 0
@@ -5882,7 +5905,7 @@ MonoBehaviour:
     descriptions: 
     lastValue: 0
     index2: 0
-    sound: 0
+    sounds: []
     add: 0
     divide: -1
     mod: -1
@@ -5891,8 +5914,10 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
+  btn2: 0
   btn: 0
-  testLoad1: 0
+  testLoad: 0
+  testLoad2: 0
   logDebug: 0
   target: {fileID: 0}
   target2: {fileID: 8884745852803125146}

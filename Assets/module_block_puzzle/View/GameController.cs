@@ -40,7 +40,7 @@ namespace BlockPuzzle
 
         [NonSerialized] public IntReactiveProperty RotateValid;
         [SerializeField] IntReactiveProperty _freeToRotate = new IntReactiveProperty();
-
+        [SerializeField] public PoolCollection<GenericPoolItem> genericPoolItem;
         public override IntReactiveProperty GetRootViewProperty(string propertyName)
         {
             var getProperty = typeof(GameController).GetField(propertyName);
@@ -114,7 +114,7 @@ namespace BlockPuzzle
         }
 
 #if UNITY_EDITOR
-        public override void TestGameOver(int score)
+        public  void TestGameOver(int score)
         {
             ChangeScore(score, SetDataType.SetThenTween);
             CheckBest();

@@ -276,6 +276,7 @@ MonoBehaviour:
   btn2: 0
   btn: 0
   testLoad: 0
+  testLoad2: 0
   logDebug: 0
   skinNames:
   - Cool

@@ -43,8 +43,8 @@ namespace BlockPuzzle
         {
             base.Register();
             board.transform.localPosition = positionAdjust;
-            items.Init(null, 0);
-            tiles.Init(null, 0);
+            items.Init( 0);
+            tiles.Init( 0);
             SubjectController.ScreenClosed.Where(x => x is PlayScreen2).Subscribe(data =>
             {
                 IsPlaying = false;
