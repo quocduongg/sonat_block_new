@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: f90cdfa046b8fe24bb22543a16b0300a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -135,6 +135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1695ca2463d3371498552ae3a0386f17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
   testStartAction: 0
   turnOff: 0
   t1: 0
@@ -202,15 +207,9 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   overridePosition: 0
   overridePositionAdjust: {x: 0, y: 0, z: 0}
+  split1: 
   enableOnRent: []
   destroyAfter: 2.5
   soundEnum: 0
@@ -240,13 +239,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   reloadOnEnable: 0
   onChangedRandomOnEnable: 0
   lastValue: 0

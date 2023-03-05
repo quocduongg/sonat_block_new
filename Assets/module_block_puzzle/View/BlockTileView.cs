@@ -91,22 +91,36 @@ namespace BlockPuzzle
                                                   CurrentGameSetting.itemPlaceTween))
                 .Subscribe(data =>
                 {
-                    if (star.Value)
+                    try
                     {
-                        var fx = GameController.genericPoolItem.pools[0].RentWorld(null, transform.position);
-                        fx.StartStepAnimation();
-                    }
-                    if (DelayToDestroy < GameController.explodeSoundCheck.Length && !GameController.explodeSoundCheck[DelayToDestroy])
-                    {
-                        GameController.explodeSoundCheck[DelayToDestroy] = true;
-                        ((int)SoundEnum.BombExplode).PlaySound();
-                    }
+                        base.DestroyView();
+                        if (star.Value)
+                        {
+                            var fx = GameController.genericPoolItem.pools[0].RentWorld(null, transform.position);
+                            fx.StartStepAnimation();
+                        }
 
-                    if(destroyWithSetIndex)
-                        GameController.blockEffects.pools[0].Rent(null,transform.position).SetIndex2(CurrentColor);
-                    else
-                        GameController.blockEffects.pools[CurrentColor].Rent(null,transform.position).SetIndex2(CurrentColor);
-                    base.DestroyView();
+                        if (DelayToDestroy < GameController.explodeSoundCheck.Length &&
+                            !GameController.explodeSoundCheck[DelayToDestroy])
+                        {
+                            GameController.explodeSoundCheck[DelayToDestroy] = true;
+                            ((int) SoundEnum.BombExplode).PlaySound();
+                        }
+
+//                        if (destroyWithSetIndex)
+                            GameController.blockEffects.pools[0].Rent(null, transform.position).SetIndex2(CurrentColor);
+//                        else
+//                            GameController.blockEffects.pools[CurrentColor].Rent(null, transform.position)
+//                                .SetIndex2(CurrentColor);
+                       
+                    }
+                    catch (Exception e)
+                    {
+                        
+                        Kernel.Resolve<FireBaseController>().LogCrashException(e);
+                        if(GameController.explodeSoundCheck == null)
+                            Kernel.Resolve<FireBaseController>().LogEvent("explodeSoundCheck null");
+                    }
                 });
         }
 
