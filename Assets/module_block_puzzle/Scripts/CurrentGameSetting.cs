@@ -14,7 +14,7 @@ namespace BlockPuzzle
 
     [CreateAssetMenu(fileName = nameof(CurrentGameSetting) + ".asset",
         menuName = "Duong/BlockPuzzle/" + nameof(CurrentGameSetting))]
-    public class CurrentGameSetting : ScriptableObject
+    public class CurrentGameSetting : BaseCurrentGameSetting
     {
         public BlockSpawnSetting blockSpawnSetting;
         public float tileDistance = 1;

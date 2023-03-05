@@ -48,13 +48,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   products:
   - quantity: 300
     amount: 0
@@ -66,6 +59,8 @@ MonoBehaviour:
     parameter: 0
     parameter2: 0
     index: 0
+  key: init_product
+  notOnProduction: 0
 --- !u!1 &951265547762182804
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,13 +572,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   testSound: 0
   testPlaySound: 0
   volumeProperty:
@@ -698,6 +686,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2438c42ee6435064898c7e3f5c5386f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
   testStartAction: 0
   turnOff: 0
   t1: 0
@@ -839,6 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecfc912ea77ab8f45b49dbe71b8cf621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultRemoteDatabase: {fileID: 11400000, guid: d6684f6b1c638c94faee3b747ac91861, type: 2}
   defaultConfigs:
   - dataType: 1
     defaultString: 0
@@ -1010,7 +1004,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fff6e39608f92459265689d2b680a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  facebookController: {fileID: 0}
+  facebookController: {fileID: 8435826600656683607}
+  avatar: {fileID: 0}
   totalAvatar: 8
 --- !u!1 &8435826601139006070
 GameObject:
@@ -1227,6 +1222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   showBanner: 1
+  isDefault: 1
   testAds: 0
   logFail: 1
   useOpenAdsAsInterstitial:

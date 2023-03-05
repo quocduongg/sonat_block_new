@@ -14,33 +14,33 @@ namespace BlockPuzzle
             new int []{10}, 
             new []{nameof(CustomParameter.boolValue),nameof(CustomParameter.boolValue),nameof(CustomParameter.intValue3),nameof(CustomParameter.boolValue)}, 
             new []{"InitMap"}, 
-            new []{40,30} ,ListPointType.ColorMap,5)]
+            new []{40,30} ,ListPointType.ColorMap,5,5)]
         public ListPoint map; // spawn map on board
         
         [ListPointName(
             new []{10,10}, 
             new []{nameof(CustomParameter.intValue),nameof(CustomParameter.boolValue),nameof(CustomParameter.intValue3),nameof(CustomParameter.boolValue)}, 
             new []{"Color","Yes"}, 
-            new []{40,30} ,ListPointType.Absolute,5)]
+            new []{40,30} ,ListPointType.Absolute,5,5)]
         public ListPoint hintPlacePoints; // first point is place point
         
         [ListPointName(
             new []{10,5,5}, 
             new []{nameof(CustomParameter.intValue),nameof(CustomParameter.boolValue),nameof(CustomParameter.boolValue2),nameof(CustomParameter.boolValue)}, 
             new []{"Color","Spawn","Drag"}, 
-            new []{40,40,40} ,ListPointType.Relative,3)]
+            new []{40,40,40} ,ListPointType.Relative,3,3)]
         [SerializeField] private ListPoint item;
         [ListPointName(
             new []{10,5,5}, 
             new []{nameof(CustomParameter.intValue),nameof(CustomParameter.boolValue),nameof(CustomParameter.boolValue2),nameof(CustomParameter.boolValue)}, 
             new []{"Color","Spawn","Drag"}, 
-            new []{40,40,40} ,ListPointType.Relative,3)]
+            new []{40,40,40} ,ListPointType.Relative,3,3)]
         [SerializeField] private ListPoint item2;
         [ListPointName(
             new []{10,5,5}, 
             new []{nameof(CustomParameter.intValue),nameof(CustomParameter.boolValue),nameof(CustomParameter.boolValue2),nameof(CustomParameter.boolValue)}, 
             new []{"Color","Spawn","Drag"}, 
-            new []{40,40,40} ,ListPointType.Relative,3)]
+            new []{40,40,40} ,ListPointType.Relative,3,3)]
         [SerializeField] private ListPoint item3; //spawn item
         
         public ListPoint[] Items

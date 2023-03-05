@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95909dcff496cb4488aac5dc2024079f, type: 3}
   m_Name: LevelDatabase
   m_EditorClassIdentifier: 
+  textAsset: {fileID: 0}
+  loadLevel: 0
   levels:
   - size:
       col: 10

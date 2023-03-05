@@ -71,6 +71,7 @@ namespace BlockPuzzle
 
         [NonSerialized] public IntReactiveProperty notEnoughSpace = new IntReactiveProperty();
 
+        public override BaseCurrentGameSetting BaseCurrentGameSetting => currentGameSetting;
         protected override IActiveTutorialComponents IActiveTutorialComponents => gameTutorial;
         protected override string NameSpace => "BlockPuzzle";
 
@@ -112,7 +113,7 @@ namespace BlockPuzzle
         private void LoadRemote()
         {
             var stringKey = CurrentRemoteSettingKey.remote_spawn_setting.ToString();
-            if (RemoteConfigController.HasValue(stringKey))
+            if (RemoteConfigController.RemoteHasValue(stringKey))
             {
                 try
                 {
@@ -226,6 +227,11 @@ namespace BlockPuzzle
             });
         }
 
+        protected override void ClearMoves()
+        {
+           
+        }
+
         public override bool GetCustomCondition(int customGameCondition)
         {
             if (customGameCondition == 0)
@@ -239,6 +245,11 @@ namespace BlockPuzzle
                 default:
                     return true;
             }
+        }
+
+        public override Product GetCustomReward(Product reward)
+        {
+           return Product.Free;
         }
 
         public override void Clear()
@@ -287,12 +298,12 @@ namespace BlockPuzzle
             }
         }
 
-        protected override void CheckHint()
+        protected override void CheckHintIdle()
         {
-            base.CheckHint();
-            if (_waitForHint % currentGameSetting.timeToHint == 0 && PlayerData.tutorialStep == -1)
+            base.CheckHintIdle();
+            if (_waitForHintIdle % currentGameSetting.timeToHint == 0 && PlayerData.tutorialStep == -1)
                 HintPlace();
-            if (_waitForHint == currentGameSetting.timeHintJigsawMode)
+            if (_waitForHintIdle == currentGameSetting.timeHintJigsawMode)
                 HintMode(true);
         }
 
@@ -1331,7 +1342,7 @@ namespace BlockPuzzle
         public void ClearIdleHint()
         {
             BgTilePoolIdleHint.ReturnAll();
-            _waitForHint = 0;
+            _waitForHintIdle = 0;
             HintMode(false);
         }
 

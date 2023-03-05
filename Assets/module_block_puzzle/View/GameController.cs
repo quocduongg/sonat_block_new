@@ -279,11 +279,7 @@ namespace BlockPuzzle
             return false;
         }
 
-        protected override void ClearMoves()
-        {
-        }
-
-        public override void HandlerButton(int key)
+        public override void HandlerButton(int key, PointParameter parameter)
         {
             switch ((GameRootButtonEnum) key)
             {

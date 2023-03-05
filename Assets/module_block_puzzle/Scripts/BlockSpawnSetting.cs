@@ -14,7 +14,7 @@ namespace BlockPuzzle
             new int []{10}, 
             new []{nameof(CustomParameter.boolValue),nameof(CustomParameter.boolValue),nameof(CustomParameter.intValue3),nameof(CustomParameter.boolValue)}, 
             new []{"Rotate"}, 
-            new []{40,30} ,ListPointType.Relative,3)]
+            new []{40,30} ,ListPointType.Relative,3,3)]
         public ListPoint[] map;
 
         public ListPoint GetRandomDes(int currentScoreValue)

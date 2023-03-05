@@ -91,7 +91,7 @@ namespace BlockPuzzle
                     return false;
                 }
 
-                RootView.rootView.onTutorial.Value = true;
+                RootView.rootView.onTutorial.BoolValue = true;
                 if (CurrentTutStep.map.customParameter.boolValue)
                 {
                     GameController.ViewMap.ReturnAll();
