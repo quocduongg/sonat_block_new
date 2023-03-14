@@ -52,7 +52,7 @@ namespace BlockPuzzle
         [SerializeField] private bool turnOnOnlyItemMatch;
         [SerializeField] private ToggleScript[] hintMode;
 
-       
+        public override BaseLevelDatabase<Level> BaseLevelDatabase => levelDatabase;
 
         public BoardSpecialState BoardSpecialState { get; set; }
 
@@ -247,7 +247,7 @@ namespace BlockPuzzle
             }
         }
 
-        public override Product GetCustomReward(Product reward)
+        public override Product GetCustomProduct(Product reward)
         {
            return Product.Free;
         }
@@ -1444,12 +1444,12 @@ namespace BlockPuzzle
             if (indexWhenStop == -1)
             {
                 Debug.Log("finish all tut");
-                FxOnFinishTut();
+                //FxOnFinishTut();
                 tiles.ReturnAll();
                 for (var i = 0; i < spawnItems.Length; i++)
                     spawnItems[i].ClearTiles();
                 _viewMap.Populate(null);
-                CurrentGameSave = CreateGameSaveFromCurrentLevel();
+                CurrentGameSave = CreateGameSaveFromInputDirty(CurrentLevel);
                 Spawn(null, true);
                 ChangeScore(0, SetDataType.ClearAll);
             }

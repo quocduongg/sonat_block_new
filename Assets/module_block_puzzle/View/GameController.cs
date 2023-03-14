@@ -53,8 +53,6 @@ namespace BlockPuzzle
                 1, 5, 10, 15, 30
             });
 
-        protected override ScriptableObject CurrentGameSetting => currentGameSetting;
-
 
         protected override void Register()
         {
@@ -166,7 +164,7 @@ namespace BlockPuzzle
             return levelDatabase.GetLevel(0);
         }
 
-        public override GameSave<BoardState> GetGameSaveFromInput(object input)
+        public GameSave<BoardState> GetGameSaveFromInput(object input)
         {
             hint_save_slot_times.Value = 0;
             PlayerData.tutorialStep = -1;
@@ -244,16 +242,12 @@ namespace BlockPuzzle
         }
 
 
-        protected override GameSave<BoardState> CreateGameSaveFromCurrentLevel()
+        protected override void SetDefaultGameSaveKey(GameSave<BoardState> save)
         {
-            var gameSave = new GameSave<BoardState>(typeof(GameSaveKey));
-            gameSave[(int) GameSaveKey.StartBestScore] = PlayerData.bestScore.Value;
-            gameSave.AddState(CreateStateFromLevel(CurrentLevel));
-            SaveLevel();
-            SaveGame();
-            return gameSave;
+            save[(int) GameSaveKey.StartBestScore] = PlayerData.bestScore.Value;
         }
-
+        
+     
         public override void UpdateUserProperty()
         {
             var block = (int) Mathf.Pow(2, PlayerData.newValue + 1);
@@ -290,8 +284,7 @@ namespace BlockPuzzle
             }
         }
 
-
-        public override BoardState CreateStateFromLevel(Level level)
+        protected override BoardState CreateStateFromLevel(Level level)
         {
             return new BoardState
             {
@@ -299,7 +292,6 @@ namespace BlockPuzzle
                 spawns = null
             };
         }
-
 
         public override bool IsOfferOkayToShow(int key)
         {
@@ -352,8 +344,9 @@ namespace BlockPuzzle
             base.DeleteGameSave();
         }
 
-        protected override void HandlerGameOver()
+        protected override void HandlerGameOverAfter()
         {
+            base.HandlerGameOverAfter();
             Pause.Value = true;
 //            if (WaveData.currentScore.Value > DeletedCurrentGameSave[(int) GameSaveKey.StartBestScore]
 //                && WaveData.currentScore.Value > 100
