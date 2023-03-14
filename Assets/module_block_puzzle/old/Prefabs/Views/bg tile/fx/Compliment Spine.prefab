@@ -161,6 +161,7 @@ MonoBehaviour:
     whenSoundStartIn: 0
     delayScript: {fileID: 0}
     delayScriptIndex: 0
+    delayStart: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1

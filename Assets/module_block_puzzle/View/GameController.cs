@@ -104,6 +104,7 @@ namespace BlockPuzzle
         protected override void OnKernelLoaded()
         {
             base.OnKernelLoaded();
+            genericPoolItem.Init();
         }
 
         protected override void RegisterCurrentGame()

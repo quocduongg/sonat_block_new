@@ -535,6 +535,11 @@ namespace BlockPuzzle
         {
             tweenSaveSlot.OnChanged(false);
             BgTilePoolPlaceHint.ReturnAll();
+            if(_draggingItem.Value == null)
+            {
+                dragItemState = DragItemState.NotHandler;
+                return;
+            }
             if ((dragItemState & DragItemState.ValidRotate) != 0)
             {
                 bool validToRotate = CurrentTutStep == null ||
