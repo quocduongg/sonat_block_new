@@ -281,7 +281,7 @@ namespace BlockPuzzle
                         blockTileView.onDrag.Animator_In();
                 }
             }
-            else
+            else if(Tiles != null)
             {
                 if (value)
                 {

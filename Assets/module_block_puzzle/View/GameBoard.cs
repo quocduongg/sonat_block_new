@@ -465,6 +465,11 @@ namespace BlockPuzzle
 
         private void OnMouse()
         {
+            if (_draggingItem.Value == null)
+            {
+                dragItemState = DragItemState.NotHandler;
+                return;
+            }
             // pick up
             if ((dragItemState & DragItemState.ValidToDrag) != 0)
             {
