@@ -348,7 +348,6 @@ namespace BlockPuzzle
         protected override void HandlerGameOverAfter()
         {
             base.HandlerGameOverAfter();
-            Pause.Value = true;
 //            if (WaveData.currentScore.Value > DeletedCurrentGameSave[(int) GameSaveKey.StartBestScore]
 //                && WaveData.currentScore.Value > 100
 //                && Kernel.IsInternetConnection() 
@@ -360,7 +359,7 @@ namespace BlockPuzzle
 //                    ScreenRoot.popupManager.ShowPopup<PopupGameOver>();
 //            }
 //            else
-            ScreenRoot.popupManager.ShowPopup<PopupGameOver>();
+
 
             new SonatLogLevelEnd()
             {
