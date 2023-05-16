@@ -21959,6 +21959,18 @@ PrefabInstance:
       propertyPath: visitCondition
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1227319137, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: bind
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227319137, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: customPropertyEnum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227319137, guid: f063099db2906a7478819171448cac4b, type: 3}
+      propertyPath: gameMainEvents.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1999693482, guid: f063099db2906a7478819171448cac4b, type: 3}
       propertyPath: m_IsActive
       value: 0

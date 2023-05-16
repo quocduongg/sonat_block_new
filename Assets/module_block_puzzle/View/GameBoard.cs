@@ -358,6 +358,7 @@ namespace BlockPuzzle
         {
             base.HandlerGameOver();
             PlayerData.customPropertyList[(int) CustomPlayerDataProperty.LoseTimes].Value++;
+            Debug.Log(nameof(HandlerGameOver));
         }
 
         protected override void OnStartANewGame()

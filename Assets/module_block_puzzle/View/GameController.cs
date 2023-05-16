@@ -46,7 +46,6 @@ namespace BlockPuzzle
 
         public bool[] explodeSoundCheck;
         public IntReactiveProperty rotateOn;
-
         [NonSerialized] public IntReactiveProperty RotateValid;
         [SerializeField] IntReactiveProperty _freeToRotate = new IntReactiveProperty();
         [SerializeField] public PoolCollection<GenericPoolItem> genericPoolItem;
@@ -618,7 +617,7 @@ namespace BlockPuzzle
             Debug.Log(1.56f);
         }
 
-        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : PlayerData.currentLevel.Value;
+        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : PlayerData.playTimes;
 
         public override string Mode => JigsawBoard.IsPlaying ? JigsawBoard.Mode : base.Mode;
     }

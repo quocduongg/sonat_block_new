@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f90cdfa046b8fe24bb22543a16b0300a, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -141,6 +141,7 @@ MonoBehaviour:
     parameter2: 0
   logAndRename: 0
   testStartAction: 0
+  applyWhen: 0
   turnOff: 0
   t1: 0
   t2: 0
@@ -221,6 +222,7 @@ MonoBehaviour:
   - {fileID: 5751441717674004409}
   indexBindings2: []
   delayActives: []
+  timeVibrateMilliseconds: 0
   test: 0
   testOnRent: 0
 --- !u!114 &5751441717674004409
@@ -266,8 +268,8 @@ MonoBehaviour:
     othersIndex2: []
     othersComputedIndex2: []
     index2ToOther1: []
-  btn2: 0
-  btn: 0
+  test_btn2: 0
+  test_btn: 0
   testLoad: 0
   testLoad2: 0
   logDebug: 0
