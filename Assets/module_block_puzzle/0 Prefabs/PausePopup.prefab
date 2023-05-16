@@ -377,13 +377,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   displayFormat: '{0}'
   upperCase: 0
   removeHtmlTag: 0
@@ -656,7 +649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 1
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -665,11 +659,11 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   otherReverses: []
   delayDeactive: 0
   delayDeactiveOnActive: 0
-  test: 0
   lastValue: 0
 --- !u!114 &1532862952
 MonoBehaviour:
@@ -683,7 +677,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -692,7 +687,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -766,28 +762,28 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   key: 0
+  rewardTypeFlag: 1
+  placement: 1
   whenCloseShop: 0
   whenNotAffordable: 0
+  showMessagePopupBeforeNotAffordableAction: 0
+  notAffordableMessagePopupContent: 
   whenNotAffordableAction: {fileID: 0}
+  whenNotAffordableInvokeButton: {fileID: 0}
   preview: 0
-  bonus: 0
   soundClick: 0
   buyButton: {fileID: 1532862954}
+  adsButton: {fileID: 0}
   inStockBindings:
   - {fileID: 1532862953}
   - {fileID: 1912799400}
+  firstProductBindings: []
   customCondition: 0
   customConditionBinding: []
-  rewardingWaysWhenClickBuy: 0
   inStockActiveThis: 0
+  closeCurrentPopupOnRewarded: 0
+  withExtra: 0
   priceAmountText: {fileID: 1352452939}
   productAmountText: {fileID: 0}
   currencyIcon: {fileID: 0}
@@ -911,7 +907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -920,11 +917,11 @@ MonoBehaviour:
   reverse: 1
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   otherReverses: []
   delayDeactive: 0
   delayDeactiveOnActive: 0
-  test: 0
   lastValue: 0
 --- !u!1 &2019175777
 GameObject:
@@ -1075,7 +1072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a50d87e14642146983062d9069ffd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1084,11 +1082,11 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   otherReverses: []
   delayDeactive: 0
   delayDeactiveOnActive: 0
-  test: 0
   lastValue: 0
 --- !u!114 &2019175779
 MonoBehaviour:
@@ -1107,13 +1105,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   displayFormat: '{0}'
   upperCase: 0
   removeHtmlTag: 0
@@ -1256,13 +1247,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 0
   actionBefore: []
   dButton: 0
@@ -1287,7 +1271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1296,7 +1281,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -1441,13 +1427,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 1
   actionBefore: []
   dButton: 0
@@ -1472,7 +1451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1481,7 +1461,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -1702,13 +1683,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 1
   actionBefore: []
   dButton: 0
@@ -1748,7 +1722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -1757,7 +1732,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -1978,21 +1954,16 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 1
   actionBefore: []
   dButton: 0
   Enum: 2
+  levelTriggerCondition: 0
   value: 0
   showInters: 1
   showIntersLog: setting_replay
   conditionLevel: 1
+  exceptLevels: 
 --- !u!114 &3296523539924862210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2091,7 +2062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -2100,7 +2072,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -2324,21 +2297,16 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 1
   actionBefore: []
   dButton: 0
   Enum: 1
+  levelTriggerCondition: 0
   value: 0
   showInters: 0
   showIntersLog: 
   conditionLevel: 1
+  exceptLevels: 
 --- !u!114 &4464715865625799601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,7 +2393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -2434,7 +2403,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -2532,14 +2502,13 @@ GameObject:
   - component: {fileID: 4116742309910843921}
   - component: {fileID: 4116742309910844012}
   - component: {fileID: 4116742309910844015}
-  - component: {fileID: 4116742309910844014}
   m_Layer: 5
   m_Name: PausePopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4116742309910843921
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2585,36 +2554,25 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   locationManager: {fileID: 0}
   resumeIfHome: 1
+  nativeAds: 0
   close: {fileID: 0}
   testShow: 0
   adsToLog: {fileID: 0}
   log: 0
   animators:
   - {fileID: 2238996887701591643}
+  unWaitAnimators: []
   activeOnShow: []
   checkers: []
   dependencies: []
---- !u!225 &4116742309910844014
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4116742309910843920}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
+  stopTime:
+    value: 0
+    value2: 0
+  popupName: popup_pause
+  skipLog: 0
+  loadDependency: 0
 --- !u!1 &4450965490235891219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,13 +2850,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 0
   actionBefore: []
   dButton: 0
@@ -2994,7 +2945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -3003,7 +2955,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -3283,21 +3236,16 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 1
   actionBefore: []
   dButton: 0
   Enum: 7
+  levelTriggerCondition: 0
   value: 1
   showInters: 1
   showIntersLog: classic_to_home
   conditionLevel: 1
+  exceptLevels: 
 --- !u!114 &1133496774542030771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3384,7 +3332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -3393,7 +3342,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -3439,12 +3389,13 @@ RectTransform:
   - {fileID: 5133946889440558231}
   - {fileID: 5034226158734198082}
   - {fileID: 2075433776}
+  - {fileID: 1260286492964614082}
   m_Father: {fileID: 4116742309910843921}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 91}
+  m_AnchoredPosition: {x: 0, y: 243}
   m_SizeDelta: {x: 924, y: 1026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1540368149128598505
@@ -3497,7 +3448,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ccade988ccdd5d45b085545c0dae63a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testFunction:
+    method: functionName
+    parameter1: 0
+    parameter2: 0
+  logAndRename: 0
   testStartAction: 0
+  applyWhen: 0
   turnOff: 0
   t1: 0
   t2: 0
@@ -3516,18 +3473,24 @@ MonoBehaviour:
     animInSound: 2
     animOutSound: 0
     whenSoundStartIn: 0
+    delayScript: {fileID: 0}
+    delayScriptIndex: 0
+    delayStart: 0
     delayBeforeIn: 0
     delayAfterOut: 0
     toggleTrueOnIn: 1
     toggleScripts: []
+    toggleOutValue: 1
+    toggleOnOut: []
     indexBindings: []
     afterInCallBack: 0
     particleTimeAdjust: 0
     afterInParticleSystems: []
     onStartParticleSystems: []
   state: 2
+  index: 0
+  busy: 0
   inThenOutIdleDelay: 0
-  particleTimeAdjust: 0
   afterInParticleSystems: []
   onStartParticleSystems: []
   afterInAction:
@@ -4044,13 +4007,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 0
   actionBefore: []
   dButton: 0
@@ -4146,7 +4102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -4155,7 +4112,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -4571,21 +4529,16 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 1
   actionBefore: []
   dButton: 0
   Enum: 2
+  levelTriggerCondition: 0
   value: 0
   showInters: 0
   showIntersLog: 
   conditionLevel: 1
+  exceptLevels: 
 --- !u!114 &7751623850367104597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4684,7 +4637,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -4693,7 +4647,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -4767,13 +4722,6 @@ MonoBehaviour:
     parameter1: 0
     parameter2: 0
   logAndRename: 0
-  testProduct:
-    quantity: 0
-    amount: 0
-    parameter: 0
-    parameter2: 0
-    index: 0
-  testProduct123: 0
   sound: 1
   actionBefore: []
   dButton: 0
@@ -4902,7 +4850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1791705021bf31e49ac416e067dedd5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: 0
+  disable: 0
+  sounds: []
   whenStartInAnimations: []
   test2: 0
   testToggle: 0
@@ -4911,7 +4860,8 @@ MonoBehaviour:
   reverse: 0
   custom: 0
   testOnOff: 0
-  testLoadtoggle: 0
+  testLoadComponent: 0
+  testBreak: 0
   scaleOut: {x: 1.1, y: 1.1, z: 1.1}
   time: 0.05
   useLast: 0
@@ -4994,3 +4944,105 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &2062967299704853829
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2619615825706616550}
+    m_Modifications:
+    - target: {fileID: 998759217148426886, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_Name
+      value: btnShowPopupTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 147.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 151.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -375
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 443.62994
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+--- !u!224 &1260286492964614082 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 998759217148426887, guid: 30116c141e7d6f643b207116645a3366, type: 3}
+  m_PrefabInstance: {fileID: 2062967299704853829}
+  m_PrefabAsset: {fileID: 0}

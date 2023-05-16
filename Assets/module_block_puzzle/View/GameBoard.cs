@@ -131,7 +131,7 @@ namespace BlockPuzzle
         {
             LoadRemote();
             if (!FireBaseController.FireBaseRemoteReady)
-                RemoteConfigController.OnInitialized.Action += data => LoadRemote();
+                SharedRemoteConfigController.OnInitialized.Action += data => LoadRemote();
 
             rotateOn.BoolValue = false;
             gameTutorial.Set(this);

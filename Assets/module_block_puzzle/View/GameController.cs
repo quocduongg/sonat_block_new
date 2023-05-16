@@ -81,16 +81,22 @@ namespace BlockPuzzle
         protected override void Retry()
         {
             base.Retry();
-            var logEvent2 = $"level_end";
-            Kernel.Resolve<FireBaseController>().LogEvent(logEvent2, new LogParameter[]
+            
+            new SonatLogLevelEnd()
             {
-                new LogParameter("mode", "classic"),
-                new LogParameter("type", "retry"),
-                new LogParameter("level", PlayerData.playTimes.ToString()),
-                new LogParameter("score", WaveData.currentScore.Value),
-                new LogParameter("use_booster_count", DeletedCurrentGameSave[(int) GameSaveKey.UseBoosterCount]),
-                new LogParameter("play_time", DeletedCurrentGameSave[(int) GameSaveKey.TimeSeconds]),
-            });
+                mode = Mode,
+                highest_score = PlayerData.bestScore.Value,
+                is_first_play = PlayerData.playTimes == 1,
+                level = PlayerData.playTimes.ToString(),
+                lose_cause = "retry",
+                move_count = 0,
+                play_time = DeletedCurrentGameSave[(int) GameSaveKey.TimeSeconds],
+                score = WaveData.currentScore.Value,
+                success = false,
+                use_booster_count = DeletedCurrentGameSave[(int) GameSaveKey.UseBoosterCount]
+            }.Post();
+            Debug.LogError("duong "+ DeletedCurrentGameSave[(int) GameSaveKey.TimeSeconds]);
+            
             var timeSeconds = DeletedCurrentGameSave[(int) GameSaveKey.TimeSeconds];
             Debug.Log(timeSeconds);
         }
@@ -612,7 +618,7 @@ namespace BlockPuzzle
             Debug.Log(1.56f);
         }
 
-        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : Level;
+        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : PlayerData.currentLevel.Value;
 
         public override string Mode => JigsawBoard.IsPlaying ? JigsawBoard.Mode : base.Mode;
     }
