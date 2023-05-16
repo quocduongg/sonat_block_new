@@ -354,10 +354,9 @@ namespace BlockPuzzle
         private ReactiveProperty<BlockItemView> _draggingItem = new ReactiveProperty<BlockItemView>();
         private Vector3 _oldPos;
 
-
-        protected override void GameOver()
+        protected override void HandlerGameOver()
         {
-            base.GameOver();
+            base.HandlerGameOver();
             PlayerData.customPropertyList[(int) CustomPlayerDataProperty.LoseTimes].Value++;
         }
 
@@ -639,7 +638,7 @@ namespace BlockPuzzle
 
 
                         _draggingItem.Value.ReleaseTile(placePoints, null, _viewMap);
-                        CheckWin();
+                        CheckBoardWin();
                         ((int) SoundEnum.ItemPlace).PlaySound();
 
 
@@ -806,11 +805,11 @@ namespace BlockPuzzle
                 GameActionEvent.SaveGame.OnNext();
             }
 
-            if (!CheckPossibleToPlace())
-                GameActionEvent.BoardLose.OnNext();
-
+            CheckBoardLose();
             CheckOnlyItemMatch();
         }
+        
+        
 
         protected override void HandlerBoardLose()
         {
@@ -823,7 +822,8 @@ namespace BlockPuzzle
 
         private bool _lose;
 
-        protected override IEnumerator IeBoardLose()
+      
+        protected override IEnumerator IeFinishingBoardLose()
         {
             _lose = true;
             Pause.Value = true;
@@ -851,7 +851,7 @@ namespace BlockPuzzle
             yield return new WaitForSeconds(currentGameSetting.waitLoseClearScreen);
 
             Pause.Value = false;
-            GameOver();
+            HandlerGameOver();
             _lose = false;
         }
 
@@ -1019,23 +1019,7 @@ namespace BlockPuzzle
             UnDrag();
         }
 
-        public override void LogCustom()
-        {
-            base.LogCustom();
-
-            WaveData.currentScore.Value = CurrentGameSave[(int) GameSaveKey.StartBestScore] + 1;
-            SubjectController.GameActionEvent.OnNext(GameActionEvent.BoardLose);
-
-//            var fx = scoreEffects.pools[0].Rent(null, BgPoints.GetAtPoint(new Point(4, 4)).value);
-//            fx.SetIndex(10); // set score
-//            fx.SetIndex2(0);
-//
-//            .5f.Timer(() =>
-//            {
-//                complimentEffects.pools[0].Rent(null, Vector3.zero).SetIndex(UnityEngine.Random.Range(0, 3));
-//                SubjectController.OnGlobalEffect.OnNext((int) AnimatorCallbackEnum.ShakeCamera);
-//            });
-        }
+     
 
 
         private IEnumerator EatCoroutine(IList<PointParameter> points)
@@ -1722,6 +1706,24 @@ namespace BlockPuzzle
             public float complimentClampPosX = 3.4f;
         }
 
+        
+        public override void LogCustom()
+        {
+            base.LogCustom();
+            WaveData.currentScore.Value = CurrentGameSave[(int) GameSaveKey.StartBestScore] + 1;
+            SubjectController.GameActionEvent.OnNext(GameActionEvent.ForceBoardLose);
+        }
+        
+#if UNITY_EDITOR
+        public  void TestGameOver(int score)
+        {
+            ChangeScore(score, SetDataType.SetThenTween);
+            CheckBest();
+            3f.Timer(HandlerGameOver);
+        }
+#endif
+
+        
         public override void LogCustomInt(int value)
         {
             base.LogCustomInt(value);

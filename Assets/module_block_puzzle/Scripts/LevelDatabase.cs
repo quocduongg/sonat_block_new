@@ -35,6 +35,11 @@ namespace BlockPuzzle
                 blocks = blocks.Select(x => x.CloneCurrent()).ToList()
             };
         }
+
+        public override bool IsNotValid()
+        {
+            return false;
+        }
     }
 
     [System.Serializable]

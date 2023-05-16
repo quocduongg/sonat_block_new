@@ -28,7 +28,16 @@ namespace BlockPuzzle
         public static CurrentGameSetting currentGameSetting;
     }
 
-    public partial class GameController : GameSaveController<BoardState, Level> 
+    [Serializable]
+    public  class CustomGameSave : BaseCustomGameSave
+    {
+        public override void Validate()
+        {
+            
+        }
+    }
+    
+    public partial class GameController : GameSaveController<BoardState, Level,CustomGameSave> 
     {
         [SerializeField] private bool useRemoteConfig = true;
         [SerializeField] private CurrentGameSetting currentGameSetting;
@@ -111,16 +120,6 @@ namespace BlockPuzzle
         {
             BasePoolItemGameView<GameController, CurrentGameSetting>.Set(this, currentGameSetting);
         }
-
-#if UNITY_EDITOR
-        public  void TestGameOver(int score)
-        {
-            ChangeScore(score, SetDataType.SetThenTween);
-            CheckBest();
-            3f.Timer(GameOver);
-        }
-#endif
-
 
         protected override void HandleGlobalEffect(int value)
         {
@@ -269,9 +268,14 @@ namespace BlockPuzzle
             };
         }
 
-        protected override bool IsWin()
+        protected override bool IsBoardWin()
         {
             return false;
+        }
+
+        protected override bool IsBoardLose()
+        {
+            return !CheckPossibleToPlace();
         }
 
         public override void HandlerButton(int key, PointParameter parameter)
@@ -608,7 +612,7 @@ namespace BlockPuzzle
             Debug.Log(1.56f);
         }
 
-        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : base.Level;
+        public override int Level => JigsawBoard.IsPlaying ? JigsawBoard.Level : Level;
 
         public override string Mode => JigsawBoard.IsPlaying ? JigsawBoard.Mode : base.Mode;
     }
